@@ -128,7 +128,6 @@ li > .delete:hover  {
 
 /* Completed */
 #list-complete label  {
-
     color: #888;
 }
 
@@ -146,5 +145,5 @@ li > .delete:hover  {
     display: none;
 }
 input#new-task  {
-    width:  318px;
+    width: 318px;
 }
