@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="header"><img src="./eisenhower-matrix.jpg">
+  <div class="header"><img src="./eisenhower-matrix.jpg" alt="It's a matrix">
     <a class="link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details</a>
   </div>
   <div class="main">
@@ -17,10 +17,12 @@
      <div class="section">
          <h3>Todo</h3>
          <ul id="list">
-             <li><input type="checkbox"><label class="task">Pay Bills</label>
-             <button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
+             <li class="todo-list"><input class="todo-list__checkbox" type="checkbox"><label class="task">Pay Bills</label>
+             <button class="edit">Edit</button><button class="delete"><img src="./remove.svg" alt="It's white remove image with a cross in the center"></button>
              </li>
-             <li class="edit-mode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class="edit">Save</button><button class="delete"><img src="./remove.svg"></button>
+             <li class="todo-list"><input class="todo-list__checkbox" type="checkbox">
+                 <label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class="edit">Save</button><button class="delete">
+                 <img src="./remove.svg" alt="It's white remove image with a cross in the center"></button>
              </li>
          </ul>
      </div>
@@ -28,9 +30,9 @@
       <div class="section">
           <h3>Completed</h3>
           <ul id="list-complete">
-              <li><input type="checkbox" checked><label class="task">See the Doctor</label>
+              <li class="todo-list"><input class="todo-list__checkbox" type="checkbox" checked><label class="task">See the Doctor</label>
                   <button class="edit">Edit</button>
-                  <button class="delete"><img src="./remove.svg"></button>
+                  <button class="delete"><img src="./remove.svg" alt="It's white remove image with a cross in the center "></button>
               </li>
           </ul>
       </div>

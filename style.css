@@ -104,7 +104,7 @@ li > *  {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"]  {
+.shop-list__checkbox {
     margin: 0 10px;
 }
 li > label  {
@@ -138,12 +138,12 @@ li > .delete:hover  {
     display: none
 }*/
 
-.edit-mode input[type="text"]  {
+.shop-list input[type="text"]  {
     display: inline-block;
     width: 210px;
 }
 
-.edit-mode label  {
+.shop-list label  {
     display: none;
 }
 input#new-task  {
