@@ -14,9 +14,9 @@ body  {
     width: 100%;
 }
 .header .link  {
-    font-family: fantasy, cursive;
+    font-family: Fantasy, cursive;
 }
-@media (max-width:768px)  {
+@media (max-width: 768px)  {
 
     .header  {
         text-align: center;
@@ -32,18 +32,18 @@ body  {
     display: inline-block;
 }
 ul  {
-    margin:0;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 li, h3  {
-    list-style:none;
+    list-style: none;
 }
 input, button  {
-    outline:none;
+    outline: none;
 }
 button  {
     background: none;
-    border: 0px;
+    border: 0;
     color: #888;
     font-size: 15px;
     width: 60px;
@@ -85,7 +85,7 @@ label[for="new-task"]  {
     display: block;
     margin: 0 0 20px;
 }
-#new-task  {
+input#new-task {
     width: 318px;
 }
 p > button:hover  {
@@ -128,20 +128,23 @@ li > .delete:hover  {
 
 /* Completed */
 #list-complete label  {
-    text-decoration: line-through;
+
     color: #888;
 }
 
 /* Edit Task */
-li input[type="text"]  {
-    display:none
+/* input[type="text"]  {
+    display: none
+}*/
+
+.edit-mode input[type="text"]  {
+    display: inline-block;
+    width: 210px;
 }
 
-li.edit-mode input[type="text"]  {
-    display:inline-block;
-    width:210px;
+.edit-mode label  {
+    display: none;
 }
-
-li.edit-mode label  {
-    display:none;
+input#new-task  {
+    width:  318px;
 }
