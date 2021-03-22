@@ -17,6 +17,7 @@ body  {
     font-family: fantasy, cursive;
 }
 @media (max-width:768px)  {
+
     .header  {
         text-align: center;
     }
@@ -111,7 +112,7 @@ li > label  {
     width: 226px;
 }
 li > input[type="text"]  {
-    width: 226px
+    width: 226px;
 }
 li > .delete:hover  {
     color: #cf2323;
@@ -138,7 +139,7 @@ li input[type="text"]  {
 
 li.edit-mode input[type="text"]  {
     display:inline-block;
-    width:224px
+    width:210px;
 }
 
 li.edit-mode label  {
