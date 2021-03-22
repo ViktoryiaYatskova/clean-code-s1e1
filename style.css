@@ -13,7 +13,7 @@ body  {
 .header img  {
     width: 100%;
 }
-.header .more-info  {
+.header .link  {
     font-family: fantasy, cursive;
 }
 @media (max-width:768px)  {
@@ -125,7 +125,7 @@ button.delete img:hover  {
 }
 
 /* Completed */
-ul#completed-tasks label  {
+ul#list-complete label  {
     text-decoration: line-through
     color: #888;
 }
