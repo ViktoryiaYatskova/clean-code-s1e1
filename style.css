@@ -1,3 +1,6 @@
+*{
+  box-sizing:border-box
+}
 /* Basic Style */
 body {
     background-color: #f8f8f8;
