@@ -135,7 +135,7 @@ li > label {
 }
 
 li >    input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 li > .delete:hover {
@@ -154,18 +154,18 @@ li > .delete:hover {
 
 /* Completed */
 #completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-  display: none
+  display: none;
 }
 
 ul .edit-mode input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 ul .edit-mode label {
