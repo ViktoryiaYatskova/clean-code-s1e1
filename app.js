@@ -32,7 +32,7 @@ var createNewTaskElement=function(taskString){
   var deleteButtonImg=document.createElement("img");//delete button image
 
   label.innerText=taskString;
-  label.className='task';
+  label.className="task";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
@@ -43,7 +43,7 @@ var createNewTaskElement=function(taskString){
 
   deleteButton.innerText="Delete";
   deleteButton.className="delete";
-  deleteButtonImg.src='./remove.svg';
+  deleteButtonImg.src="./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -159,7 +159,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 //for each list item
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
-  //bind events to list items chldren(tasksCompleted)
+  //bind events to list items children(tasksCompleted)
   bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
 }
 
