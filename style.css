@@ -20,7 +20,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 	
   .aaa {
     text-align: center;
@@ -40,16 +40,16 @@ body {
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 button {
@@ -157,14 +157,14 @@ li > .delete:hover {
 
 /* Edit Task */
 li input[type="text"] {
-  display:none
+  display: none
 }
 
 .editMode input[type="text"] {
-  display:inline-block;
-  width:205px
+  display: inline-block;
+  width: 205px
 }
 
 .editMode label {
-  display:none;
+  display: none;
 }
