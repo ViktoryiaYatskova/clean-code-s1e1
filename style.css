@@ -5,14 +5,14 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.header img {
   width: 100%;
 }
 
@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 768px) {
 	
-  .aaa {
+  .header {
     text-align: center;
   }
 
