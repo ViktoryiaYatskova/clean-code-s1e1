@@ -29,12 +29,16 @@ body {
 }
 .main-page {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
 }
 .main-page__task {
   width: 56%;
   display: inline-block;
+  flex-grow: 1;
+}
+.task-row-wrapper {
+  display: flex;
 }
 ul {
   margin: 0;
@@ -104,6 +108,10 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 li > * {
   vertical-align: middle;
@@ -146,7 +154,7 @@ ul li input[type=text] {
 
 ul .main-page__edit-mode input[type=text] {
   display: inline-block;
-  width: 216px;
+  width: 224px;
 }
 
 ul .main-page__edit-mode label {

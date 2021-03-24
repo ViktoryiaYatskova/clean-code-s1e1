@@ -13,8 +13,10 @@
   <main class="main-page">
     <p id="adding-elements">
       <label for="new-task">Add Item</label>
-      <input id="new-task" type="text">
-      <button>Add</button>
+      <div class="task-row-wrapper">
+        <input id="new-task" type="text" class="main-page__task">
+        <button>Add</button>
+      </div>
     </p>
     <nav>
       <h3>Todo</h3>
@@ -45,7 +47,7 @@
           <li>
             <input type="checkbox" checked>
             <label class="main-page__task">See the Doctor</label>
-            <input type="text">
+            <input type="text" class="main-page__task">
             <button class="main-page__edit">Edit</button>
             <button class="main-page__delete">
               <img src="./remove.svg" alt="">
