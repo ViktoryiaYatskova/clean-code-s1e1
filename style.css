@@ -13,7 +13,7 @@ body {
 .header img {
     width: 100%;
 }
-.header .more-info {
+.header .header__more-info {
     font-family: fantasy, cursive;
 }
 
@@ -90,7 +90,7 @@ label[for="new-task"] {
 #new-task { /*убрал input*/
     width: 318px;
 }
-.add-task button:hover { /** p > */
+.main-page__add-task button:hover { /** p > */
     color: #0FC57C;
 }
 
@@ -116,7 +116,7 @@ li > label {
 li > input[type="text"] {
     width: 226px;
 }
-.incomplete-tasks.delete:hover {              /** li > button.delete */
+.main-page__incomplete-tasks.delete:hover {              /** li > button.delete */
     color: #CF2323;
 }
 button.delete img {
@@ -129,7 +129,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-#completed-tasks label { /* было ul#completed-tasks label */
+#main-page__completed-tasks label { /* было ul#completed-tasks label */
     text-decoration: line-through;
     color: #888;
 }
@@ -139,11 +139,11 @@ ul li input[type=text] {
     display: none;
 }
 
-.edit-mode input[type=text] {             /** ul li.edit-mode input[type=text]*/
+.incomplete-tasks__edit-mode input[type=text] {             /** ul li.edit-mode input[type=text]*/
     display: inline-block;
     width: 224px;
 }
 
-.edit-mode label {        /** ul li.edit-mode label */
+.incomplete-tasks__edit-mode label {        /** ul li.edit-mode label */
     display: none;
 }

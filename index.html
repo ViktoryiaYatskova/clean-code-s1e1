@@ -10,18 +10,18 @@
 <body>
   <header class="header"> <!-- div -->
     <img src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
-    <a class="more-info" 
+    <a class="header__more-info" 
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?</a>
   </header>
   <main class="main-page"> <!-- main -->
-    <div id="add-task"> <!-- р -->
+    <div id="main-page__add-task"> <!-- р -->
       <label for="new-task">Add Item</label>
       <input id="new-task" type="text">
       <button>Add</button>
     </div>
     <h3>Todo</h3>
-    <ul id="incomplete-tasks">
+    <ul id="main-page__incomplete-tasks">
       <li>
         <input type="checkbox">
         <label class="task">Pay Bills</label>
@@ -31,7 +31,7 @@
           <img src="./remove.svg" alt="Remove task">
         </button>
       </li>
-      <li class="edit-mode">
+      <li class="incomplete-tasks__edit-mode">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
@@ -42,7 +42,7 @@
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
+    <ul id="main-page__completed-tasks">
       <li>
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
