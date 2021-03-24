@@ -8,13 +8,13 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("button-item");//Add a new task.
+var taskInput=document.getElementById("button-item");//Add a new edit-field.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("main__incomplete-tasks");//ul of #main__incomplete-tasks
 var completedTasksHolder=document.getElementById("main__completed-tasks");//main__completed-tasks
 
 
-//New task list item
+//New edit-field list item
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
@@ -33,7 +33,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task';
+    label.className='edit-field';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -73,7 +73,7 @@ var addTask=function(){
 
 }
 
-//Edit an existing task.
+//Edit an existing edit-field.
 
 var editTask=function(){
     console.log("Edit Task...");
@@ -85,7 +85,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("editMode");
+    var containsClass=listItem.classList.contains("main__editMode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -99,11 +99,11 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("main__editMode");
 };
 
 
-//Delete task.
+//Delete edit-field.
 var deleteTask=function(){
     console.log("Delete Task...");
 
@@ -115,11 +115,11 @@ var deleteTask=function(){
 }
 
 
-//Mark task completed
+//Mark edit-field completed
 var taskCompleted=function(){
     console.log("Complete Task...");
 
-    //Append the task list item to the #main__completed-tasks
+    //Append the edit-field list item to the #main__completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
@@ -129,9 +129,9 @@ var taskCompleted=function(){
 
 var taskIncomplete=function(){
     console.log("Incomplete Task...");
-//Mark task as incomplete.
+//Mark edit-field as incomplete.
     //When the checkbox is unchecked
-    //Append the task list item to the #main__incomplete-tasks.
+    //Append the edit-field list item to the #main__incomplete-tasks.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);

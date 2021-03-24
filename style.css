@@ -29,7 +29,7 @@ menu {
     margin: 0 auto 0;
 }
 
-.task {
+.edit-field {
     width: 56%;
     display: inline-block;
 }
@@ -139,11 +139,11 @@ ul li input[type=text] {
     display:none;
 }
 
-ul li.editMode input[type=text] {
+ul li.main__editMode input[type=text] {
     display:inline-block;
     width:224px;
 }
 
-ul li.editMode label {
+ul li.main__editMode label {
     display:none;
 }
