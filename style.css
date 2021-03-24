@@ -18,9 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
+
   .about-matrix { 
     text-align: center;
   }
+  
 }
 .main-page {
   display: block;
