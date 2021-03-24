@@ -142,6 +142,10 @@ li  {
 }
 
 /* Completed */
+.list-complete__task {
+    text-decoration: line-through;
+    color: #888;
+}
 
 .todo-list__input  {
     display: none;
