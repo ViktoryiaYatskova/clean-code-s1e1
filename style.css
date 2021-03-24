@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  
+  width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
@@ -48,11 +48,13 @@ form {
   padding: 0px;
 }
 
-.block, h3 {
+.block, 
+h3 {
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
@@ -71,7 +73,8 @@ button:hover {
 }
 
 /* Heading */
-h3, label[for="new-task"] {
+h3,
+label[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -107,6 +110,7 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
+
 form > button:hover {
   color: #0fc57c;
 }
@@ -154,7 +158,7 @@ form > button:hover {
 }
 
 /* Edit Task */
-form .block input[type="text"] {
+.block input[type="text"] {
   display: none;
 }
 
