@@ -22,7 +22,7 @@ body {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.main-page {
   display: block;
   width: 400px;
   margin: 0 auto 0;
