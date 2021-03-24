@@ -18,8 +18,8 @@ body {
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
-}
+    .header { text-align: center;
+    }
 }
 .main-page {
     display: block;
@@ -110,7 +110,7 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
 .incomplete-tasks.delete:hover {              /** li > button.delete */
