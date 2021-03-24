@@ -22,7 +22,7 @@ body {
   .preview__info {
     text-align: center;
   }
-
+	
 }
 .main__content {
   display: block;
@@ -34,7 +34,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.main__content-task-wrapper {
   display: flex;
 }
 ul {
