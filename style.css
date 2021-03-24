@@ -94,6 +94,7 @@ body {
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
+  box-sizing: border-box;
   font-family: Lato, sans-serif;
   color: #888;
 }
@@ -124,8 +125,9 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-.list__item > * {
-  vertical-align: middle;
+.list__item {
+  display: flex;
+  align-items: center;
 }
 
 .list__checkbox {
