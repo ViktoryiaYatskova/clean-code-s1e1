@@ -18,9 +18,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .preview-info {
     text-align: center;
   }
+	
 }
 .main-content {
   display: block;
