@@ -22,7 +22,7 @@ body {
     text-align: center;
   }
 }
-.centered-todo-list {
+.todo-block {
   display: block;
   width: 500px;
   margin: 0 auto;
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.input-task {
   display: flex;
 }
 ul {
