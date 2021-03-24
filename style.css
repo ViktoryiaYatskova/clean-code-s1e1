@@ -48,7 +48,7 @@ form {
   padding: 0px;
 }
 
-.block, 
+li, 
 h3 {
   list-style: none;
 }
@@ -84,7 +84,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+li input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -116,24 +116,24 @@ form > button:hover {
 }
 
 /* Task list */
-.block {
+li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
 }
 
-.block > input[type="checkbox"] {
+li > input[type="checkbox"] {
     margin: 0 10px;
 }
 
-.block > label {
+li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.block > input[type="text"] {
+li > input[type="text"] {
     width: 226px;
 }
 
@@ -158,15 +158,15 @@ form > button:hover {
 }
 
 /* Edit Task */
-.block input[type="text"] {
+li input[type="text"] {
   display: none;
 }
 
-.block.edit-mode input[type="text"] {
+.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.block.edit-mode label {
+.edit-mode label {
   display: none;
 }
