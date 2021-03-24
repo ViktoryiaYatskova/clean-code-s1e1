@@ -10,21 +10,23 @@
     <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details</a>
   </div>
   <div class="main">
-     <p class="section"><label class="section__new-task">Add Item</label>
-        <input class="section__button" type="text"><button class="section__btn">Add</button>
+     <p class="section"><label class="section__new-task"  for="new-task">Add Item</label>
+         <input class="section__button" id="new-task" type="text"><button class="section__btn" >Add</button>
+
      </p>
+
 
      <div class="section">
          <h3>Todo</h3>
          <ul class="list">
-             <li class="todo-list"><input class="todo-list__checkbox" type="checkbox"><label class="todo-list__task">Pay Bills</label>
-             <button class="edit">Edit</button><button class="todo-list__delete"><img class="todo-list__image" src="./remove.svg" alt="It's white remove image with a cross in the center"></button>
+             <li><input class="todo-list__checkbox" type="checkbox"><label class="todo-list__task">Pay Bills</label>
+             <button class="edit">Edit</button><button class="delete"><img src="./remove.svg" alt="It's white remove image with a cross in the center"></button>
              </li>
-             <li class="todo-list"><input class="shop-list__checkbox" type="checkbox">
-                 <label class="todo-list__shopping">Go Shopping</label>
-                 <input type="text" value="Go Shopping" class="todo-list__button">
-                 <button class="edit">Save</button><button class="todo-list__delete">
-                 <img class="todo-list__image" src="./remove.svg" alt="It's white remove image with a cross in the center"></button>
+             <li class="todo-list"><input class="todo-list__checkbox" type="checkbox">
+                 <label class="todo-list__task" id="shopping">Go Shopping</label>
+                 <input class="todo-list__input" type="text" value="Go Shopping">
+                 <button class="edit">Save</button><button class="delete">
+                 <img  src="./remove.svg" alt="It's white remove image with a cross in the center"></button>
              </li>
          </ul>
      </div>
@@ -32,9 +34,9 @@
       <div class="section">
           <h3>Completed</h3>
           <ul class="list-complete">
-              <li class="todo-list"><input class="todo-list__checkbox" type="checkbox" checked><label class="list-complete__task">See the Doctor</label>
+              <li><input class="todo-list__checkbox" type="checkbox" checked><label class="list-complete__task">See the Doctor</label>
                   <button class="edit">Edit</button>
-                  <button class="todo-list__delete"><img class="todo-list__image" src="./remove.svg" alt="It's white remove image with a cross in the center "></button>
+                  <button class="delete"><img src="./remove.svg" alt="It's white remove image with a cross in the center "></button>
               </li>
           </ul>
       </div>
