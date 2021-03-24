@@ -83,7 +83,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('.todo-list__input');
+    var editInput=listItem.querySelector('.todo-list__task');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("todo-list");
