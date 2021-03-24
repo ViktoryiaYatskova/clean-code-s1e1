@@ -112,7 +112,7 @@ li > label {
     width: 226px;
 }
 li > input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 .incomplete-tasks.delete:hover {              /** li > button.delete */
     color: #CF2323;
@@ -128,18 +128,18 @@ button.delete img:hover {
 
 /* Completed */
 #completed-tasks label { /* было ul#completed-tasks label */
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display: none
+    display: none;
 }
 
 .edit-mode input[type=text] {             /** ul li.edit-mode input[type=text]*/
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .edit-mode label {        /** ul li.edit-mode label */
