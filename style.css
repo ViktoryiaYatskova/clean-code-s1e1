@@ -84,7 +84,7 @@ label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task { /*убрал input*/
     width: 318px;
 }
 p > button:hover {
@@ -113,7 +113,7 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-li > button.delete:hover {
+.incomplete-tasks.delete:hover {              /** li > button.delete */
     color: #CF2323;
 }
 button.delete img {
@@ -126,7 +126,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label { /* было ul#completed-tasks label */
     text-decoration: line-through
     color: #888;
 }
@@ -136,11 +136,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode input[type=text] {             /** ul li.edit-mode input[type=text]*/
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode label {        /** ul li.edit-mode label */
     display:none;
 }
