@@ -18,8 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
-}
+    .aaa {
+            text-align: center;
+        }
 }
 .centered-main-page-element {
     display: block;
@@ -41,7 +42,7 @@ ul {
 li, h3 {
     list-style:none;
 }
-input,button{
+input,button {
     outline:none;
 }
 button {
@@ -54,7 +55,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    color: #3a3A3a;
+    color: #3a3a3a;
 }
 /* Heading */
 h3,
@@ -73,8 +74,8 @@ input[type="text"] {
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #dDd;
-    background: #FFF;
+    border: 1px solid #ddd;
+    background: #fff;
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
@@ -92,7 +93,7 @@ input#new-task {
     width: 318px;
 }
 p > button:hover {
-    color: #0FC57C;
+    color: #0fc57c;
 }
 
 /* Task list */
@@ -118,11 +119,11 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
 li > button.delete:hover {
-    color: #CF2323;
+    color: #cf2323;
 }
 button.delete img {
     height: 2em;
