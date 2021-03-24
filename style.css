@@ -9,15 +9,18 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header img {
   width: 100%;
 }
+
 .header-link {
   font-family: fantasy, cursive;
 }
@@ -26,22 +29,27 @@ body {
   .header { text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 400px;
   margin: 0 auto 0;
 }
+
 .task {
     width: 56%;
     display: inline-block;
 }
+
 form {
   margin: 0;
   padding: 0px;
 }
+
 .block, h3 {
   list-style: none;
 }
+
 input,button{
   outline: none;
 }
@@ -55,9 +63,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 h3, label[for="new-task"] {
   color: #333;
@@ -68,6 +78,7 @@ h3, label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
+
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -80,6 +91,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 input[type="text"]:focus {
   color: #333;
 }
@@ -89,6 +101,7 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
@@ -103,27 +116,31 @@ form > button:hover {
   border-bottom: 1px solid #eee;
 }
 
-
 .block > input[type="checkbox"] {
     margin: 0 10px;
 }
+
 .block > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .block > input[type="text"] {
     width: 226px;
 }
+
 .delete:hover {
   color: #cf2323;
 }
+
 .delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete img:hover {
   transform: rotateZ(0);
 }
@@ -145,5 +162,5 @@ form .block input[type="text"] {
 }
 
 .block.edit-mode label {
-  display: none;
+  display: block;
 }
