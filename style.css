@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+}
 /* Basic Style */
 body {
   background-color: #f8f8f8;
@@ -115,7 +118,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
   width: 226px;
 }
 li > .main-page__delete:hover {
@@ -143,7 +146,7 @@ ul li input[type=text] {
 
 ul .main-page__edit-mode input[type=text] {
   display: inline-block;
-  width: 224px;
+  width: 216px;
 }
 
 ul .main-page__edit-mode label {
