@@ -68,10 +68,7 @@ h3,
     margin: 0;
     text-transform: uppercase;
 }
-/*li > input[type="text"]  {
-    width: 226;
-}*/
-/*.section__button,*/
+
 .todo-list__button,
 .section__button  {
     margin: 0;
@@ -145,14 +142,7 @@ li  {
 }
 
 /* Completed */
-/*.shop-list__checkbox  {
-    color: #888;
-}*/
 
-/* Edit Task */
-/*ul li input[type=text] {
-    display:none;
-}*/
 .todo-list__input  {
     display: none;
 }
