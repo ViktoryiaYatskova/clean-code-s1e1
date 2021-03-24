@@ -90,7 +90,7 @@ label[for="new-task"] {
 #new-task { /*убрал input*/
     width: 318px;
 }
-p > button:hover {
+.add-task button:hover { /** p > */
     color: #0FC57C;
 }
 
