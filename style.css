@@ -84,7 +84,7 @@ label[for='new-task'] {
     text-transform: uppercase;
 }
 
-input {
+input [type=text]{
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -97,7 +97,7 @@ input {
     color: #888;
 }
 
-input:focus {
+input[type=text]:focus {
     color: #333;
 }
 
@@ -130,7 +130,7 @@ li > * {
     vertical-align: middle;
 }
 
-li > input{
+li > input [type="checkbox"]{
     margin: 0 10px;
 }
 
@@ -141,7 +141,7 @@ li > label {
     width: 226px;
 }
 
-li >    input {
+li >    input [type="text"]{
     width: 226px;
 }
 
@@ -166,11 +166,11 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-ul li input {
+ul li input[type="text"] {
     display: none;
 }
 
-ul li.shopping input {
+ul li.shopping input[type="text"] {
     display: inline-block;
     width: 224px;
 }
