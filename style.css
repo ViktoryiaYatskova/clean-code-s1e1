@@ -29,7 +29,7 @@ body {
     width: 400px;
     margin: 0 auto 0;
 }
-.tasks-list__li__label, .tasks-list__li__label__input_text {
+.tasks-list__li__label, .tasks-list__li__input_text {
     width: 56%;
     display: inline-block;
 }
@@ -138,11 +138,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editing-block input[type=text] {
+ul li.tasks-list__li_editing input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editing-block label {
+ul li.tasks-list__li_editing label {
     display:none;
 }

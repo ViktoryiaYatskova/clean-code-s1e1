@@ -99,7 +99,7 @@ var editTask = function () {
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("editing-block");
+  listItem.classList.toggle("tasks-list__li_editing");
 };
 
 
