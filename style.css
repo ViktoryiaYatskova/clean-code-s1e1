@@ -36,7 +36,8 @@ body {
     margin: 0 auto 0;
 }
 
-.tasks-list__li__label, .tasks-list__li__input_text {
+.tasks-list__li__label,
+.tasks-list__li__input_text {
     width: 56%;
     display: inline-block;
 }
@@ -46,11 +47,13 @@ ul {
     padding: 0px;
 }
 
-li, h3 {
+li,
+h3 {
     list-style: none;
 }
 
-input,button{
+input,
+button{
     outline: none;
 }
 
@@ -157,15 +160,12 @@ li > button.tasks-list__li__button_delete:hover {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li input[type=text],
+ul .tasks-list__li_edit label {
     display: none;
 }
 
 ul .tasks-list__li_edit input[type=text] {
     display: inline-block;
     width: 224px;
-}
-
-ul .tasks-list__li_edit label {
-    display: none;
 }
