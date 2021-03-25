@@ -18,8 +18,11 @@ img {
 }
 
 @media (max-width:768px) {
-.question { text-align: center;
-}
+
+    .question { 
+      text-align: center;
+    }
+
 }
 .centeiner {
     display: block;
