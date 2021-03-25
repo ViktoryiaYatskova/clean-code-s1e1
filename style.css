@@ -59,7 +59,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+label.ntask {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -85,11 +85,11 @@ input:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label.ntask {
     display: block;
     margin: 0 0 20px;
 }
-input[for="new-task"] {
+input.ntask {
     width: 318px;
 }
 button:hover {
@@ -109,7 +109,7 @@ li {
     vertical-align: middle;
 }
 
-input[type="checkbox"] {
+[type="checkbox"] {
     margin: 0 10px;
 }
 li > label {
@@ -118,7 +118,7 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-input[type="text"] {
+[type="text"] {
     width: 226px
 }
 .delete:hover {
@@ -134,21 +134,21 @@ input[type="text"] {
 }
 
 /* Completed */
-ul[for="completedTasks"] label {
+[for="completedTasks"] label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-input[type="text"] {
+[type="text"] {
     display:none
 }
 
-li.editMode input[type="text"] {
+.editMode input[type="text"] {
     display:inline-block;
     width:224px
 }
 
-li.editMode label {
+.editMode label {
     display:none;
 }
