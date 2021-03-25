@@ -33,41 +33,18 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    label.className='todo-list__task';
-=======
     label.className="todo-list__task";
->>>>>>> c8bd487 (feat: add some code to app.js)
-=======
-    label.className="todo-list__task";
->>>>>>> c8bd487 (feat: add some code to app.js)
-=======
-    label.className="todo-list__task";
->>>>>>> c8bd487 (feat: add some code to app.js)
 
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.classList.add("todo-list__checkbox");
     editInput.type="text";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    editInput.className="todo-list__task";
-    editInput.classList.add("todo-list__input");
-=======
-=======
->>>>>>> c8bd487 (feat: add some code to app.js)
-=======
->>>>>>> c8bd487 (feat: add some code to app.js)
     //editInput.className="todo-list__task";
     editInput.classList.add("todo-list__input");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
->>>>>>> c8bd487 (feat: add some code to app.js)
 
     //deleteButton.innerText="Delete";
     deleteButton.className="delete";
@@ -216,6 +193,9 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 
 // Issues with usability don't get seen until they are in front of a human tester.
+
+//prevent creation of empty tasks.
+
 
 //prevent creation of empty tasks.
 

@@ -155,16 +155,6 @@ li  {
     text-decoration: line-through;
     color: #888;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> c8bd487 (feat: add some code to app.js)
-=======
->>>>>>> c8bd487 (feat: add some code to app.js)
-=======
->>>>>>> c8bd487 (feat: add some code to app.js)
 .todo-list__input,
 .todo-list .todo-list__task  {
     display: none;
@@ -181,4 +171,3 @@ li  {
 .section__button  {
     width: 318px;
 }
-
