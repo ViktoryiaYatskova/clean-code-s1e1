@@ -32,7 +32,7 @@ body {
 
 .main {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
 }
 
@@ -40,6 +40,11 @@ body {
 .tasks-list__li__input_text {
   width: 56%;
   display: inline-block;
+  flex-grow: 1;
+}
+/* ! */
+.newclass {
+  display: flex;
 }
 
 ul {
@@ -118,6 +123,9 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 li > * {
