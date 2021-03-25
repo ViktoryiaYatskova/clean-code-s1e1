@@ -32,7 +32,7 @@ img {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 .taskConteiner {
     display: flex;
@@ -122,7 +122,7 @@ li > label {
     width: 226px;
 }
 [type="text"] {
-    width: 226px
+    width: 226px;
 }
 .delete:hover {
     color: #cf2323;
@@ -144,7 +144,7 @@ li > label {
 
 /* Edit Task */
 [type="text"] {
-    display: none
+    display: none;
 }
 
 .editMode input[type="text"] {
