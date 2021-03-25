@@ -10,23 +10,23 @@
           charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
+    <div class="head-wrapper">
       <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf"
+      <a class="get-more-inf"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
     </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
+    <div class="main-wrapper">
+      <p>
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+        <div class="new-task-wrapper">
+          <input id="new-task" class="task" type="text">
           <button>Add</button>
        </div>
       </p>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
+      <ul id="js-incomplete-tasks">
         <li>
           <input type="checkbox">
           <label class="task">Pay Bills</label>
@@ -36,7 +36,7 @@
             <img src="./remove.svg">
           </button>
         </li>
-        <li class="editMode">
+        <li class="edit-mode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
           <input type="text" 
