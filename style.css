@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .get-more-inf {
+.header .info {
   font-family: fantasy, cursive;
 }
 
@@ -22,7 +22,7 @@ body {
     text-align: center;
   }
 }
-.main-wrapper {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.new-task-wrapper {
+.task-wrapper {
   display: flex;
 }
 ul {
@@ -135,7 +135,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed label {
   text-decoration: line-through
   color: #888;
 }
