@@ -147,11 +147,13 @@ li  {
     color: #888;
 }
 
-.todo-list__input  {
+.todo-list__input,
+.todo-list .todo-list__task  {
     display: none;
 }
 
-.todo-list__input  {
+.todo-list .todo-list__input,
+.todo-list__task  {
     display: inline-block;
     width: 210px;
     color: #888;
