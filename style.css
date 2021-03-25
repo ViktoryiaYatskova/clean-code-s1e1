@@ -137,7 +137,7 @@ li label {
 }
 
 /* Completed */
-[for="completedTasks"] label {
+label.completedTasks{
     text-decoration: line-through;
     color: #888;
 }
