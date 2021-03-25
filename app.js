@@ -35,7 +35,11 @@ var createNewTaskElement=function(taskString){
     label.innerText=taskString;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     label.className='todo-list__task';
+=======
+    label.className="todo-list__task";
+>>>>>>> c8bd487 (feat: add some code to app.js)
 =======
     label.className="todo-list__task";
 >>>>>>> c8bd487 (feat: add some code to app.js)
@@ -50,9 +54,12 @@ var createNewTaskElement=function(taskString){
     editInput.type="text";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     editInput.className="todo-list__task";
     editInput.classList.add("todo-list__input");
 =======
+=======
+>>>>>>> c8bd487 (feat: add some code to app.js)
 =======
 >>>>>>> c8bd487 (feat: add some code to app.js)
     //editInput.className="todo-list__task";
