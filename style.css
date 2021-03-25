@@ -5,23 +5,23 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.logo {
+footer {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.logo img {
+footer img {
   width: 100%;
 }
 
-.logo .about-us-link {
+footer .about-us-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .logo {
+  footer {
     text-align: center;
   }
 }
