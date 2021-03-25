@@ -29,7 +29,7 @@ body {
     width: 400px;
     margin: 0 auto 0;
 }
-.task {
+.tasks-list__li__label, .tasks-list__li__label__input_text {
     width: 56%;
     display: inline-block;
 }
@@ -129,7 +129,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul.completed-tasks label {
     text-decoration: line-through
     color: #888;
 }
