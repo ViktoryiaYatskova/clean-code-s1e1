@@ -56,8 +56,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,11 +82,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-task__h3 {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+input.add-task__input {
     width: 318px;
 }
 p > button:hover {
@@ -116,15 +115,15 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-li > button.delete:hover {
+li > button.tasks-list__li__button_delete:hover {
     color: #cf2323;
 }
-button.delete img {
+button.tasks-list__li__button_delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.tasks-list__li__button_delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -139,11 +138,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.editing-block input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.editing-block label {
     display:none;
 }

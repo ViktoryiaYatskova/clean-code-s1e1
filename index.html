@@ -13,9 +13,10 @@
   </div>
   <div class="main">
     <p class="add-task">
-      <label for="new-task">Add Item</label>
-      <input id="new-task" type="text" />
-      <button>Add</button>
+      <!-- TODO -->
+    <h3 class="add-task__h3">Add Item</h3>
+    <input class="add-task__input" type="text" />
+    <button>Add</button>
     </p>
     <h3>Todo</h3>
     <ul class="incompleted-tasks tasks-list">
@@ -24,16 +25,16 @@
         <label class="tasks-list__li__label">Pay Bills</label>
         <input type="text" />
         <button class="tasks-list__li__button_edit">Edit</button>
-        <button class="delete">
+        <button class="tasks-list__li__button_delete">
           <img src="./remove.svg" />
         </button>
       </li>
-      <li class="editMode">
+      <li class="editing-block">
         <input type="checkbox" />
         <label class="tasks-list__li__label">Go Shopping</label>
         <input type="text" value="Go Shopping" class="tasks-list__li__label__input_text" />
         <button class="tasks-list__li__button_edit">Save</button>
-        <button class="delete">
+        <button class="tasks-list__li__button_delete">
           <img src="./remove.svg" />
         </button>
       </li>
@@ -45,7 +46,7 @@
         <label class="tasks-list__li__label">See the Doctor</label>
         <input type="text" />
         <button class="tasks-list__li__button_edit">Edit</button>
-        <button class="delete">
+        <button class="tasks-list__li__button_delete">
           <img src="./remove.svg" />
         </button>
       </li>
