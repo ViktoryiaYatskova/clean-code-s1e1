@@ -62,7 +62,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label.ntask {
+h3.ntask {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -88,7 +88,7 @@ input:focus {
 }
 
 /* New Task */
-label.ntask {
+h3.ntask {
     display: block;
     margin: 0 0 20px;
 }
@@ -115,7 +115,7 @@ li {
 [type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+li label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
