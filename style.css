@@ -4,34 +4,34 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.question {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.question img {
     width: 100%;
 }
-.aaa .more_inf {
+.question .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-    .aaa { text-align: center;
+    .question { text-align: center;
 }
 }
-.centered-main-page-element {
+.conteiner{
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.lAndI {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.addInput {
     display: flex;
 }
 ul {
@@ -59,7 +59,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for="newItem"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -85,11 +85,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="newItem"] {
     display: block;
     margin: 0 0 20px;
 }
-input[for="new-task"] {
+input[for="newItem"] {
     width: 318px;
 }
 p > button:hover {
@@ -135,7 +135,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul[for="completed-tasks"] label {
+ul[for="completed"] label {
     text-decoration: line-through;
     color: #888;
 }
