@@ -138,11 +138,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.tasks-list__li_editing input[type=text] {
+ul li.tasks-list__li_edit input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.tasks-list__li_editing label {
+ul li.tasks-list__li_edit label {
     display:none;
 }
