@@ -157,15 +157,15 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasks__list-item .tasks__field {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.tasks__list-item.editMode .tasks__field {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.tasks__list-item.editMode .tasks__label {
   display: none;
 }
