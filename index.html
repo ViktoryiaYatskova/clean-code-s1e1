@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="intro">
+  <header class="intro">
     <img class="intro-img" src="./eisenhower-matrix.jpg">
     <a class="intro-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="container">
-  	<p id="add-item">
-  	  <label for="new-task">Add Item</label>
-	<div class="task-row-wrapper">
-	  <input id="new-task"class="task" type="text">
-	  <button>Add</button>
-	</div>
-    </p>
-    <h3>Todo</h3>
-	<ul id="incomplete-tasks">
+  </header>
+  <main class="container">
+  	<ul id="add-item">
+      <li>
+  	    <h3>Add Item</h3>
+	    <div class="task-row-wrapper">
+	      <input id="new-task" class="task" type="text">
+	      <button>Add</button>
+	    </div>
+	  </li>
+    </ul>
+    <ul id="incomplete-tasks">
 	  <li>
+	  	<h3>Todo</h3>
 	    <input type="checkbox">
 	  	<label class="task">Pay Bills</label>
 	  	<input type="text">
@@ -40,9 +42,9 @@
 	  	</button>
 	  </li>
 	</ul>
-	<h3>Completed</h3>
 	<ul id="completed-tasks">
 	  <li>
+	  	<h3>Completed</h3>
 	    <input type="checkbox" checked>
 	  	<label class="task">See the Doctor</label>
 	  	<input type="text" class="task">
@@ -52,7 +54,7 @@
 	  	</button>
       </li>
     </ul>
-  </div>
+  </main>
 <script src="app.js"></script>
 </body>
 </html>

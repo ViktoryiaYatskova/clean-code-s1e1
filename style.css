@@ -75,8 +75,7 @@ button:hover {
 
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -113,7 +112,7 @@ input#new-task {
     width: 318px;
 }
 
-p > button:hover {
+ul > button:hover {
     color: #0FC57C;
 }
 
