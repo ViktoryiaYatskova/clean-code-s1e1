@@ -61,7 +61,9 @@
   text-transform: uppercase;
 }
 
-.button-edit {
+.button-edit,
+.button-add,
+.button-delete {
   outline: none;
   background: none;
   border: 0px;
@@ -104,17 +106,6 @@
   width: 318px;
 }
 
-.button-add {
-  outline: none;
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-
 .list {
   overflow: hidden;
   padding: 20px 0;
@@ -128,17 +119,6 @@
 
 .input-checkbox {
   margin: 0 10px;
-}
-
-.button-delete {
-  outline: none;
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
 }
 
 .button-delete:hover {
