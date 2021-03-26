@@ -41,13 +41,13 @@
   width: 226px;
 }
 
-.task-row-wrapper {
-  display: flex;
-}
-
 .ul-tasks {
   margin: 0;
   padding: 0px;
+}
+
+.task-row-wrapper {
+  display: flex;
 }
 
 .head-h3 {
