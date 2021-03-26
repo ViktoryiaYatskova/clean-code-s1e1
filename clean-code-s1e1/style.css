@@ -126,7 +126,7 @@
   list-style: none;
 }
 
-input[type="checkbox"] {
+.input-checkbox {
   margin: 0 10px;
 }
 
@@ -170,5 +170,5 @@ input[type="checkbox"] {
 }
 
 .label-hidden {
-  display: none;
+  display: none
 }
