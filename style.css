@@ -21,7 +21,7 @@ body {
 }
 
 .header .header__a {
-  font-family: fantasy, cursive;
+  font-family: Fantasy, cursive;
 }
 
 @media (max-width: 768px) {
@@ -36,16 +36,12 @@ body {
   margin: 0 auto 0;
 }
 
-.tasks-list__li__label,
-.tasks-list__li__input_text {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
 /* ! */
-.newclass {
+.add-task__span {
   display: flex;
 }
+/* TODO
+ https://github.com/igorlyatskiy/clean-code-s1e1/commit/1aca6c63a0e1640754f902d45c58afcedcc4762e    */
 
 ul {
   margin: 0;
@@ -110,7 +106,7 @@ input[type="text"]:focus {
   margin: 0 0 20px;
 }
 
-.add-task__input {
+.add-task__span__input {
   width: 318px;
 }
 
@@ -176,4 +172,14 @@ ul .tasks-list__li_edit label {
 ul .tasks-list__li_edit input[type="text"] {
   display: inline-block;
   width: 224px;
+  flex-grow: 1;
+}
+
+
+.tasks-list__li__label,
+.tasks-list__li__input_text,
+.add-task__span__input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
 }
