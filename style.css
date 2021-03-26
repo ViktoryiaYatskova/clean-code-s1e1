@@ -107,7 +107,7 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
   width: 318px;
 }
 
@@ -145,19 +145,18 @@ li>input[type="text"] {
   width: 226px
 }
 
-li>button
 .delete-btn:hover {
   color: #cf2323;
 }
 
-button.delete-btn 
+.delete-btn 
 img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete-btn 
+.delete-btn 
 img:hover {
   transform: rotateZ(0);
 }
