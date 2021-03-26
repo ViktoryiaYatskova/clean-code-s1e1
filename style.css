@@ -5,24 +5,26 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.wrapper {
   width: 500px;
   margin: 0 auto;
-  display: block;
+}
+
+.matrix-details {
   text-align: right;
 }
 
-.aaa img {
+.matrix-details__image {
   width: 100%;
 }
 
-.aaa .more_inf {
+.matrix-details__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa {
+  .matrix-details {
     text-align: center;
   }
 
@@ -30,8 +32,6 @@ body {
 
 .centered-main-page-element {
   display: block;
-  width: 500px;
-  margin: 0 auto 0;
 }
 
 .task {
