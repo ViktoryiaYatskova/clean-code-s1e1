@@ -82,22 +82,22 @@
 }
 
 .edit-task {
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 23px;
-    padding: 0 9px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
-    font-family: Lato, sans-serif;
-    color: #888;
-    width: 226px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 23px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+  width: 226px;
 }
 
 .edit-task:focus {
-    color: #333;
-    outline: none;
+  color: #333;
+  outline: none;
 }
 
 #new-task {
