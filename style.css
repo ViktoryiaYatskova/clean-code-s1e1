@@ -30,18 +30,16 @@ body {
 
 }
 
-.centered-main-page-element {
-  display: block;
+.tasks__new-wrapper {
+  display: flex;
+  padding-top: 20px;
 }
 
-.task {
+.tasks__field,
+.tasks__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-}
-
-.task-row-wrapper {
-  display: flex;
 }
 
 ul {
@@ -74,8 +72,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -103,14 +100,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
 
-input#new-task {
-  width: 318px;
-}
 
 p > button:hover {
   color: #0FC57C;
@@ -161,7 +151,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completedTasks label {
   text-decoration: line-through;
   color: #888;
 }
