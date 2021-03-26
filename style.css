@@ -49,6 +49,7 @@ button {
 
 .matrix-details__image {
   width: 100%;
+  display: block;
 }
 
 .matrix-details__info {
@@ -64,6 +65,14 @@ button {
 }
 
 /* Tasks */
+.tasks {
+  padding-top: 15px;
+}
+
+.tasks__todo {
+  padding-top: 14px;
+}
+
 .tasks__new-wrapper {
   display: flex;
   padding-top: 20px;
