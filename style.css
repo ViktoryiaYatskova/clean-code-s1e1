@@ -1,10 +1,10 @@
-/* Basic Style */
+/* basic style */
 
 body {
 
     background-color: #f8f8f8;
     color: #333;
-    font-family: "Lato", sans-serif;
+    font-family: "lato", sans-serif;
 
 }
 
@@ -86,7 +86,7 @@ button {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: "Lato", sans-serif;
+    font-family: "lato", sans-serif;
     cursor: pointer;
 
 }
@@ -97,7 +97,7 @@ button:hover {
 
 }
 
-/* Heading */
+/* heading */
 
 h3,
 label[for="new-task"] {
@@ -122,7 +122,7 @@ input[type="text"] {
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: lato, sans-serif;
     color: #888;
 
 }
@@ -133,7 +133,7 @@ input[type="text"]:focus {
 
 }
 
-/* New Task */
+/* new task */
 
 label[for="new-task"] {
 
@@ -154,7 +154,7 @@ p > button:hover {
 
 }
 
-/* Task list */
+/* task list */
 
 li {
 
@@ -214,7 +214,7 @@ button.delete img:hover {
 
 }
 
-/* Completed */
+/* completed */
 
 ul#completed-tasks label {
 
@@ -223,7 +223,7 @@ ul#completed-tasks label {
 
 }
 
-/* Edit Task */
+/* edit task */
 
 ul li input[type=text] {
 
