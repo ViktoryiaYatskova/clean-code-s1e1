@@ -5,28 +5,30 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.aaa {
+.description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.description__img {
   width: 100%;
 }
 
-.aaa .more_inf {
-  font-family: fantasy, cursive;
+.description__link {
+  font-family: "Fantasy", cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+
+  .description {
     text-align: center;
   }
+  
 }
 
-.centered-main-page-element {
+.container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -81,7 +83,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+input[type="add-block__input"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -104,8 +106,8 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
-  width: 318px;
+input#add-block__input {
+  width: 370px;
 }
 
 p > button:hover {
@@ -156,7 +158,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#open-tasks label {
   text-decoration: line-through;
   color: #888;
 }
