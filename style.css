@@ -21,13 +21,11 @@ button{
 button {
   background: none;
   border: 0px;
-  color: #888;
   font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-
 
 /* Header */
 .wrapper {
@@ -67,10 +65,6 @@ button {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-}
-
-button:hover {
-  color: #3a3A3a;
 }
 
 /* Tasks Heading */
@@ -138,6 +132,15 @@ p > button:hover {
 
 .tasks__list-item > button.delete:hover {
   color: #CF2323;
+}
+
+/* Button edit */
+.button-edit {
+  color: #888;
+}
+
+.button-edit:hover {
+  color: #3a3A3a;
 }
 
 button.delete img {
