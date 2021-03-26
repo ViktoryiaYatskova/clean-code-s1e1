@@ -39,7 +39,7 @@ var createNewTaskElement=function(taskString){
     editButton.className="list__button-edit";
 
     deleteButton.className="list__button-delete";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src='./img/remove.svg';
     deleteButtonImg.className="list__img-delete";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -74,7 +74,7 @@ var editTask=function(){
     const parentListItem = listItem.parentNode;
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".button-edit");
+    var editBtn=listItem.querySelector(".list__button-edit");
     var containsClass=listItem.classList.contains("edit-mode");
     parentListItem.getAttribute("id") === "completed-tasks" ? 
     label.classList.add("task-complete") : 
