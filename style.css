@@ -154,7 +154,7 @@ p > button:hover {
 }
 
 /* Completed */
-#completedTasks label {
+.tasks__completed label {
   text-decoration: line-through;
   color: #888;
 }
