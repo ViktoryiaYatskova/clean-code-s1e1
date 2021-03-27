@@ -12,14 +12,14 @@ body {
   text-align: right;
 }
 
-figure {
+.header-figure {
    margin: 0;
 }
-.header figure img {
+.header-figure__img {
   width: 500px;
 }
 
-.more-inf {
+.header-figure__caption a {
   font-family: fantasy, cursive;
 }
 
@@ -42,13 +42,14 @@ section {
 }
 
 .task {
+   display: flex;
+ }
+
+.task__label,
+.task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-}
-
-.task-row-wrapper {
-  display: flex;
 }
 
 ul {
@@ -151,17 +152,17 @@ li > input[type="text"] {
   width: 226px;
 }
 
-.delete:hover {
+.delete-btn:hover {
   color: #cf2323;
 }
 
-.delete img {
+.delete-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.delete-btn img:hover {
   transform: rotateZ(0);
 }
 
