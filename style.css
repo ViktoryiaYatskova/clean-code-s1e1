@@ -1,24 +1,29 @@
 /* Basic Style */
+h1 {
+    font-size: 0.0008px;
+    position: absolute;
+}
+
 body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
-.matrix {
+.matrix-block {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.matrix img {
+.matrix-block  img {
     width: 100%;
 }
-.matrix .more_inf {
+.matrix-block  .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.matrix { text-align: center;
+.matrix-block  { text-align: center;
 }
 }
 .centered-main-page-element {
