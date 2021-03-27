@@ -20,8 +20,8 @@
       </div>
     </section>
     <h3 class="title">Todo</h3>
-    <ul id="incompleteTasks">
-      <li>
+    <ul id="incompleteTasks" class="incompleteTasks">
+      <li class="incompleteTasks-item">
         <input type="checkbox">
         <label class="task">Pay Bills</label>
         <input class="newTask" type="text">
@@ -29,8 +29,8 @@
         <button class="delete">
           <img src="./remove.svg" alt="arrow">
         </button>
-      </li>
-      <li class="editMode">
+      </li class="incompleteTasks-item">
+      <li class="incompleteTasks-item editMode">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
@@ -41,8 +41,8 @@
       </li>
     </ul>
     <h3 class="title">Completed</h3>
-    <ul id="completed-tasks">
-      <li>
+    <ul id="completedTasks" class="completedTasks">
+      <li class="completedTasks-item">
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
         <input type="text" class="task">
