@@ -6,24 +6,24 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.logo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.logo img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.logo .more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa {
+  .logo {
     text-align: center;
   }
 
