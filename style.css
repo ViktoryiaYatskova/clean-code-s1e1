@@ -91,6 +91,9 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
+.add-item{
+  padding-top: 20px;
+}
 #new-task {
   width: 318px;
 }
