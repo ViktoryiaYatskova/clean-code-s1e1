@@ -1,20 +1,20 @@
 /* Basic Style */
 .page {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
 .intro {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    text-align: right;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
 }
 .intro img {
-    width: 100%;
+  width: 100%;
 }
 .intro .more_inf {
-    font-family: fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
@@ -22,9 +22,9 @@
 }
 }
 .centered-element {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
 }
 .task {
     width: 56%;
