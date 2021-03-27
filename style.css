@@ -10,10 +10,10 @@ body {
     display: block;
     text-align: right;
 }
-#eisenhower-image {
+.top-image__image {
     width: 100%;
 }
-.more-information {
+.top-image__link {
     font-family: fantasy, cursive;
 }
 
@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -32,10 +32,10 @@ body {
     display: inline-block;
     flex-grow: 1;
 }
-.task-row-wrapper {
+.main__task-row-wrapper {
     display: flex;
 }
-#incomplete-tasks {
+.main__incomplete-tasks {
     margin: 0;
     padding: 0px;
 }
@@ -136,7 +136,11 @@ li > .delete:hover {
 }
 
 /* Completed */
-#completed-tasks label {
+.main__completed-tasks {
+    padding: 0;
+}
+
+.main__completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
@@ -146,11 +150,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul .edit-mode input[type=text] {
+ul .main__incomplete-tasks__item_edit-mode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul .edit-mode label {
+ul .main__incomplete-tasks__item_edit-mode label {
     display: none;
 }

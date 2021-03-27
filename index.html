@@ -7,16 +7,16 @@
   </head>
   <body>
     <section class="top-image">
-      <img src="./eisenhower-matrix.jpg" id="eisenhower-image" alt="Eisenhower matrix square">
-      <a class="more-information" 
+      <img src="./eisenhower-matrix.jpg" class="top-image__image" alt="Eisenhower matrix square">
+      <a class="top-image__link" 
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
     </section>
-    <article class="centered-main-page-element">
-      <section id="add-element">
+    <article class="main">
+      <section class="main__add-element">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
+        <div class="main__task-row-wrapper">
           <input id="new-task"
                  class="task"
                  type="text">
@@ -25,8 +25,8 @@
       </section>
       <section>
         <h3>Todo</h3>
-        <ul id="incomplete-tasks">
-          <li>
+        <ul class="main__incomplete-tasks">
+          <li class="main__incomplete-tasks__item">
             <input type="checkbox">
             <label class="task">Pay Bills</label>
             <input type="text">
@@ -35,7 +35,7 @@
               <img src="./remove.svg" alt="">
             </button>
           </li>
-          <li class="edit-mode">
+          <li class="main__incomplete-tasks__item_edit-mode">
             <input type="checkbox">
             <label class="task">Go Shopping</label>
             <input type="text" 
@@ -50,7 +50,7 @@
       </section>
       <section>
         <h3>Completed</h3>
-        <ul id="completed-tasks">
+        <ul class="main__completed-tasks">
           <li>
             <input type="checkbox" checked>
             <label class="task">See the Doctor</label>
