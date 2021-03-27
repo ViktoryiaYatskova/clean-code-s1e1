@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.description__link {
+.description__inf {
   font-family: "Fantasy", cursive;
 }
 
@@ -25,13 +25,13 @@ body {
   .description {
     text-align: center;
   }
-  
+
 }
 
 .container {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
 .task {
@@ -40,7 +40,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__item {
   display: flex;
 }
 
@@ -72,18 +72,17 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
-  margin: 0;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
-input[type="add-block__input"] {
+input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,16 +100,8 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
 
-input#add-block__input {
-  width: 370px;
-}
-
-p > button:hover {
+div > button:hover {
   color: #0fc57c;
 }
 
@@ -143,22 +134,22 @@ li > input[type="text"] {
   width: 226px;
 }
 
-li > button.delete:hover {
+li > .btn-task_delete:hover {
   color: #cf2323;
 }
 
-button.delete img {
+.btn-task_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.btn-task_delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#open-tasks label {
+ul#completed-tasks__listWrap label {
   text-decoration: line-through;
   color: #888;
 }
