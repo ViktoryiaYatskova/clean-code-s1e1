@@ -112,7 +112,7 @@ label[for="new-task"] {
   width: 318px;
 }
 
-button:hover {
+.add-item__wrapper > button:hover {
   color: #0fc57c;
 }
 
