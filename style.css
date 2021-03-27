@@ -16,7 +16,7 @@ body {
 .head-container .more-inf {
   font-family: fantasy, cursive;
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
