@@ -78,8 +78,9 @@ var taskIncomplete=function(){
 }
 var ajaxRequest=function(){ 
 }
-//The glue to hold it all together.
+
 //Set the click handler to the addTask function.
+
 addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
@@ -99,5 +100,5 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 // Issues with usability don"t get seen until they are in front of a human tester.
-//prevent creation of empty tasks.
+
 //TODO:Change edit to save when you are in edit mode.
