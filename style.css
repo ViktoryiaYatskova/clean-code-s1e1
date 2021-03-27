@@ -12,8 +12,11 @@ body {
   text-align: right;
 }
 
-.header img {
-  width: 100%;
+figure {
+   margin: 0;
+}
+.header figure img {
+  width: 500px;
 }
 
 .more-inf {
@@ -32,6 +35,10 @@ body {
   display: block;
   width: 500px;
   margin: 0 auto 0;
+}
+
+section {
+   margin: 16px 0;
 }
 
 .task {
