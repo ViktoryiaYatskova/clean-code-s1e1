@@ -9,64 +9,67 @@
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
 
-  <body>
+  <body class = 'todo'>
+    <header class="todo__header header">
 
-    <header class="aaa">
-
-      <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?;</a>
+      <img class="header__img" src="./eisenhower-matrix.jpg">
+      <a class="header__link-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?;</a>
 
     </header>
 
-    <main class="centered-main-page-element">
+    <main class="todo-content">
 
-      <div id="topSectionForAddingElementToList">
+      <div id="todo-content__add add">
 
-        <label for="new-task">Add Item</label>
+        <label class="add__lable" for="new-task">Add Item</label>
 
-        <div class="task-row-wrapper">
+        <div class="add_wrapper">
 
-          <input id="new-task"class="task" type="text">
-          <button>Add</button>
+          <input class="add__task" id="new-task" type="text">
+          <button class="add__submit">Add</button>
 
         </div>
 
       </div>
 
-      <div>
-        <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg"></button>
+      <div class="todo-content__plan plan">
+        <h3 class="plan__title">Todo</h3>
+      <ul class="plan__list" id="incompleteTasks">
+
+        <li class="plan__item">
+          <input class="plan__check" type="checkbox">
+          <label class="plan__task">Pay Bills</label>
+          <input class="plan__input" type="text">
+          <button class="plan__edit">Edit</button>
+          <button class="plan__delete">
+          <img class="plan__img" src="./remove.svg"></button>
         </li>
 
-        <li class="editMode">
+        <li class="plan__item edit-mode">
           
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button><button class="delete"><img src="./remove.svg"></button>
+          <input class="plan__check" type="checkbox">
+          <label class="plan__task">Go Shopping</label>
+          <input class="plan__input" type="text" value="Go Shopping" >
+          <button class="plan__edit">Save</button>
+          <button class="plan__delete">
+          <img class="plan__img" src="./remove.svg"></button>
 
         </li>
 
       </ul>
       </div>
       
-      <div>
-        <h3>Completed</h3>
+      <div class="todo-content__completed completed">
+        <h3 class="completed__title">Completed</h3>
 
-            <ul id="completed-tasks">
-              <li>
+            <ul class="completed__list" id="completed-tasks">
+              <li class="complited__item">
 
-                <input type="checkbox" checked>
-                <label class="task">See the Doctor</label>
-                <input type="text" class="task">
-                <button class="edit">Edit</button>
-                <button class="delete"><img src="./remove.svg"></button>
+                <input class="completed__check" type="checkbox" checked>
+                <label class="completed__task">See the Doctor</label>
+                <input class="completed__task" type="text">
+                <button class="completed__edit">Edit</button>
+                <button class="completed__delete"><img src="./remove.svg"></button>
 
               </li>
 
