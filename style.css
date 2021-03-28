@@ -53,7 +53,8 @@ li {
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
@@ -82,7 +83,8 @@ input,button{
   text-transform: uppercase;
 }
 
-.task__list_input, .task:first-child {
+.task__list_input, 
+.task:first-child {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -95,7 +97,8 @@ input,button{
   color: #888;
 }
 
-.task__list_input:focus, .task:first-child:focus {
+.task__list_input:focus,
+.task:first-child:focus {
   color: #333;
 }
 
