@@ -45,8 +45,8 @@ body {
   display: flex;
 }
 
-#incompleteTasks,
-#completed-tasks {
+#incomplete-task,
+#complet-task {
   margin: 0;
   padding: 0px;
 }
@@ -163,7 +163,7 @@ li input[type="text"] {
 
 /* Completed */
 
-#completed-tasks label {
+#complet-task label {
   text-decoration: line-through;
   color: #888;
 }
