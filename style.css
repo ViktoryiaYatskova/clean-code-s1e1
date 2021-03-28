@@ -29,7 +29,7 @@ body {
 
 }
 
-.centered-main-page-element {
+.main-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -116,7 +116,7 @@ label[for="new-task"] {
   width: 318px;
 }
 
-#topSectionForAddingElementToList button:hover {
+#add-task button:hover {
   color: #0fc57c;
 }
 
