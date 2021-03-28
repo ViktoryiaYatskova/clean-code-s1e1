@@ -5,34 +5,34 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.head-container {
+.head {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.head-container img {
+.head img {
   width: 100%;
 }
 
-.head-container .more-inf {
+.head .head__more-info {
   font-family: "fantasy", cursive;
 }
 
-.main {
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.item__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.item__task_wrapper{
   display: flex;
 }
 
@@ -137,17 +137,17 @@ li > input[type="text"] {
   width: 226px;
 }
 
-li > button.delete:hover {
+li > button.item__delete:hover {
   color: #cf2323;
 }
 
-button.delete img {
+button.item__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: 200ms ease-in;
 }
 
-button.delete img:hover {
+button.item__delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -162,12 +162,12 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.item__edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.item__edit-mode label {
   display: none;
 }
 
