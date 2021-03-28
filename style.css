@@ -21,7 +21,7 @@ header .about-us__link {
 }
 
 @media (max-width: 768px) {
-  
+
   header {
     text-align: center;
   }
@@ -68,7 +68,6 @@ button:hover {
   color: #3a3a3a;
 }
 
-/* Heading */
 h3,
 label[for="button__item"] {
   color: #333;
