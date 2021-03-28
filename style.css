@@ -32,7 +32,7 @@ menu {
   margin: 0 auto 0;
 }
 
-.edit-field {
+.edit__Field {
   width: 56%;
   display: inline-block;
 }
@@ -68,7 +68,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="button-item"] {
+label[for="button__item"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -96,12 +96,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="button-item"] {
+label[for="button__item"] {
   display: block;
   margin: 0 0 20px;
 }
 
-input#button-item {
+input#button__item {
   width: 318px;
 }
 
@@ -135,17 +135,17 @@ li > input[type="text"] {
   width: 226px;
 }
 
-li > button.delete-button:hover {
+li > button.delete__button:hover {
   color: #cf2323;
 }
 
-button.delete-button img {
+button.delete__button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete-button img:hover {
+button.delete__button img:hover {
   transform: rotateZ(0);
 }
 
