@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.bottom-section {
+.add-mode {
   display: flex;
 }
 ul {
@@ -87,7 +87,7 @@ input[type="text"]:focus {
 #new-task {
   width: 318px;
 }
-p > button:hover {
+section > button:hover {
   color: #0fc57c;
 }
 
