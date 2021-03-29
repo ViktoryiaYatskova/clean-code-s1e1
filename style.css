@@ -60,14 +60,13 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
-  margin: 0;
+  margin: 0 0 20px;
   text-transform: uppercase;
 }
 input[type="text"] {
@@ -84,12 +83,6 @@ input[type="text"] {
 }
 input[type="text"]:focus {
   color: #333;
-}
-
-/* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
 }
 #new-task {
   width: 318px;
