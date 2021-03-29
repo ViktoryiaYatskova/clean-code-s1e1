@@ -13,7 +13,8 @@ body {
 .header img {
   width: 100%;
 }
-.header .more-inf {
+.header,
+.more-inf {
   font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
