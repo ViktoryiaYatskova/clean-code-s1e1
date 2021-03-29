@@ -139,12 +139,10 @@ li > .delete:hover {
 ul li input[type="text"] {
   display: none;
 }
-
-ul .editMode input[type="text"] {
+ul .edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
-
-ul .editMode label {
+ul .edit-mode label {
   display: none;
 }
