@@ -1,8 +1,8 @@
-/* Basic Style */
+/* basic style */
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
 }
 
 .aaa {
@@ -63,15 +63,15 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   cursor: pointer;
 }
 
 button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
-/* Heading */
+/* heading */
 h3,
 label[for='new-task'] {
   color: #333;
@@ -89,10 +89,10 @@ input[type="text"] {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   color: #888;
 }
 
@@ -100,7 +100,7 @@ input[type="text"]:focus {
   color: #333;
 }
 
-/* New Task */
+/* new task */
 label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
@@ -111,10 +111,10 @@ input#new-task {
 }
 
 p>button:hover {
-  color: #0FC57C;
+  color: #0fc57c;
 }
 
-/* Task list */
+/* task list */
 li {
   overflow: hidden;
   padding: 20px 0;
@@ -145,34 +145,34 @@ li>input[type="text"] {
 }
 
 li>button.delete:hover {
-  color: #CF2323;
+  color: #cf2323;
 }
 
 button.delete img {
   height: 2em;
-  transform: rotateZ(45deg);
+  transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
 
 button.delete img:hover {
-  transform: rotateZ(0);
+  transform: rotatez(0);
 }
 
-/* Completed */
+/* completed */
 ul#completed-tasks label {
   text-decoration: line-through color: #888;
 }
 
-/* Edit Task */
+/* edit task */
 ul li input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+ul li.editmode input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul li.editmode label {
   display: none;
 }
