@@ -20,7 +20,7 @@ body {
   font-family: "fantasy", cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .aaa {
     text-align: center;
   }
@@ -67,7 +67,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button :hover {
   color: #3a3a3a;
 }
 
@@ -96,7 +96,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+input[type="text"] :focus {
   color: #333;
 }
 
@@ -106,11 +106,11 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+input #new-task {
   width: 318px;
 }
 
-p>button:hover {
+p > button :hover {
   color: #0fc57c;
 }
 
@@ -125,30 +125,30 @@ li {
   align-items: center;
 }
 
-li>* {
+li > * {
   vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+li > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li>label {
+li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li>input[type="text"] {
+li > input[type="text"] {
   width: 226px;
 }
 
-li>button.delete:hover {
+li > button .delete :hover {
   color: #cf2323;
 }
 
-button.delete img {
+button .delete img {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
@@ -159,20 +159,20 @@ button.delete img:hover {
 }
 
 /* completed */
-ul#completed-tasks label {
+ul #completed-tasks label {
   text-decoration: line-through #888;
 }
 
 /* edit task */
-ul li input[type=text] {
+ul li input[type="text"] {
   display: none;
 }
 
-ul li.editmode input[type=text] {
+ul li.editmode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editmode label {
+ul li .editmode label {
   display: none;
 }
