@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: lato, sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 .aaa {
@@ -17,7 +17,7 @@ body {
 }
 
 .aaa .more_inf {
-  font-family: fantasy, cursive;
+  font-family: "fantasy", cursive;
 }
 
 @media (max-width:768px) {
@@ -35,7 +35,7 @@ body {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -63,7 +63,7 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: lato, sans-serif;
+  font-family: "lato", sans-serif;
   cursor: pointer;
 }
 
@@ -92,7 +92,7 @@ input[type="text"] {
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: lato, sans-serif;
+  font-family: "lato", sans-serif;
   color: #888;
 }
 
@@ -141,7 +141,7 @@ li>label {
 }
 
 li>input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 li>button.delete:hover {
@@ -160,17 +160,17 @@ button.delete img:hover {
 
 /* completed */
 ul#completed-tasks label {
-  text-decoration: line-through color: #888;
+  text-decoration: line-through #888;
 }
 
 /* edit task */
 ul li input[type=text] {
-  display: none
+  display: none;
 }
 
 ul li.editmode input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 ul li.editmode label {
