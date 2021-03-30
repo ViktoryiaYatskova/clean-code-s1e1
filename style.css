@@ -92,7 +92,7 @@ input#new-task {
     width: 318px;
 }
 p > button:hover {
-    color: #0FC57C;
+    color: #0fc57c;
 }
 
 /* Task list */
@@ -122,7 +122,7 @@ li >    input[type="text"] {
     width: 226px
 }
 li > button.delete:hover {
-    color: #CF2323;
+    color: #cf2323;
 }
 button.delete img {
     height: 2em;
