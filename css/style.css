@@ -122,7 +122,7 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input #new-task { 
+#new-task { 
   width: 318px; 
 }
 
@@ -179,7 +179,7 @@ button .delete-task img :hover {
 
 /* completed */
 
-ul #completed-tasks label { 
+ul .completed-tasks label { 
   text-decoration: line-through #888; 
 }
 

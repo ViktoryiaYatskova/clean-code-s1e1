@@ -7,17 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="RSS-Task Clean-code">
   <meta name="description" content="Rolling Scopes School, HTML, CSS, JS">
-  
   <link rel="shortcut icon" href="./assets/icons/check.svg">
   <link rel="stylesheet" 
         href="https://fonts.googleapis.com/css?family=lato:300,400,700">
-
   <link rel="stylesheet" href="./css/style.css">
-  
   <title>todo app</title>
 </head>
 
 <body>
+  <!-- header -->
   <header class="header">
     <img class="header-image"
          src="./assets/img/eisenhower-matrix.jpg" 
@@ -29,6 +27,7 @@
         Want more details?
     </a>
   </header>
+  <!-- main -->
   <main class="main">
     <!-- add task -->
     <section class="add">
@@ -43,7 +42,7 @@
     <!-- todo list -->
     <section class="todo">
       <h3>todo</h3>
-      <ul id="todo-list">
+      <ul class="todo-list">
         <li>
           <input type="checkbox">
           <label class="task">Pay Bills</label>
@@ -72,7 +71,7 @@
     <!-- comleted task-->
     <section class="completed">
       <h3>completed</h3>
-      <ul id="completed-tasks">
+      <ul class="completed-tasks">
         <li>
           <input type="checkbox" checked>
           <label class="task">See the doctor</label>
