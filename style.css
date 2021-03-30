@@ -4,34 +4,36 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.more-details {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.more-details__img {
     width: 100%;
 }
-.aaa .more_inf {
+.more-details .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+  .more-details { text-align: center;
+  }
 }
-}
-.centered-main-page-element {
+
+.centered-main-page__wrapper {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task-row__wrapper {
     display: flex;
 }
 ul {
@@ -144,11 +146,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
     display:none;
 }
