@@ -89,7 +89,9 @@ input[type="text"] :focus {
 
 .header-link {
   display: block;
+}
 
+.get-info {
   font-family: "fantasy", cursive;
 }
 
@@ -122,7 +124,7 @@ input[type="text"] :focus {
 
 /* new task */
 
-label[for="new-task"] {
+label[for="add-task"] {
   display: block;
   margin: 0 0 20px;
 }
