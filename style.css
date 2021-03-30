@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -44,7 +44,7 @@ li, h3 {
 input,button{
     outline:none;
 }
-button {
+.btn {
     background: none;
     border: 0px;
     color: #888;
@@ -53,7 +53,7 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.btn:hover {
     color: #3a3A3a;
 }
 /* Heading */
@@ -67,7 +67,7 @@ label[for="new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.task {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,7 +79,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task:focus {
     color: #333;
 }
 
@@ -88,15 +88,15 @@ label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
-p > button:hover {
+.btn:hover {
     color: #0FC57C;
 }
 
 /* Task list */
-li {
+.tasks-list {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -105,50 +105,50 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.tasks-list > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.tasks-list > input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.tasks-list > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.task {
     width: 226px
 }
-li > button.delete-btn:hover {
+.delete-btn:hover {
     color: #CF2323;
 }
-button.delete-btn img {
+.delete-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete-btn img:hover {
+.delete-btn img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasks-list > input[type=text] {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode > label {
     display:none;
 }
