@@ -6,17 +6,17 @@
         <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
     </head>
     <body class="page">
-        <div class="image-wrap"><img src="./eisenhower-matrix.jpg"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-        </div>
-        <div class="element-centered">
+        <header class="image-wrap"><img src="./eisenhower-matrix.jpg"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        </header>
+        <main class="element-centered">
             <p id="add-list-element">
                 <label for="new-task">Add Item</label>
-                <div class="task-row-wrapper"><input id="new-task" class="task" type="text"><button class="btn">Add</button>
-                </div>
+                <figure class="task-row-wrapper"><input id="new-task" class="task" type="text"><button class="btn">Add</button>
+                </figure>
             </p>
             <h3>Todo</h3>
             <ul id="incomplete-tasks">
-                <li class="tasks-list"><input type="checkbox"><label class="task">Pay Bills</label><input type="text"><button class="btn edit-btn">Edit</button>
+                <li class="tasks-list"><input type="checkbox"><label class="task">Pay Bills</label><input type="text" class="task"><button class="btn edit-btn">Edit</button>
                     <button class="btn delete-btn"><img src="./remove.svg"></button>
                 </li>
                 <li class="edit-mode tasks-list"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class="btn edit-btn">Save</button>
@@ -29,7 +29,7 @@
                     <button class="btn delete-btn"><img src="./remove.svg"></button>
                 </li>
             </ul>
-        </div>
+        </main>
         <script src="app.js"></script>
     </body>
 </html>

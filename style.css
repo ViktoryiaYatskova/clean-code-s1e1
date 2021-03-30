@@ -58,6 +58,10 @@ button{
   outline: none;
 }
 
+figure {
+  margin: 0;
+}
+
 .btn {
   background: none;
   border: 0px;
