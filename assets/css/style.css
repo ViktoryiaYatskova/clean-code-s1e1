@@ -134,3 +134,9 @@
 .edit-mode .task__name {
   display: none;
 }
+.footer{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  font-size: 12px;
+}
