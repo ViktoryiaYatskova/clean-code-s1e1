@@ -13,43 +13,49 @@ body {
   color: #333;
 }
 
-.aaa {
+.header {
   display: block;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   
   text-align: right;
 }
 
-.aaa img { 
+.header-image {
+  display: block; 
   width: 100%; 
+  margin: 0 auto;
 }
 
-.aaa .more_inf {
+.header-link {
+  display: block;
+
   font-family: "fantasy", cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa { 
+  .header-link { 
     text-align: center; 
   }
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
-  width: 500px;
-  margin: 0 auto 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .task {
-  display: inline-block;
-  width: 56%;
+  display: block;
+  width: 100%;
   flex-grow: 1;
 }
 
-.task-row-wrapper { 
+.task-wrapper { 
   display: flex; 
 }
 
@@ -156,18 +162,18 @@ li > input[type="text"] {
   width: 226px; 
 }
 
-li > button .delete :hover { 
+li > button .delete-task :hover { 
   color: #cf2323; 
 }
 
-button .delete img {
+button .delete-task img {
   height: 2em;
 
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
 
-button .delete img :hover { 
+button .delete-task img :hover { 
   transform: rotatez(0); 
 }
 
@@ -183,11 +189,11 @@ ul li input[type="text"] {
   display: none; 
 }
 
-ul li.editmode input[type="text"] {
+ul li .edit-task input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li .editmode label { 
+ul li .edit-task label { 
   display: none; 
 }
