@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="more-details">
-    <img class="more-details__img" src="./eisenhower-matrix.jpg">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a>
+  <div class="main-image">
+    <img class="main-image__img" src="./eisenhower-matrix.jpg">
+    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details</a>
   </div>
-  <div class="centered-main-page__wrapper">
-    <p id="topSectionForAddingElementToList">
+  <div class="main-page__wrapper">
+    <p id="add-item">
       <label for="new-task">Add Item</label>
-      <div class="task-row__wrapper">
+      <div class="add-item__wrapper">
         <input id="new-task" class="task" type="text">
         <button class="add">Add</button>
       </div>
@@ -34,8 +35,8 @@
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
+        <button class="edit-button">Save</button>
+        <button class="delete-button">
           <img src="./remove.svg">
         </button>
       </li>
@@ -46,8 +47,8 @@
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
         <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">
           <img src="./remove.svg">
         </button>
       </li>

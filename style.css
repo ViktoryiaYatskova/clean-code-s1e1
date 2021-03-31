@@ -5,27 +5,28 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.more-details {
+.main-image {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.more-details__img {
+.main-image img {
   width: 100%;
 }
-.more-details
+
+.main-image
 .more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .more-details { text-align: center;
+  .main-image { text-align: center;
   }
 }
 
-.centered-main-page__wrapper {
+.main-page__wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -36,7 +37,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row__wrapper {
+.add-item__wrapper {
   display: flex;
 }
 
@@ -141,17 +142,17 @@ li > input[type="text"] {
   width: 226px;
 }
 
-li > button.delete:hover {
+li > button.delete-button:hover {
   color: #cf2323;
 }
 
-button.delete img {
+button.delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.delete-button img:hover {
   transform: rotateZ(0);
 }
 
