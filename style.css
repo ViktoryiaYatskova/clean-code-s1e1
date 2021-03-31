@@ -15,7 +15,8 @@ body {
 .more-details__img {
   width: 100%;
 }
-.more-details .more_inf {
+.more-details
+.more_inf {
   font-family: fantasy, cursive;
 }
 
@@ -44,11 +45,13 @@ ul {
   padding: 0px;
 }
 
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
 
-input,button {
+input,
+button {
   outline: none;
 }
 
