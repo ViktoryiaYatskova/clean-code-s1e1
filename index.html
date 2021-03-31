@@ -13,23 +13,23 @@
         media="screen" 
         charset="utf-8">
 </head>
-  <body>
+  <div class="wrapper">
     <header class="header">
       <h1 class="heading">heading</h1>
       <figure class="figure">
-        <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
+        <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
       </figure>      
-      <a class="more_inf" 
+      <a class="header__link" 
           href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?
       </a>
     </header>
 
     <main class="main">
-      <p id="topSectionForAddingElementToList"> 
-        <label for="new-task">Add Item</label>        
+      <p id="main__add"> 
+        <label for="main__input">Add Item</label>        
         <div class="task-row-wrapper">         
-          <input id="new-task"class="task" type="text">
-          <button>Add</button>
+          <input id="main__input"class="task" type="text">
+          <button class="main__add-button">Add</button>
         </div>
       </p>
 
@@ -73,5 +73,5 @@
 
     <script src="app.js"></script>
     
-  </body>
+</div>
 </html>

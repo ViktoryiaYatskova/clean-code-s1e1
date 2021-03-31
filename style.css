@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.wrapper {
 	background-color: #f8f8f8;
 	color: #333;
 	font-family: lato, sans-serif;
@@ -21,11 +21,11 @@ body {
 	text-align: right;
 }
 
-.header img {
+.header__img {
 	width: 100%;
 }
 
-.header .more_inf {
+.header__link {
 	font-family: fantasy, cursive;
 }
 
@@ -84,7 +84,7 @@ button:hover {
 /* Heading */
 
 h3,
-label[for="new-task"] {
+label[for="main__input"] {
 	color: #333;
 	font-weight: 700;
 	font-size: 15px;
@@ -112,7 +112,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="main__input"] {
 	display: block;
 	margin: 0 0 20px;
 }
