@@ -46,7 +46,7 @@ ul {
 }
 
 li,
-h3 {
+.task-title {
   list-style: none;
 }
 
@@ -70,7 +70,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
+.task-title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
