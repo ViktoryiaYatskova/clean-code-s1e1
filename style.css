@@ -145,13 +145,13 @@ li > button.delete:hover {
 	color: #cff323;
 }
 
-.delete__img {
+button.delete img {
 	height: 2em;
 	transform: rotateZ(45deg);
 	transition: transform 200ms ease-in;
 }
 
-.delete__img:hover {
+button.delete img:hover {
 	transform: rotateZ(0);
 }
 
