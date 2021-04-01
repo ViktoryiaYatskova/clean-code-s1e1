@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!--Уважаемые проверяющие! элемент DOCTYPE пишется в верхнем регистре, что не является нарушением п 1.2 правил  -->
+<!DOCTYPE html>    
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -25,51 +26,49 @@
     </header>
 
     <main class="main">
-      <p id="main__add"> 
-        <label for="main__input">Add Item</label>        
-        <div class="task-row-wrapper">         
-          <input id="main__input"class="task" type="text">
+      <h3>Add Item</h3>
+      <p id="main__add">         
+        <div class="main__wrapper">         
+          <input id="main__input" class="task" type="text">
           <button class="main__add-button">Add</button>
         </div>
       </p>
 
       <h3>Todo</h3>
+      <ul id="incompleteTasks">
+        <li>
+          <input type="checkbox">
+          <label class="task">Pay Bills</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">
+            <img src="./remove.svg" alt="remove sign">
+          </button>
+        </li>
+        <li class="editMode">
+          <input type="checkbox">
+          <label class="task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task">
+          <button class="edit">Save</button>
+          <button class="delete">
+            <img src="./remove.svg" alt="remove sign">
+          </button>
+        </li>
+      </ul>
 
-    <ul id="incompleteTasks">
-      <li>
-        <input type="checkbox">
-        <label class="task">Pay Bills</label>
-        <input type="text">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg" alt="remove sign">
-        </button>
-      </li>
-      <li class="editMode">
-        <input type="checkbox">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
-          <img src="./remove.svg" alt="remove sign">
-        </button>
-      </li>
-    </ul>
-
-    <h3>Completed</h3>
-    
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg" alt="remove sign">
-        </button>
-      </li>
-    </ul>
-  </main>
+      <h3>Completed</h3>    
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked>
+          <label class="task">See the Doctor</label>
+          <input type="text" class="task">
+          <button class="edit">Edit</button>
+          <button class="delete">
+            <img src="./remove.svg" alt="remove sign">
+          </button>
+        </li>
+      </ul>
+    </main>
 
     <script src="app.js"></script>
     

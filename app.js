@@ -61,7 +61,7 @@ var createNewTaskElement=function(taskString){
 
 var addTask=function(){
     console.log("Add Task...");
-    //Create a new list item with the text from the main__input:
+    //Create a new list item with the text from the #main__input:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
 
