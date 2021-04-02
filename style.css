@@ -91,9 +91,6 @@ label[for='new-task'] {
 input#new-task {
     width: 318px;
 }
-p > button:hover {
-    color: #0FC57C;
-}
 
 /* Task list */
 li {
@@ -120,9 +117,6 @@ li > label {
 }
 li >    input[type="text"] {
     width: 226px
-}
-li > button.delete:hover {
-    color: #CF2323;
 }
 button.delete img {
     height: 2em;
