@@ -1,4 +1,7 @@
 /* Basic Style */
+* {
+  box-sizing:border-box;
+}
 body {
   background-color: #f8f8f8;
   color: #333;
@@ -19,7 +22,7 @@ body {
   width: 500px;
 }
 
-.header-figure__caption a {
+.header-figure__link {
   font-family: fantasy, cursive;
 }
 
@@ -37,7 +40,8 @@ body {
   margin: 0 auto 0;
 }
 
-section {
+#new-task {
+   width: 100%;
    margin: 16px 0;
 }
 
@@ -152,17 +156,17 @@ li > input[type="text"] {
   width: 226px;
 }
 
-.delete-btn:hover {
+.task__delete-btn:hover {
   color: #cf2323;
 }
 
-.delete-btn img {
+.task__delete-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-btn img:hover {
+.task__delete-btn img:hover {
   transform: rotateZ(0);
 }
 
@@ -177,11 +181,11 @@ ul li input[type="text"] {
   display:none;
 }
 
-.edit-mode input[type="text"] {
+.task_edit input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.task_edit label {
   display: none;
 }
