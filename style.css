@@ -18,9 +18,13 @@ body {
 }
 
 @media (max-width:768px) {
-.info { text-align: center;
+
+  .info { 
+    text-align: center;
+  }
+
 }
-}
+
 .task-list {
   display: block;
   width: 500px;
