@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .aaa {
   width: 500px;
@@ -14,7 +14,7 @@ body {
   width: 100%;
 }
 .aaa .more_inf {
-  font-family: fantasy, cursive;
+  font-family: "fantasy", "cursive";
 }
 
 @media (max-width:768px) {
@@ -50,7 +50,7 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
 }
 button:hover {
@@ -58,7 +58,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+label[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -76,7 +76,7 @@ input[type="text"] {
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   color: #888;
 }
 input[type="text"]:focus {
@@ -84,7 +84,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
@@ -134,11 +134,11 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li input[type="text"] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.editMode input[type="text"] {
   display:inline-block;
   width:224px
 }
