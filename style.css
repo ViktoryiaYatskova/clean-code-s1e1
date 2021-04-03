@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
 .info {
   width: 500px;
@@ -14,7 +14,7 @@ body {
   width: 100%;
 }
 .info .more-info {
-  font-family: cursive,fantasy;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
