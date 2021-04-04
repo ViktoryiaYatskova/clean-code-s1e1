@@ -19,21 +19,25 @@
   </head>
     <body class="pages">
         <header class="header">
-            <img class="logo" src="./eisenhower-matrix.jpg" alt="matrix">
-            <a class="more-inf" 
-            href="https://goal-life.com/page/method/matrix-eisenhower">Want more details</a>
+            <img class="header__scheme" 
+                 alt="Eisenhower matrix" 
+                 src="./eisenhower-matrix.jpg">
+            <a class="header__inf" 
+               href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
         </header>
         <main class="tasks_list">
             <p id="top-section">
-                <label class="label" for="new-task">Add Item</label>
+                <label class="label" 
+                       for="new-task">Add Item</label>
                 <div class="task-row-wrapper">
-                <input id="new-task"class="task">
+                <input id="new-task"
+                       class="task">
                 <button class="btn">Add</button>
                 </div>
             </p>
             <h3 class="heading">Todo</h3>
             <ul class="task-list" id="incomplete">
-                <li class="task-list-elem">
+                <li class="list__elem">
                 <input class="inp-elem">
                 <label class="task label">Pay Bills</label>
                 <input class="task inp-elem">
@@ -41,7 +45,7 @@
                 <button class="delete btn">
                 <img class="del-img" src="./remove.svg" alt="remove"></button>
                 </li>
-            <li class="edit-mode task-list-elem">
+            <li class="task-list__edit task__elem">
                 <input  class="inp-elem" 
                         type="checkbox">
                 <label class="task label">Go Shopping</label>
@@ -56,7 +60,7 @@
             </ul>
             <h3 class="heading">Completed</h3>
             <ul class="task-list" id="completed">
-                <li class="task-list-elem">
+                <li class="list__elem">
                 <input class="inp-elem" 
                     type="checkbox" checked>
                 <label class="task label">See the Doctor</label>
