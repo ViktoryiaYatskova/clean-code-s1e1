@@ -90,9 +90,9 @@ label[for="new-task"] {
 #new-task { /*убрал input*/
     width: 315px;
 }
-#main-page__add-task button:hover { /** p > */
-    color: #0FC57C;
-}
+/* #main-page__add-task button:hover {  */   /*! p >  !у автора этот блок полностью удален */
+    /* color: #0FC57C;
+} */
 
 /* Task list */
 li {
@@ -116,9 +116,10 @@ li > label {
 li > input[type="text"] {
     width: 226px;
 }
-#main-page__incomplete-tasks.delete:hover {              /** li > button.delete */
-    color: #CF2323;
-}
+/*#main-page__incomplete-tasks.delete:hover { */             /*! li > button.delete, у автота этот блок удален */
+    /* color: #CF2323; */
+/* } */
+
 button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
