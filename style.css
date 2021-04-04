@@ -33,7 +33,7 @@ body {
 .main__task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .main__task-wrapper {
   display: flex;
@@ -143,13 +143,13 @@ button{
 /* Edit Task */
 .main__task-list input[type=text],
 .main__task-item.edit-mode input[type=text]{
-  display: none
+  display: none;
 }
 
 .main__task-list.edit-mode input[type=text],
 .main__task-item.edit-mode input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .main__task-list.edit-mode label,
