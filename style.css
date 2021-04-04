@@ -13,7 +13,8 @@ body {
 .header__img {
   width: 100%;
 }
-.header, .header__link-info {
+.header,
+.header__link-info {
   font-family: fantasy, cursive;
 }
 
@@ -41,10 +42,12 @@ body {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
-input,button{
+input,
+button{
   outline: none;
 }
 .btn {
@@ -120,12 +123,14 @@ input,button{
 .main__task-item > input[type="text"] {
   width: 226px
 }
-.btn, .delete img {
+.btn,
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn, .delete img: hover {
+.btn,
+.delete img:hover {
   transform: rotateZ(0);
 }
 
