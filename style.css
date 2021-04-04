@@ -33,6 +33,7 @@
   margin: 0 auto 0;
 }
 
+
 .task {
   width: 56%;
   display: inline-block;
@@ -153,11 +154,13 @@ ul#completed .label {
 }
 
 /* Edit Task */
-.task-list .task-list-elem .inp-elem[type=text] {
+.task-list .task-list-elem 
+.inp-elem[type=text] {
   display: none;
 }
 
-.task-list.edit-mode .inp-elem[type=text] {
+.task-list.edit-mode 
+.inp-elem[type=text] {
   display: inline-block;
   width: 224px;
 }
