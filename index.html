@@ -12,39 +12,43 @@
   <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
 </header>
 <main class="centered">
-  <p>
+  <p id="topSection">
     <label for="new-task">Add Item</label>
   <div class="task-row-wrapper">
     <input id="new-task" class="task" type="text">
     <button>Add</button>
     </p>
   </div>
+
   <h3>Todo</h3>
   <ul id="incompleteTasks">
     <li>
       <input type="checkbox" name="checkbox">
-      <label class="task">Go Shopping</label>
+      <label class="task-text">Go Shopping</label>
       <input type="text" name="text">
       <button class="edit">Edit</button>
       <button class="delete">
         <img src="./remove.svg" alt="remove">
       </button>
     </li>
+
     <li class="editMode">
       <input type="checkbox" name="checkbox">
-      <label class="task">New task</label>
-      <input type="text" value="New task" class="task" name="text">
+      <label class="task-text">New task</label>
+      <input type="text" value="New task" class="task-text" name="text">
       <button class="edit">Save</button>
       <button class="delete">
         <img src="./remove.svg" alt="remove">
       </button>
     </li>
+
   </ul>
   <h3>Completed</h3>
   <ul id="completed-tasks">
-    <li><input type="checkbox" checked>
-      <label class="task">See the Doctor</label>
-      <input type="text" class="task">
+    <li>
+      <input type="checkbox" checked>
+      <label class="task-text">See the Doctor</label>
+      <input type="text" class="task-text">
       <button class="edit">Edit</button>
       <button class="delete">
         <img src="./remove.svg" alt="remove">
