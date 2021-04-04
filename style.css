@@ -22,7 +22,7 @@ body {
       text-align: center;
   }
 }
-.centered-main-page-element {
+.task-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -128,7 +128,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed label {
   text-decoration: line-through
   color: #888;
 }
