@@ -4,46 +4,59 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .footer {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .footer__image {
   width: 100%;
 }
+
 .footer__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.footer { text-align: center;
+
+  .footer { 
+    text-align: center;
+  }
+
 }
-}
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .main__text-form-item {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .main__text-form {
   display: flex;
 }
+
 .main__ul {
   margin:0;
   padding: 0px;
 }
+
 .main__ul-item, .main__h3 {
   list-style:none;
 }
+
 input,.main__btn{
   outline:none;
 }
+
 .main__btn {
   background: none;
   border: 0px;
@@ -53,10 +66,13 @@ input,.main__btn{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .main__btn:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
+
 .main__h3,
 .main__text-label {
   color: #333;
@@ -67,6 +83,7 @@ input,.main__btn{
   margin: 0;
   text-transform: uppercase;
 }
+
 .input-text {
   margin: 0;
   font-size: 18px;
@@ -79,6 +96,7 @@ input,.main__btn{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .input-text:focus {
   color: #333;
 }
@@ -88,6 +106,7 @@ input,.main__btn{
   display: block;
   margin: 0 0 20px;
 }
+
 input#new-task {
   width: 318px;
 }
@@ -97,11 +116,11 @@ input#new-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .main__ul-item > * {
   vertical-align: middle;
 }
@@ -109,12 +128,14 @@ input#new-task {
 .input-checkbox {
   margin: 0 10px;
 }
+
 .main__text-form-item {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .input-text {
   width: 226px
 }
@@ -124,17 +145,20 @@ input#new-task {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .main__btn-delete-image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 .main__ul-completed {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
+
 .main__ul-item .input-text {
   display:none
 }
