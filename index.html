@@ -11,7 +11,7 @@
   <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
 </article>
 <main class="main">
-  <div class="centered-main-page-element">
+  <section class="centered-main-page-element">
     <p id="topSectionForAddingElementToList">
       <label for="new-task">Add Item</label>
     <div class="task-row-wrapper">
@@ -19,9 +19,9 @@
       <button>Add</button>
     </div>
     </p>
-    <h3>Todo</h3>
+    <h3 class="main__header">Todo</h3>
     <ul class="incomplete list" id="incompleteTasks">
-      <li>
+      <li class="list__item">
         <input type="checkbox">
         <label class="task">Pay Bills</label>
         <input type="text">
@@ -30,7 +30,7 @@
           <img src="./remove.svg"  alt="remove image">
         </button>
       </li>
-      <li class="editMode">
+      <li class="list__item editMode">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
@@ -40,9 +40,9 @@
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
+    <h3 class="main__header">Completed</h3>
     <ul class="complete tasks" id="completed-tasks">
-      <li>
+      <li class="list__item">
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
         <input type="text" class="task">
@@ -52,7 +52,7 @@
         </button>
       </li>
     </ul>
-  </div>
+  </section>
 </main>
 <script src="app.js"></script>
 </body>
