@@ -37,7 +37,7 @@ body {
 .main__text-form-item {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .main__text-form {
@@ -137,7 +137,7 @@ input#new-task {
 }
 
 .input-text {
-  width: 226px
+  width: 226px;
 }
 
 .main__btn-delete-image {
@@ -153,19 +153,19 @@ input#new-task {
 /* Completed */
 
 .main__ul-completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
 .main__ul-item .input-text {
-  display: none
+  display: none;
 }
 
 .main__ul-item-editMode .input-text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .main__ul-item-editMode .main__text-form-item-label {
