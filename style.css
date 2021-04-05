@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.aaa img {
+.aaa .matrix {
   width: 100%;
 }
 .aaa .more_inf {
@@ -87,7 +87,7 @@ label[for="new-task"] {
 input#new-task {
   width: 318px;
 }
-p > button:hover {
+.add:hover {
   color: #0fc57c;
 }
 
@@ -113,20 +113,20 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-li > button.delete:hover {
+li > .delete:hover {
   color: #cf2323;
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through
   color: #888;
 }
@@ -136,11 +136,11 @@ ul li input[type="text"] {
   display:none
 }
 
-ul li.editMode input[type="text"] {
+ul .editMode input[type="text"] {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+ul .editMode label {
   display:none;
 }
