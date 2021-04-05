@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-    color: #3a3A3a;
+    color: #3a3a3a;
 }
 
 /* Heading */
@@ -106,7 +106,7 @@ input#new-task {
 }
 
 p > button:hover {
-    color: #0FC57C;
+    color: #0fc57c;
 }
 
 /* Task list */
@@ -137,7 +137,7 @@ li >    input[type="text"] {
 }
 
 li > button.delete:hover {
-    color: #CF2323;
+    color: #cf2323;
 }
 
 button.delete img {
