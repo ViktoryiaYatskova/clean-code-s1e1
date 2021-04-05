@@ -13,12 +13,12 @@ body {
 .main-image img {
     width: 100%;
 }
-.main-image .more-inf {
+.main-image .more-info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-    .aaa { text-align: center;
+    .main-image { text-align: center;
 }
 }
 .main-page__element {
