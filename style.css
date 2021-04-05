@@ -22,7 +22,7 @@ body {
   .matrix { 
     text-align: center;
   }
-  
+
 }
 .main {
   display: block;
@@ -38,14 +38,14 @@ body {
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -138,14 +138,14 @@ ul#completed__list label {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none
+  display: none
 }
 
 ul li.completed__item_editing input[type=text] {
-  display:inline-block;
+  display: inline-block;
   width:224px
 }
 
 ul li.completed__item_editing label {
-  display:none;
+  display: none;
 }
