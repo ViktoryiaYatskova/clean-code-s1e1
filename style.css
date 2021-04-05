@@ -129,7 +129,7 @@ input#new-task {
 }
 
 /* Completed */
-.main__ul-completed-tasks {
+.main__ul-completed {
     text-decoration: line-through
     color: #888;
 }
