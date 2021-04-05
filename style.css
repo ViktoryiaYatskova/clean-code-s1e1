@@ -36,14 +36,14 @@ body {
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -136,14 +136,14 @@ input[type="text"]:focus {
 
 /* Edit Task */
 .task-item .edit-task{
-  display:none
+  display: none
 }
 
 .task-item.edit-mode .edit-task{
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task-item.edit-mode .task-name{
-  display:none;
+  display: none;
 }
