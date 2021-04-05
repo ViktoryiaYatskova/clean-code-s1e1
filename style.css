@@ -28,7 +28,7 @@ body {
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 400px;
   margin: 0 auto 0;
@@ -69,7 +69,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+.add-task__logo {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -97,16 +97,16 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-task__logo {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-task__input {
   width: 318px;
 }
 
-.add:hover {
+.add-task__btn:hover {
   color: #0fc57c;
 }
 
