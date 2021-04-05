@@ -1,8 +1,8 @@
-/* Basic Style */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 .add__submit,
 .plan__edit,
@@ -15,6 +15,12 @@
   border: 0px;
   background: none;
   cursor: pointer;
+}
+.add__submit:hover,
+.plan__edit:hover,
+.plan__save:hover,
+.completed__edit:hover {
+  color: #0FC57C;
 }
 .todo {
   color: #333;
@@ -94,115 +100,23 @@
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-
-
-/* 
-@media (max-width:768px) {
-  .todo__header { text-align: center;}
+.plan__img:hover,
+.completed__img:hover {
+  transform: rotateZ(0);
 }
-.todo-content {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-.add__task,
-.plan__task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1
-}
-.content {
-  display: flex;
-justify-content: space-between;
-}
-ul {
-  margin:0;
-  padding: 0px;
-}
-li, h3 {
-  list-style:none;
-}
-input,button{
-  outline:none;
-}
-button {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-button:hover {
-  color: #3a3A3a;
-} */
-/* Heading */
-h3,
-
-
-input[type="text"]:focus {
-  color: #333;
-}
-
-/* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-
-p > button:hover {
-  color: #0FC57C;
-}
-
-/* Task list */
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
+.plan__item,
+.completed__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
-li > * {
+.plan__check,
+.completed__check {
+  margin: 0 10px;
   vertical-align: middle;
 }
-
-li > input[type="checkbox"] {
-  margin: 0 10px;
-}
-li >    input[type="text"] {
-  width: 226px
-}
-li > button.delete:hover {
-  color: #CF2323;
-}
-button.delete img {
-  height: 2em;
-  transform: rotateZ(45deg);
-  transition: transform 200ms ease-in;
-}
-button.delete img:hover {
-  transform: rotateZ(0);
-}
-
-/* Completed */
-ul#completed-tasks label {
-  text-decoration: line-through
-  color: #888;
-}
-
-/* Edit Task */
-ul li input[type=text] {
+.completed__text,
+.plan__input {
   display:none
-}
-
-ul li.editMode input[type=text] {
-  display:inline-block;
-  width:224px
-}
-
-ul li.editMode label {
-  display:none;
 }
