@@ -18,9 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
+
   .aaa { 
     text-align: center;
   }
+
 }
 .centered-main-page-element {
   display: block;
@@ -42,7 +44,7 @@ ul {
 li, h3 {
   list-style:none;
 }
-input,button{
+input,button {
   outline:none;
 }
 button {
