@@ -136,17 +136,17 @@ li > input[type="text"] {
   width: 226px;
 }
 
-li > .delete:hover {
+.todolist__task__delete:hover {
   color: #cf2323;
 }
 
-.delete img {
+.todolist__task__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.todolist__task__delete img:hover {
   transform: rotateZ(0);
 }
 
