@@ -26,7 +26,7 @@ body {
     }
 }
 
-.centered-main-page-element {
+.centered_main_page_element {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -38,7 +38,7 @@ body {
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task_row_wrapper {
     display: flex;
 }
 
@@ -72,7 +72,7 @@ button:hover {
 }
 /* Heading */
 .main__header,
-label[for="new-task"] {
+label[for="new_task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -100,12 +100,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="new_task"] {
     display: block;
     margin: 0 0 20px;
 }
 
-input#new-task {
+input#new_task {
     width: 318px;
 }
 
