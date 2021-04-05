@@ -134,17 +134,8 @@ input#new-task {
     color: #888;
 }
 
-ul#completed-tasks label {
-    text-decoration: line-through
-    color: #888;
-}
-
 /* Edit Task */
 .main__ul-item .input-text {
-    display:none
-}
-
-ul li input[type=text] {
     display:none
 }
 
