@@ -49,11 +49,13 @@ body {
   padding: 0px;
 }
 
-.main__ul-item, .main__h3 {
+.main__ul-item, 
+.main__h3 {
   list-style: none;
 }
 
-input,.main__btn {
+input, 
+.main__btn {
   outline: none;
 }
 
