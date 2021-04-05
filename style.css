@@ -1,28 +1,28 @@
 /* Basic Style */
-.body {
+body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa .matrix {
+.header__logo {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .header { 
     text-align: center;
   }
 
