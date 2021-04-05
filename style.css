@@ -21,7 +21,7 @@ body {
 .more-info { text-align: center;
 }
 }
-.edit-item {
+.edit {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -128,7 +128,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed label {
   text-decoration: line-through
   color: #888;
 }
