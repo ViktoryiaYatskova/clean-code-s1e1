@@ -116,7 +116,23 @@
   margin: 0 10px;
   vertical-align: middle;
 }
-.completed__text,
+.completed__input,
 .plan__input {
   display:none
 }
+
+.edit .plan__input,
+.edit .completed__input {
+  display: flex;
+  flex-grow: 1;
+  width: 56%;
+  padding-left: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.edit .plan__task,
+.edit .completed__task {
+  display: none;
+}
+
