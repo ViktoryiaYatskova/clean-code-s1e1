@@ -45,16 +45,16 @@ body {
 }
 
 .main__ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .main__ul-item, .main__h3 {
-  list-style:none;
+  list-style: none;
 }
 
-input,.main__btn{
-  outline:none;
+input,.main__btn {
+  outline: none;
 }
 
 .main__btn {
@@ -160,14 +160,14 @@ input#new-task {
 /* Edit Task */
 
 .main__ul-item .input-text {
-  display:none
+  display: none
 }
 
 .main__ul-item-editMode .input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .main__ul-item-editMode .main__text-form-item-label {
-  display:none;
+  display: none;
 }
