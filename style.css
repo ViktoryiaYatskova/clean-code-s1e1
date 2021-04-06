@@ -80,7 +80,8 @@ body {
   justify-content: space-between;
 }
 
-.add-task__input {
+.add-task__input,
+.tasks__task__input {
   outline: none;
   margin: 0;
   font-size: 18px;
@@ -92,22 +93,10 @@ body {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
-  width: 226px;
 }
 
 .tasks__task__input {
   display: none;
-  outline: none;
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  height: 21px;
-  padding: 0 9px;
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
 }
 
 .tasks__task__input:focus {
