@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more-inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -29,12 +29,12 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.main__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.main__task-row-wrapper {
   display: flex;
 }
 ul {
@@ -45,7 +45,7 @@ li,
 h3 {
   list-style:none;
 }
-input, 
+input,
 button{
   outline: none;
 }
@@ -123,12 +123,12 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-.delete img {
+.main__delete img {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.main__delete img:hover {
   transform: rotatez(0);
 }
 
@@ -143,11 +143,11 @@ ul li input[type=text] {
   display: none;
 }
 
-.editMode input[type=text] {
+.main__editMode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.editMode label {
+.main__editMode label {
   display: none;
 }
