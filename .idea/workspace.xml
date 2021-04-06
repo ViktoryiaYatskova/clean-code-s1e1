@@ -36,7 +36,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617734607506</updated>
-      <workItem from="1617734608562" duration="2824000" />
+      <workItem from="1617734608562" duration="4540000" />
     </task>
     <servers />
   </component>
@@ -44,6 +44,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-2162" y="250" key="RollbackChangesDialog" timestamp="1617738277016">
+      <screen x="-2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="-2162" y="250" key="RollbackChangesDialog/0.0.1440.900/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1617738277016" />
     <state x="-2453" y="115" width="900" height="900" key="SettingsEditor" timestamp="1617736092400">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
