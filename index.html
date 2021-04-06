@@ -23,8 +23,10 @@
     <main class="main">
       <section id="add-task">
         <label class="add-task__title" for="new-task">Add Item</label>
-        <input class="add-task__input" id="new-task" type="text">
-        <button class="add-task button">Add</button>
+        <div class="add-task__wrapper">
+          <input class="add-task__input" id="new-task" type="text">
+          <button class="add-task button">Add</button>
+        </div>
       </section>
       <section class="tasks">
         <h3 class="tasks__title">Todo</h3>
@@ -55,9 +57,9 @@
       <section class="tasks">
         <h3 class="tasks__title">Completed</h3>
         <ul class="tasks__tasks" id="completed-tasks">
-          <li class="tasks__task">
+          <li class="tasks__task complete">
             <input class="tasks__task__checkbox" type="checkbox" checked>
-            <label class="tasks__task__label complete">See the Doctor</label>
+            <label class="tasks__task__label">See the Doctor</label>
             <input class="tasks__task__input" type="text">
             <button class="tasks__task__edit button">Edit</button>
             <button class="tasks__task__delete button">

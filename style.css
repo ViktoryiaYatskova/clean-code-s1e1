@@ -1,4 +1,5 @@
 /* Basic Style */
+
 body {
   background-color: #f8f8f8;
   color: #333;
@@ -45,11 +46,6 @@ body {
   padding: 0px;
 }
 
-.tasks__task {
-  display: flex;
-  justify-content: space-between;
-}
-
 .button {
   outline: none;
   background: none;
@@ -64,7 +60,9 @@ body {
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .tasks__title,
 .add-task__title {
   list-style: none;
@@ -75,6 +73,11 @@ body {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.add-task__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .add-task__input {
@@ -112,6 +115,7 @@ body {
 }
 
 /* New Task */
+
 .add-task__title {
   display: block;
   margin: 0 0 20px;
@@ -126,7 +130,8 @@ body {
 }
 
 /* Task list */
-li {
+
+.tasks__task {
   list-style: none;
   overflow: hidden;
   padding: 20px 0;
@@ -136,7 +141,7 @@ li {
   align-items: center;
 }
 
-li > input[type="checkbox"] {
+.tasks__task__checkbox {
   margin: 0 10px;
 }
 
@@ -162,18 +167,19 @@ li > input[type="checkbox"] {
 }
 
 /* Completed */
-.tasks__task__label.complete {
+
+.tasks__task.complete > .tasks__task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-ul .editMode input[type="text"] {
+.editMode > .tasks__task__input {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+.editMode > .tasks__task__label {
   display: none;
 }
