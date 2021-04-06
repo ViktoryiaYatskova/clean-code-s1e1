@@ -23,6 +23,52 @@ function changeTask(li) {
   }
 }
 
+function changeConditionToCompleted(li) {
+  let lable = li.children[0]
+  if(lable.checked&&li.classList.contains("plan__item")){
+    li.classList.remove("plan__item");
+    li.classList.add("completed__item");
+
+    li.children[0].classList.remove("plan__check");
+    li.children[0].classList.add("completed__check");
+
+    li.children[1].classList.remove("plan__task");
+    li.children[1].classList.add("completed__task");
+
+    li.children[2].classList.remove("plan__input");
+    li.children[2].classList.add("completed__input");
+
+    li.children[3].classList.remove("plan__edit");
+    li.children[3].classList.add("completed__edit");
+
+    li.children[4].classList.remove("plan__delete");
+    li.children[4].classList.add("completed__delete");
+    
+    completedList.append(li)
+  } else if (!lable.checked&&li.classList.contains("completed__item")){
+    li.classList.remove("completed__item");
+    li.classList.add("plan__item");
+
+    li.children[0].classList.remove("completed__check");
+    li.children[0].classList.add("plan__check");
+
+    li.children[1].classList.remove("completed__task");
+    li.children[1].classList.add("plan__task");
+
+    li.children[2].classList.remove("completed__input");
+    li.children[2].classList.add("plan__input");
+
+    li.children[3].classList.remove("completed__edit");
+    li.children[3].classList.add("plan__edit");
+
+    li.children[4].classList.remove("completed__delete");
+    li.children[4].classList.add("plan__delete");
+    
+    planList.append(li)
+  }
+}
+
+
 addButton.addEventListener("click", function(e){
   let taskMessage = addTask.value;
   if(taskMessage){
@@ -39,17 +85,21 @@ addButton.addEventListener("click", function(e){
 })
 
 planList.addEventListener("click",function (event) {
-  if(event.target.classList.contains("plan__img")){
+  if(event.target.closest(".plan__delete")){
     removeItemList(event.target.closest(".plan__item"))
   }else if (event.target.classList.contains("plan__edit")){
     changeTask(event.target.closest(".plan__item"))
+  }else if (event.target.classList.contains("plan__check")){
+    changeConditionToCompleted(event.target.closest(".plan__item"))
   }
 });
 
 completedList.addEventListener("click",function (event) {
-  if(event.target.classList.contains("completed__img")){
+  if(event.target.closest(".completed__delete")){
     removeItemList(event.target.closest(".completed__item"))
   }else if (event.target.classList.contains("completed__edit")){
     changeTask(event.target.closest(".completed__item"))
+  }else if (event.target.classList.contains("completed__check")){
+    changeConditionToCompleted(event.target.closest(".completed__item"))
   }
 });

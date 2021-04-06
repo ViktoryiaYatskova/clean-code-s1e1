@@ -124,9 +124,8 @@
 .edit .plan__input,
 .edit .completed__input {
   display: flex;
-  flex-grow: 1;
-  width: 56%;
-  padding-left: 10px;
+  width: 69%;
+   padding-left: 10px;
   font-size: 18px;
   box-sizing: border-box;
 }
