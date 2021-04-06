@@ -1,6 +1,6 @@
 /* Basic Style */
 
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -145,13 +145,13 @@ body {
   color: #cf2323;
 }
 
-.tasks__task__delete img {
+.tasks__task__delete__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.tasks__task__delete img:hover {
+.tasks__task__delete__icon:hover {
   transform: rotateZ(0);
 }
 
