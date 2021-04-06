@@ -122,9 +122,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
+
 .list__checkbox {
   margin: 0 10px;
 }
@@ -149,6 +147,7 @@ li > * {
 }
 
 .input_edited {
+  text-decoration: none;
   display: inline-block;
   width: 224px;
 }
