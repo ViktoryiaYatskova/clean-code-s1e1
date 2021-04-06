@@ -10,6 +10,9 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+h1{
+  display: none;
+}
 .header {
   width: 500px;
   margin: 0 auto;
@@ -147,7 +150,7 @@ button.delete img:hover {
 
 /* Edit Task */
  li input[type="text"] {
-  display: none
+  display: none;
 }
 
 .edit-mode input[type="text"] {
