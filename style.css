@@ -37,11 +37,17 @@ body {
 .tasks__task__label {
   width: 56%;
   display: inline-block;
+  flex-grow: 1;
 }
 
 .tasks__tasks {
   margin: 0;
   padding: 0px;
+}
+
+.tasks__task {
+  display: flex;
+  justify-content: space-between;
 }
 
 .button {
@@ -125,10 +131,9 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-}
-
-li > * {
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 li > input[type="checkbox"] {
