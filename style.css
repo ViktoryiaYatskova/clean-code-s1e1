@@ -32,13 +32,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task-text {
+.task__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task__row__wrapper {
   display: flex;
 }
 
@@ -104,7 +104,7 @@ label[for='new-task'] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+input#new__task {
   width: 420px;
 }
 
