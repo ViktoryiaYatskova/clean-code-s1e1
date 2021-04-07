@@ -20,7 +20,7 @@
 .plan__edit:hover,
 .plan__save:hover,
 .completed__edit:hover {
-  color: #0FC57C;
+  color: #0fc57c;
 }
 .todo {
   color: #333;
@@ -34,7 +34,7 @@
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 .header__img {
   width: 100%;
@@ -70,9 +70,9 @@
   font-size: 18px;
   line-height: 18px;
   color: #888;
-  border: 1px solid #dDd;
-  background: #FFF;
-  border-radius: 6px; 
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
 }
 .plan__task,
 .completed__task {
@@ -97,8 +97,8 @@
 .plan__img,
 .completed__img {
   height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
 .plan__img:hover,
 .completed__img:hover {
@@ -118,14 +118,14 @@
 }
 .completed__input,
 .plan__input {
-  display:none
+  display: none;
 }
 
 .edit .plan__input,
 .edit .completed__input {
   display: flex;
   width: 69%;
-   padding-left: 10px;
+  padding-left: 10px;
   font-size: 18px;
   box-sizing: border-box;
 }
@@ -134,4 +134,3 @@
 .edit .completed__task {
   display: none;
 }
-
