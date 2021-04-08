@@ -123,12 +123,12 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-.main__delete img {
+.delete img {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
-.main__delete img:hover {
+.delete img:hover {
   transform: rotatez(0);
 }
 
@@ -143,11 +143,11 @@ ul li input[type=text] {
   display: none;
 }
 
-.main__editMode input[type=text] {
+.editMode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.main__editMode label {
+.editMode label {
   display: none;
 }
