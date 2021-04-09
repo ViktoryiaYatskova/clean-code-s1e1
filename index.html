@@ -19,10 +19,10 @@
       </div>
     </section>
     <section class="incomplete-tasks">
-      <h3 class="incomplete-tasks__task">Todo</h3>
-      <ul class="incomplete-tasks__list" id="incomplete-tasks">
-        <li class="incomplete-tasks__item">
-          <input type="checkbox" class="incomplete-tasks__checkbox">
+      <h3 class="incomplete-tasks__task title-h3">Todo</h3>
+      <ul class="incomplete-tasks__list list" id="incomplete-tasks">
+        <li class="incomplete-tasks__item list__item">
+          <input type="checkbox" class="incomplete-tasks__check  check">
           <label class="task  incomplete-tasks__label">Pay Bills</label>
           <input type="text" class="task incomplete-tasks__input">
           <button class="incomplete-tasks__btn edit btn">Edit</button>
@@ -30,8 +30,8 @@
             <img src="./remove.svg" class="incomplete-tasks__img" alt="Remove">
           </button>
         </li>
-        <li class="incomplete-tasks__item edit-mode">
-          <input type="checkbox"><label class="task incomplete-tasks__check">Go Shopping</label>
+        <li class="incomplete-tasks__item edit-mode list__item">
+          <input type="checkbox"><label class="task incomplete-tasks__check  check">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task incomplete-tasks__input">
           <button class="incomplete-tasks__btn edit btn">Save</button>
           <button class="incomplete-tasks__btn delete btn">
@@ -41,10 +41,10 @@
       </ul>
     </section>
     <sectiom class="completed">
-      <h3>Completed</h3>
-      <ul id="completed-tasks" class="completed__list">
-        <li class="completed__item">
-          <input type="checkbox" checked class="completed__check">
+      <h3 class="title-h3">Completed</h3>
+      <ul id="completed-tasks" class="completed__list  list">
+        <li class="completed__item list__item">
+          <input type="checkbox" checked class="completed__check  check">
           <label class="task completed__label">See the Doctor</label>
           <input type="text" class="task completed__input">
           <button class="edit btn completed-btn">Edit</button>
