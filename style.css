@@ -20,7 +20,8 @@
 
 @media (max-width: 768px) {
 
-.my-header { text-align: center;
+.my-header {
+  text-align: center;
   }
 
 }
