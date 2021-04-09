@@ -42,7 +42,7 @@ ul {
   padding: 0px;
 }
 li,
-.incompleteTasks__task {
+.incomplete-tasks__task {
   list-style: none;
 }
 input,
@@ -85,7 +85,7 @@ h3,
   text-transform: uppercase;
 }
 .task-block__task,
-.incompleteTasks__input {
+.incomplete-tasks__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,7 +99,7 @@ h3,
 }
 
 .task-block__task:hover,
-.incompleteTasks__input:hover {
+.incomplete-tasks__input:hover {
   color: #333;
 }
 
@@ -135,7 +135,7 @@ li > label {
   width: 226px;
 }
 .task-block__task,
-.incompleteTasks__input {
+.incomplete-tasks__input {
   width: 226px;
 }
 .delete img {
@@ -158,11 +158,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
