@@ -16,13 +16,16 @@
 }
 .my-header__link {
   font-family: fantasy, cursive;
+  margin-bottom: 17px;
+  display: block;
+  margin-top: -5px;
 }
 
 @media (max-width: 768px) {
 
-.my-header {
-  text-align: center;
-  }
+  .my-header {
+    text-align: center;
+    }
 
 }
 .main {
@@ -38,6 +41,9 @@
 }
 .task-block__wrapper {
   display: flex;
+}
+#task-block {
+  margin-bottom: 15px;
 }
 .task {
   width: 56%;
@@ -55,20 +61,6 @@ input,
 button{
   outline: none;
 }
-
-/*button:hover {*/
-/*  color: #3a3a3a;*/
-/*}*/
-/*button {*/
-/*  background: none;*/
-/*  border: 0px;*/
-/*  color: #888;*/
-/*  font-size: 15px;*/
-/*  width: 60px;*/
-/*  font-family: Lato, sans-serif;*/
-/*  cursor: pointer;*/
-/*}*/
-
 .btn:hover {
   color: #3a3a3a;
 }
