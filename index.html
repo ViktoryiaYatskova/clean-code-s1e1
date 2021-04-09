@@ -1,23 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-        <title>Todo App</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-        <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <meta charset="utf-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
       <img class="image" src="./eisenhower-matrix.jpg">
       <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <p id="add-task">
+    </header>
+    <main class="main">
+      <section id="add-task">
         <label class="title" for="new-task">Add Item</label>
         <div class="task-wrapper">
           <input class="task-input new-task" id="new-task" type="text">
           <button class="button button--add">Add</button>
         </div>
-      </p>
-      <h3 class="title">Todo</h3>
+      </section>
+      <h1 class="title">Todo</h1>
       <ul class="list incomplete" id="incomplete">
         <li class="list-item">
           <input class="task-checkbox" type="checkbox">
@@ -38,7 +40,7 @@
           </button>
         </li>
       </ul>
-      <h3 class="title">Completed</h3>
+      <h2 class="title">Completed</h2>
       <ul class="list completed" id="completed">
         <li class="list-item">
           <input class="task-checkbox" type="checkbox" checked>
@@ -50,7 +52,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
 </body>
-</!DOCTYPE>
+</html>
