@@ -1,19 +1,19 @@
 /* Basic Style */
-.page {
+body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.info {
+header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.info img {
+header img {
   width: 100%;
 }
-.info .more_info {
+header .more_info {
   font-family: fantasy, cursive;
 }
 
@@ -22,9 +22,9 @@
   .info {
     text-align: center;
   }
-  
+
 }
-.page {
+main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
