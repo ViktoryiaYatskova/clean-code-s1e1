@@ -18,8 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
-.inform-block { text-align: center;
-}
+
+  .inform-block { 
+    text-align: center;
+  }
+  
 }
 .main-page-el {
     display: block;
