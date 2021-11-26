@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Todo App</title>
-  <link 
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
-      rel="stylesheet" 
-      type="text/css">
-  <link 
-      rel="stylesheet" 
-      href="style.css" 
-      media="screen" 
-      charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
-  <div class="inform-block">
+
+<body class="body-full">
+  <header class="inform-block">
     <img src="./eisenhower-matrix.jpg">
-    <a class="more-inf" 
-        href="https://goal-life.com/page/method/matrix-eisenhower">
-        Want more details?
+    <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+      Want more details?
     </a>
-  </div>
-  <div class="main-page-el">
+  </header>
+  <main class="main-page-el">
     <p id="add-el">
-    <label for="new-task">Add Item</label>
+      <label for="new-task">Add Item</label>
     <div class="task-wrap">
-      <input id="new-task"class="task" type="text">
+      <input id="new-task" class="task" type="text">
       <button>Add</button>
     </div>
     </p>
@@ -61,7 +55,8 @@
         </button>
       </li>
     </ul>
-  </div>
-  <script type="text/javascript" src="app.js"></script>
+  </main>
+  <script src="app.js"></script>
 </body>
+
 </html>

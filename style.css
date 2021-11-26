@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body-full {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -18,9 +18,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .inform-block {
     text-align: center;
   }
+  
 }
 .main-page-el {
   display: block;
