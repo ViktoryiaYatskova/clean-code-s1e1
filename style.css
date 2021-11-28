@@ -1,6 +1,6 @@
 /* Basic Style */
-input,button{
-  outline:none;
+input, button {
+  outline: none;
 }
 
 .body {
@@ -21,7 +21,7 @@ input,button{
     font-family: fantasy, cursive;
   }
   
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     .wrapper { 
       text-align: center;
     }
@@ -40,11 +40,11 @@ input,button{
     display: flex;
   }
   .task-list {
-    margin:0;
+    margin: 0;
     padding: 0px;
   }
   .task-list--item, .header {
-    list-style:none;
+    list-style: none;
   }
   button {
     background: none;
@@ -137,14 +137,14 @@ input,button{
   
   /* Edit Task */
   .task-list .task-list--item .todo-wrapper--input {
-    display:none
+    display: none
   }
   
   .task-list .task-list--item__edit .todo-wrapper--input {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
   }
   
   .task-list .task-list--item__edit .todo-wrapper--label {
-    display:none;
+    display: none;
   }
