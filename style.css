@@ -13,7 +13,7 @@ body {
   .wrapper img {
     width: 100%;
   }
-  .wrapper .more-inf {
+  .wrapper .link {
     font-family: fantasy, cursive;
   }
   
@@ -22,12 +22,12 @@ body {
       text-align: center;
     }
   }
-  .text-wrapper {
+  .todo-wrapper {
     display: block;
     width: 500px;
     margin: 0 auto 0;
   }
-  .task {
+  .todo-wrapper--item {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -139,11 +139,11 @@ body {
     display:none
   }
   
-  ul li.edit-mode input[type=text] {
+  ul li.task-list--item__edit input[type=text] {
     display:inline-block;
     width:224px
   }
   
-  ul li.edit-mode label {
+  ul li.task-list--item__edit label {
     display:none;
   }
