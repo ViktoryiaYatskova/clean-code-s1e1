@@ -4,44 +4,47 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <div class="wrapper">
-    <img src="./eisenhower-matrix.jpg"><a class="link" 
+    <img src="./eisenhower-matrix.jpg" class="wrapper--img"><a class="link" 
     href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
   <div class="todo-wrapper">
-    <p id="text-wrapper"><label for="new-task">Add Item</label>
+    <p id="text-wrapper" class="todo-wrapper--label todo-wrapper--label__new"><label for="new-task">Add Item</label>
       <div class="text-container">
-        <input id="new-task"class="todo-wrapper--item" type="text">
-        <button>Add</button>
+        <input id="new-task" class="todo-wrapper--input todo-wrapper--input__new todo-wrapper--item" type="text">
+        <button class="button">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
-    <ul id="task-list">
-      <li><input type="checkbox"><label class="todo-wrapper--item">Pay Bills</label>
-        <input type="text" class="todo-wrapper--item">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg">
+    <h3 class="header">Todo</h3>
+    <ul id="tasks" class="task-list">
+      <li class="task-list--item"><input type="checkbox" class="todo-wrapper--checkbox">
+        <label class="todo-wrapper--label todo-wrapper--item">Pay Bills</label>
+        <input type="text" class="todo-wrapper--input todo-wrapper--item">
+        <button class="button button__edit">Edit</button>
+        <button class="button button__delete">
+          <img class="button--image" src="./remove.svg">
         </button>
       </li>
-      <li class="task-list--item__edit"><input type="checkbox">
-        <label class="todo-wrapper--item">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="todo-wrapper--item">
-        <button class="edit">Save</button>
-        <button class="delete">
-          <img src="./remove.svg">
+      <li class="task-list--item task-list--item__edit">
+        <input type="checkbox" class="todo-wrapper--checkbox">
+        <label class="todo-wrapper--label todo-wrapper--item">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="todo-wrapper--input todo-wrapper--item">
+        <button class="button button__edit">Save</button>
+        <button class="button button__delete">
+          <img class="button--image" src="./remove.svg">
         </button>
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li><input type="checkbox" checked>
-        <label class="todo-wrapper--item">See the Doctor</label>
-        <input type="text" class="todo-wrapper--item">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg">
+    <ul id="completed-tasks" class="task-list task-list--completed">
+      <li class="task-list--item">
+        <input type="checkbox" class="todo-wrapper--checkbox" checked>
+        <label class="todo-wrapper--label todo-wrapper--item">See the Doctor</label>
+        <input type="text" class="todo-wrapper--input todo-wrapper--item">
+        <button class="button button__edit">Edit</button>
+        <button class="button button__delete">
+          <img class="button--image" src="./remove.svg">
         </button>
       </li>
     </ul>
