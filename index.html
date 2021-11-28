@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css" MEDIA="screen">
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
 		<img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
 		<a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
@@ -15,12 +15,12 @@
 		</a>
 	</header>
 
-	<main>
+	<main class="main">
 		<section class="add">
 			<h3 class="title add__title">Add Item</h3>
 			<div class="add__task">
 				<input id="new-task" class="add__task-input" type="text">
-				<button class="button__add">Add</button>
+				<button class="button button__add">Add</button>
 			</div>
 		</section>
 
@@ -31,18 +31,18 @@
 					<input class="item__checkbox" type="checkbox">
 					<label class="item__label task">Pay Bills</label>
 					<input class="item__input task" type="text" >
-					<button class="button__edit">Edit</button>
-					<button class="button__delete">
-						<img src="./remove.svg" alt="remove">
+					<button class="button button__edit">Edit</button>
+					<button class="button button__delete">
+						<img class="icon-remove" src="./remove.svg" alt="remove">
 					</button>
 				</li>
 				<li class="item editMode">
 					<input class="item__checkbox" type="checkbox">
 					<label class="item__label task"></label>
 					<input class="item__input task" type="text" value="Go Shopping" class="task">
-					<button class="button__edit">Edit</button>
-					<button class="button__delete">
-						<img src="./remove.svg" alt="remove">
+					<button class="button button__edit">Edit</button>
+					<button class="button button__delete">
+						<img class="icon-remove" src="./remove.svg" alt="remove">
 					</button>
 				</li>
 			</ul>
@@ -50,13 +50,13 @@
 
 		<section class="completed">
 			<h3 class="title title__completed">Completed</h3>
-			<ul id="completed-tasks" class="completed__list">
+			<ul id="completed-tasks" class="list">
 				<li class="completed__item">
 					<input type="checkbox" checked>
 					<label class="completed__item-name">See the Doctor</label>
 					<input  type="text" >
-					<button class="button__edit">Edit</button>
-					<button class="button__delete">
+					<button class="button button__edit">Edit</button>
+					<button class="button button__delete">
 						<img src="./remove.svg" alt="remove">
 					</button>
 				</li>
