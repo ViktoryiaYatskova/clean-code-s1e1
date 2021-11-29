@@ -159,7 +159,7 @@ body {
 
 .task,
 .task-input {
-    width: 226px
+    width: 226px;
 }
 
 .list-todo__btn-remove-img {
@@ -180,10 +180,10 @@ body {
 
 /* Edit Task */
 .hidden {
-    display: none
+    display: none;
 }
 
 .list-todo__item_edit .task-input {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
