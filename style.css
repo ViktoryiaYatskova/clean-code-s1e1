@@ -54,7 +54,8 @@
     list-style: none;
 }
 
-input,
+.block-add-item__task-row-task,
+.menu__list-input,
 .menu__list-button:hover,
 .block-add-item__task-row-button {
     outline: none;
@@ -132,7 +133,7 @@ li {
     vertical-align: middle;
 }
 
-.menu__list > input[type="checkbox"] {
+.menu__list-checkbox [type="checkbox"] {
     margin: 0 10px;
 }
 
@@ -143,7 +144,7 @@ li {
     width: 226px;
 }
 
-.menu__list > input[type="text"] {
+.menu__list > input [type="text"] {
     width: 226px;
 }
 
