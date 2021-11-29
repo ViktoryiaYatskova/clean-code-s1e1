@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.header .more-inf {
+.header .header-info {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.add-item-wrapper {
+.add-item__wrapper {
   display: flex;
 }
 
@@ -109,7 +109,7 @@
   margin: 0 0 20px;
 }
 
-input#new-task {
+input#add-item__input {
   width: 318px;
 }
 
@@ -140,7 +140,7 @@ input#new-task {
   width: 226px;
 }
 
-.list-element >    .input-text {
+.list-element > .input-text {
   width: 226px;
 }
 
