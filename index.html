@@ -15,37 +15,37 @@
       </a>
     </section>
     <section class="main-page">
-      <article id="top-section"><label class="label" for="new-task">Add Item</label>
-        <div class="main-page__task-row">
-          <input id="new-task" class="main-page__task-row-task" type="text">
-          <button>Add</button>
+      <article class="input-block-add-item" id="top-section"><label class="label" for="new-task">Add Item</label>
+        <div class="input-block-add-item__task-row">
+          <input id="new-task" class="input-block-add-item__task-row-task" type="text">
+          <button class="input-block-add-item__task-row-button">Add</button>
         </div>
       </article>
       <h3 class="heading">Todo</h3>
-      <ul id="incompleteTasks" class="menu">
-        <li class="list">
-          <input type="checkbox">
-          <p class="label task">Pay Bills</p>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg" alt="remove img"></button>
+      <ul class="menu" id="incompleteTasks">
+        <li class="menu__list">
+          <input class="menu__list-checkbox" type="checkbox">
+          <label class="menu__list-paragraf label task">Pay Bills</label>
+          <input class="menu__list-input task" type="text">
+          <button class="menu__list-button edit">Edit</button>
+          <button class="menu__list-button delete"><img src="./remove.svg" alt="remove img"></button>
         </li>
-        <li class="list editMode">
-          <input type="checkbox">
-          <p class="label task">Go Shopping</p>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete"><img src="./remove.svg" alt="remove img"></button>
+        <li class="menu__list editMode">
+          <input  class="menu__list-checkbox" type="checkbox">
+          <label class="menu__list-paragraf label task">Go Shopping</label>
+          <input class="menu__list-input task" type="text">
+          <button class="menu__list-button edit">Save</button>
+          <button class="menu__list-button delete"><img src="./remove.svg" alt="remove img"></button>
         </li>
       </ul>
       <h3 class="heading">Completed</h3>
-      <ul id="completed-tasks" class="menu menu-completed">
-        <li class="list">
-          <input type="checkbox" checked>
-          <p class="label task">See the Doctor</p>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg" alt="remove img"></button>
+      <ul class="menu menu-completed" id="completed-tasks">
+        <li class="menu__list">
+          <input class="menu__list-checkbox" type="checkbox" checked>
+          <label class="menu__list-paragraf label task">See the Doctor</label>
+          <input class="menu__list-input task" type="text" type="text">
+          <button class="menu__list-button edit">Edit</button>
+          <button class="menu__list-button delete"><img src="./remove.svg" alt="remove img"></button>
         </li>
       </ul>
     </section>
