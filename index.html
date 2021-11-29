@@ -7,47 +7,46 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
   </head>
-  <body>
-    <header>
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix"><a
+  <body class="body">
+    <header class="todo-header">
+      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix" class="header-img"><a
         class="more_info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         >Want more details?</a>
     </header>
-    <main>
-      <p id="add-elem">
-        <label for="new-task">Add Item</label>
-      </p>
-      <div class="task-input-wrapper">
-        <input id="new-task" class="task" type="text"
-        ><button>Add</button>
+    <main class="todo-main">
+      <div id="add-elem">
+        <label for="new-task" class="new-task-label">Add Item</label>
+        <div class="task-input-wrapper">
+          <input id="new-task" class="task" type="text"
+          ><button>Add</button>
+        </div>
       </div>
-      <p></p> <!-- Изначально в коде так было. Это переделать или оставить? -->
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox"
-          ><label class="task">Pay Bills</label
-          ><input type="text" class="task"
-          ><button class="edit">Edit</button
-          ><button class="delete"><img src="./remove.svg" alt="delete button image"/></button>
+      <h3 class="title">Todo</h3>
+      <ul class="tasks">
+        <li class="tasks__item">
+          <input class="tasks__checkbox" type="checkbox"
+          ><label class="tasks__task tasks__task--label">Pay Bills</label
+          ><input class="tasks__task tasks__task--input" type="text" 
+          ><button class="tasks__edit">Edit</button
+          ><button class="tasks__delete"><img src="./remove.svg" class="tasks__delete-img" alt="delete button image"/></button>
         </li>
-        <li class="edit-mode">
-          <input type="checkbox"
-          ><label class="task">Go Shopping</label
-          ><input type="text" value="Go Shopping" class="task"
-          ><button class="edit" >Save</button
-          ><button class="delete"><img src="./remove.svg" alt="delete button image"/></button>
+        <li class="tasks__item tasks__item--edit-mode">
+          <input class="tasks__checkbox" type="checkbox"
+          ><label class="tasks__task tasks__task--label">Go Shopping</label
+          ><input  class="tasks__task tasks__task--input" type="text" value="Go Shopping"
+          ><button class="tasks__edit" >Edit</button
+          ><button class="tasks__delete"><img src="./remove.svg" class="tasks__delete-img" alt="delete button image"/></button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked
-          ><label class="task">See the Doctor</label
-          ><input type="text" class="task"
-          ><button class="edit">Edit</button
-          ><button class="delete"><img src="./remove.svg" alt="delete button image"/></button>
+      <h3 class="title">Completed</h3>
+      <ul class="tasks tasks--completed">
+        <li class="tasks__item">
+          <input class="tasks__checkbox"  type="checkbox" checked
+          ><label class="tasks__task tasks__task--label">See the Doctor</label
+          ><input class="tasks__task tasks__task--input" type="text" 
+          ><button class="tasks__edit">Edit</button
+          ><button class="tasks__delete"><img src="./remove.svg" class="tasks__delete-img" alt="delete button image"/></button>
         </li>
       </ul>
     </main>
