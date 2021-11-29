@@ -12,7 +12,7 @@
     text-align: right;
 }
 
-.logo img {
+.logo .logo-img {
     width: 100%;
 }
 
@@ -55,7 +55,8 @@
 }
 
 input,
-button{
+.menu__list-button:hover,
+.block-add-item__task-row-button {
     outline: none;
 }
 
@@ -69,7 +70,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.menu__list-button:hover,
+.block-add-item__task-row-button {
     color: #3a3a3a;
 }
 
