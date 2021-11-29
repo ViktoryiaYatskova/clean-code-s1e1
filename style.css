@@ -168,12 +168,12 @@ button.delete img:hover {
     display: none;
 }
 
-.menu .list.edit-mode input[type=text] {
+.menu .list.editMode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-.menu .list.edit-mode .label {
+.menu .list.editMode .label {
     display: none;
 }
 
