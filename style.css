@@ -22,7 +22,8 @@
 
 @media (max-width:768px) {
 
-  .header { text-align: center;
+  .header { 
+    text-align: center;
   }
 
 }
@@ -45,16 +46,16 @@
 
 .incompleted-tasks,
 .completed-tasks {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .list-element {
-  list-style:none;
+  list-style: none;
 }
 
 .input,.btn{
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -162,14 +163,14 @@ input#new-task {
 /* Edit Task */
 
 .tasks .list-element .input-text {
-  display:none
+  display: none
 }
 
 .tasks .list-element.edit-mode .input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .tasks .list-element.edit-mode .task-label {
-  display:none;
+  display: none;
 }
