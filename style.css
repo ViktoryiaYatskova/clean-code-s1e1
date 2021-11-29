@@ -67,7 +67,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+input[type='text'] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,7 +79,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+input[type='text']:focus {
     color: #333;
 }
 
@@ -106,7 +106,7 @@ li > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+li > input[type='checkbox'] {
     margin: 0 10px;
 }
 li > label {
@@ -115,7 +115,7 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li >    input[type='text'] {
     width: 226px
 }
 button.delete img {
