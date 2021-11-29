@@ -50,7 +50,7 @@
 }
 
 .menu__list,
-.heading {
+.block-add-items__heading {
     list-style: none;
 }
 
@@ -75,7 +75,7 @@ button:hover {
 
 /* Heading */
 
-.heading,
+.block-add-items__heading,
 .label[for="new-task"] {
     color: #333;
     font-weight: 700;
