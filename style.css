@@ -76,7 +76,7 @@ button:hover {
 /* Heading */
 
 .heading,
-.label[for='new-task'] {
+.label[for="new-task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -86,7 +86,7 @@ button:hover {
     text-transform: uppercase;
 }
 
-input[type='text'] {
+input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -99,13 +99,13 @@ input[type='text'] {
     color: #888;
 }
 
-input[type='text']:focus {
+input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
 
-.label[for='new-task'] {
+.label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
@@ -130,7 +130,7 @@ li {
     vertical-align: middle;
 }
 
-.list > input[type='checkbox'] {
+.list > input[type="checkbox"] {
     margin: 0 10px;
 }
 
@@ -141,7 +141,7 @@ li {
     width: 226px;
 }
 
-.list > input[type='text'] {
+.list > input[type="text"] {
     width: 226px;
 }
 
