@@ -38,10 +38,12 @@
     margin: 0px;
     padding: 0px;
 }
-.list, .heading {
+.list,
+.heading {
     list-style:none;
 }
-input, button{
+input,
+button{
     outline:none;
 }
 button {
@@ -117,7 +119,7 @@ li {
     font-size: 18px;
     width: 226px;
 }
-.list >    input[type='text'] {
+.list > input[type='text'] {
     width: 226px;
 }
 button.delete img {
