@@ -171,12 +171,12 @@ li {
   display:none
 }
 
-.menu li.editMode input[type=text] {
+.menu li.edit-mode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-.menu li.editMode label {
+.menu li.edit-mode p {
   display:none;
 }
 
