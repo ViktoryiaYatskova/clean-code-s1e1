@@ -9,7 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput = document.getElementById("new-task");//Add a new task.
-var addButton = document.getElementsByTagName("button")[0];//first button
+var addButton = document.getElementById("btn-add");//first button
 var incompleteTaskHolder = document.getElementById("incompleted");//ul of #incompleteTasks
 var completedTasksHolder = document.getElementById("completed");//completed-tasks
 
@@ -86,8 +86,8 @@ var editTask = function () {
 
     var listItem = this.parentNode;
 
-    var editInput = listItem.querySelector('input[type=text]');
-    var label = listItem.querySelector("label");
+    var editInput = listItem.querySelector(".task-edit");
+    var label = listItem.querySelector(".task");
     var editBtn = listItem.querySelector(".list-todo__btn-modify");
     var containsClass = listItem.classList.contains("list-todo__item-edit");
     //If class of the parent is .editmode
@@ -159,7 +159,7 @@ addButton.addEventListener("click", ajaxRequest);
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
     console.log("bind list item events");
     //select ListItems children
-    var checkBox = taskListItem.querySelector("input[type=checkbox]");
+    var checkBox = taskListItem.querySelector(".checkbox");
     var editButton = taskListItem.querySelector(".list-todo__btn-modify");
     var deleteButton = taskListItem.querySelector(".list-todo__btn-remove");
 
