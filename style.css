@@ -18,7 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.matrix { text-align: center;
+
+  .matrix { text-align: center;
+
 }
 }
 .main {
@@ -69,7 +71,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,21 +83,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.label {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.addition__task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -104,14 +106,15 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.todo__item > *,
+.completed__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
