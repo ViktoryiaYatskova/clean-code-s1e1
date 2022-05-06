@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.matrix img {
+.matrix__img {
   width: 100%;
 }
 .matrix .matrix__link {
@@ -19,9 +19,10 @@ body {
 
 @media (max-width:768px) {
 
-  .matrix { text-align: center;
-
-}
+  .matrix {
+    text-align: center;
+  }
+  
 }
 .main {
   display: block;
@@ -45,10 +46,11 @@ body {
 .completed__item, h3 {
   list-style:none;
 }
-input,button{
+.inout,
+.btn {
   outline:none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
