@@ -34,11 +34,13 @@ body {
 .addition__row {
   display: flex;
 }
-ul {
+.todo__list,
+.completed__list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.todo__item,
+.completed__item, h3 {
   list-style:none;
 }
 input,button{
@@ -118,31 +120,28 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.completed-task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
-  display:none
-}
-
-ul li.edit-mode input[type=text] {
+.todo__input {
+  display:none;
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.todo__label {
   display:none;
 }
