@@ -139,7 +139,7 @@ h3 {
 .app__input {
   display:none;
   display:inline-block;
-  width:224px
+  width:224px;
 }
 .app__label {
   display:none;
