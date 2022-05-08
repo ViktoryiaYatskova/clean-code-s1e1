@@ -1,23 +1,19 @@
 /* Basic Style */
-.page {
+.app {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.matrix {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
+  font-family: fantasy, cursive;
 }
 .matrix__img {
   width: 100%;
 }
-.matrix
-.matrix__link {
-  font-family: fantasy, cursive;
-}
-
 @media (max-width:768px) {
 
   .matrix {
@@ -94,16 +90,15 @@ h3 {
   display: block;
   margin: 0 0 20px;
 }
-.addition__task {
+.app__task {
   width: 318px;
 }
 
 /* Task list */
-.list {
+.app__list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,24 +106,24 @@ h3 {
 .app__item > * {
   vertical-align: middle;
 }
-.app__checkbox {
+.checkbox {
   margin: 0 10px;
 }
-.completed__label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.app__input {
+.input {
   width: 226px
 }
-.app__image {
+.delete__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.app__image:hover {
+.delete__image:hover {
   transform: rotateZ(0);
 }
 /* Completed */
