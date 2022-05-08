@@ -13,7 +13,8 @@
 .matrix__img {
   width: 100%;
 }
-.matrix .matrix__link {
+.matrix
+.matrix__link {
   font-family: fantasy, cursive;
 }
 
