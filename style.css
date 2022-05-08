@@ -40,7 +40,7 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -102,10 +102,9 @@ body {
   width: 100%;
   margin: 20px 0 20px 0;
 }
-.app__task {
+.app__new {
   flex-grow: 1;
 }
-
 /* Task list */
 .app__item {
   overflow: hidden;
@@ -129,6 +128,7 @@ body {
 }
 .input {
   width: 226px;
+  flex-grow: 1;
 }
 .btn__image {
   height: 2em;
