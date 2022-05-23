@@ -18,7 +18,7 @@
       <div class="todo_container">
         <p id="todo-add-text">
           <label for="new-task">Add Item</label>
-            <div class="todo-add-wrapper">
+            <div class="todo_add-wrapper">
               <input class='todo_task todo-add-input' id="new-task" type="text">
                 <button>Add</button>
             </div>
@@ -26,13 +26,13 @@
     
       <section>
         <h3>Todo</h3> 
-          <ul id="incompleteTasks">
-            <li>
+          <ul class="todo_incompleted_task" id="incompleted-tasks">
+            <li class="todo_save-mode">
               <input type="checkbox">
                 <label class="todo_task">Pay Bills</label>
               <input type="text" class="todo_task">
-                <button class="edit">Edit</button>
-                <button class="delete">
+                <button class="todo_edit-button">Edit</button>
+                <button class="todo_remove-button">
                   <img src="./remove.svg" alt="remove">
                 </button>
             </li>
@@ -41,8 +41,8 @@
               <input type="checkbox">
                 <label class="todo_task">Go Shopping</label>
               <input type="text" value="Go Shopping" class="todo_task">
-                <button class="edit">Save</button>
-                <button class="delete">
+                <button class="todo_edit-button">Save</button>
+                <button class="todo_remove-button">
                   <img src="./remove.svg" alt="remove">
                 </button>
             </li>
@@ -54,10 +54,8 @@
               <input type="checkbox" checked>
                 <label class="todo_task">See the Doctor</label>
               <input type="text" class="todo_task">
-                <button class="edit">Edit</button>
-                <button class="delete">
-                    <img src="./remove.svg" alt="remove">
-                </button>
+                <button class="todo_edit-button">Edit</button>
+                <button class="todo_remove-button"> <img src="./remove.svg" alt="remove"> </button>
             </li>
           </ul>
         </div>
