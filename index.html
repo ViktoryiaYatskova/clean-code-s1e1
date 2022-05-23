@@ -8,18 +8,18 @@
 
   <body>
     <header>
-      <div class="aaa">
+      <div class="header">
         <img src="./eisenhower-matrix.jpg" alt="dashboard">
-        <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </div>
     </header>
   
     <main>
-      <div class="centered-main-page-element">
-        <p id="topSectionForAddingElementToList">
+      <div class="todo_container">
+        <p id="todo-add-text">
           <label for="new-task">Add Item</label>
-            <div class="task-row-wrapper">
-              <input id='new-task'class="task" type="text">
+            <div class="todo-add-wrapper">
+              <input class='todo_task todo-add-input' id="new-task" type="text">
                 <button>Add</button>
             </div>
         </p>
@@ -29,8 +29,8 @@
           <ul id="incompleteTasks">
             <li>
               <input type="checkbox">
-                <label class="task">Pay Bills</label>
-              <input type="text" class="task">
+                <label class="todo_task">Pay Bills</label>
+              <input type="text" class="todo_task">
                 <button class="edit">Edit</button>
                 <button class="delete">
                   <img src="./remove.svg" alt="remove">
@@ -39,8 +39,8 @@
       
             <li class="editMode">
               <input type="checkbox">
-                <label class="task">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task">
+                <label class="todo_task">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="todo_task">
                 <button class="edit">Save</button>
                 <button class="delete">
                   <img src="./remove.svg" alt="remove">
@@ -52,8 +52,8 @@
           <ul id="completed-tasks">
             <li>
               <input type="checkbox" checked>
-                <label class="task">See the Doctor</label>
-              <input type="text" class="task">
+                <label class="todo_task">See the Doctor</label>
+              <input type="text" class="todo_task">
                 <button class="edit">Edit</button>
                 <button class="delete">
                     <img src="./remove.svg" alt="remove">
