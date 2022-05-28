@@ -120,6 +120,10 @@
     margin: 0 10px;
 }
 
+.task-item>.checkbox {
+    margin: 0 10px;
+}
+
 .task-item>.label {
     padding-left: 10px;
     box-sizing: border-box;
