@@ -2,7 +2,7 @@
 .body {
     background-color: #f8f8f8;
     color: #333;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -103,13 +103,13 @@
 
 /* Task list */
 .task-item {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .task-item>* {
