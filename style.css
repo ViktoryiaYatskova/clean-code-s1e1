@@ -10,10 +10,12 @@ body {
   display: block;
   text-align: right;
 }
-.aaa img {
+.aaa 
+img {
   width: 100%;
 }
-.aaa .more_inf {
+.aaa 
+.more_inf {
   font-family: fantasy, cursive;
 }
 
@@ -41,10 +43,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
-input,button{
+input,
+button{
   outline: none;
 }
 button {
@@ -125,26 +129,37 @@ button.delete img {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button
+.delete 
+img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed-tasks 
+label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul 
+li 
+input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+ul 
+li
+.editMode 
+input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul 
+li
+.editMode 
+label {
   display: none;
 }
