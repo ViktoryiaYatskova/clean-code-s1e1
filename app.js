@@ -7,27 +7,27 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.querySelector(".task__todo .row__input"); //Add a new task.
-var addButton = document.querySelector(".btn_add"); //first button
-var incompleteTaskHolder = document.querySelector(".task__todo .list"); //ul of #incompleteTasks
-var completedTasksHolder = document.querySelector(".task__completed .list"); //completed-tasks
+const taskInput = document.querySelector(".task__todo .row__input"); //Add a new task.
+const addButton = document.querySelector(".btn_add"); //first button
+const incompleteTaskHolder = document.querySelector(".task__todo .list"); //ul of #incompleteTasks
+const completedTasksHolder = document.querySelector(".task__completed .list"); //completed-tasks
 
 //New task list item
-var createNewTaskElement = function (taskString) {
-  var listItem = document.createElement("li");
+const createNewTaskElement = function (taskString) {
+  const listItem = document.createElement("li");
 
   //input (checkbox)
-  var checkBox = document.createElement("input"); //checkbx
+  const checkBox = document.createElement("input"); //checkbx
   //label
-  var label = document.createElement("label"); //label
+  const label = document.createElement("label"); //label
   //input (text)
-  var editInput = document.createElement("input"); //text
+  const editInput = document.createElement("input"); //text
   //button.edit
-  var editButton = document.createElement("button"); //edit button
+  const editButton = document.createElement("button"); //edit button
 
   //button.delete
-  var deleteButton = document.createElement("button"); //delete button
-  var deleteButtonImg = document.createElement("img"); //delete button image
+  const deleteButton = document.createElement("button"); //delete button
+  const deleteButtonImg = document.createElement("img"); //delete button image
 
   listItem.classList.add("list__item", "row");
 
@@ -59,11 +59,11 @@ var createNewTaskElement = function (taskString) {
   return listItem;
 };
 
-var addTask = function () {
+const addTask = function () {
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
-  var listItem = createNewTaskElement(taskInput.value);
+  const listItem = createNewTaskElement(taskInput.value);
 
   //Append listItem to incompleteTaskHolder
   incompleteTaskHolder.appendChild(listItem);
@@ -74,16 +74,16 @@ var addTask = function () {
 
 //Edit an existing task.
 
-var editTask = function () {
+const editTask = function () {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
 
-  var listItem = this.parentNode;
+  const listItem = this.parentNode;
 
-  var editInput = listItem.querySelector(".row__input");
-  var label = listItem.querySelector(".row__label");
-  var editBtn = listItem.querySelector(".btn_edit");
-  var containsClass = listItem.classList.contains("list__item_edit-on");
+  const editInput = listItem.querySelector(".row__input");
+  const label = listItem.querySelector(".row__label");
+  const editBtn = listItem.querySelector(".btn_edit");
+  const containsClass = listItem.classList.contains("list__item_edit-on");
   //If class of the parent is .editmode
   if (containsClass) {
     //switch to .editmode
@@ -100,36 +100,36 @@ var editTask = function () {
 };
 
 //Delete task.
-var deleteTask = function () {
+const deleteTask = function () {
   console.log("Delete Task...");
 
-  var listItem = this.parentNode;
-  var ul = listItem.parentNode;
+  const listItem = this.parentNode;
+  const ul = listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
 };
 
 //Mark task completed
-var taskCompleted = function () {
+const taskCompleted = function () {
   console.log("Complete Task...");
 
   //Append the task list item to the #completed-tasks
-  var listItem = this.parentNode;
+  const listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 };
 
-var taskIncomplete = function () {
+const taskIncomplete = function () {
   console.log("Incomplete Task...");
   //Mark task as incomplete.
   //When the checkbox is unchecked
   //Append the task list item to the #incompleteTasks.
-  var listItem = this.parentNode;
+  const listItem = this.parentNode;
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 };
 
-var ajaxRequest = function () {
+const ajaxRequest = function () {
   console.log("AJAX Request");
 };
 
@@ -140,12 +140,12 @@ addButton.onclick = addTask;
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
-var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
+const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
-  var checkBox = taskListItem.querySelector(".row__checkbox");
-  var editButton = taskListItem.querySelector(".btn_edit");
-  var deleteButton = taskListItem.querySelector(".btn_delete");
+  const checkBox = taskListItem.querySelector(".row__checkbox");
+  const editButton = taskListItem.querySelector(".btn_edit");
+  const deleteButton = taskListItem.querySelector(".btn_delete");
 
   //Bind editTask to edit button.
   editButton.onclick = editTask;
@@ -157,13 +157,13 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
-for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
+for (let i = 0; i < incompleteTaskHolder.children.length; i++) {
   //bind events to list items chldren(tasksCompleted)
   bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
 //cycle over completedTasksHolder ul list items
-for (var i = 0; i < completedTasksHolder.children.length; i++) {
+for (let i = 0; i < completedTasksHolder.children.length; i++) {
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
