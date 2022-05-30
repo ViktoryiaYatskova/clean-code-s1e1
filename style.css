@@ -5,28 +5,28 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.heder {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.header img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.heder .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-    .aaa {
+    .heder {
         text-align: center;
     }
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -38,7 +38,7 @@ body {
     flex-grow: 1
 }
 
-.task-row-wrapper {
+.task-row {
     display: flex;
 }
 
