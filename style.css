@@ -144,7 +144,8 @@ li>input[type="text"] {
 button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+    transition: 200ms;
+    transform: ease-in;
 }
 
 button.delete img:hover {
@@ -153,7 +154,8 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through color: #888;
+    text-decoration: line-through;
+    color: #888;
 }
 
 /* Edit Task */
