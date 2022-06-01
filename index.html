@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
 <body class="main-page">
-    <div class="logo-container"><img class="logo-img" src="./eisenhower-matrix.jpg" alt="description">
-        <a class="more-information" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a>
+    <div class="logo-container">
+        <img class="logo-img" src="./eisenhower-matrix.jpg" alt="description">
+        <a class="more-information" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="centered-main-page-element">
-        <p id="topSectionForAddingElementToList">
+    <div class="main-container">
+        <p id="add-tasks">
             <label class="new-task" for="new-task">Add Item</label>
             <div class="task-row-wrapper">
                 <input id="new-task" class="task" type="text">
@@ -23,25 +21,24 @@
             </div>
         </p>
         <h3>Todo</h3>
-        <ul id="incompleteTasks">
+        <ul id="incomplete-tasks">
             <li class="incomplete-tasks__item">
                 <input type="checkbox">
                 <label class="task">Pay Bills</label>
                 <input type="text" class="task">
                 <button class="edit">Edit</button>
                 <button class="delete">
-                    <img src="./remove.svg" 
-                         alt="description">
-                </button>
+          <img src="./remove.svg" alt="remove icon">
+        </button>
             </li>
-            <li class="incomplete-tasks__item  editMode"><input type="checkbox">
+            <li class="incomplete-tasks__item edit-mode">
+                <input type="checkbox">
                 <label class="task">Go Shopping</label>
-                <input type="text" value="Go Shopping" class="task">
+                <input type="text" value="Go Shopping" class="task" />
                 <button class="edit">Save</button>
                 <button class="delete">
-                    <img src="./remove.svg"
-                         alt="description">
-                </button>
+          <img src="./remove.svg" alt="remove icon">
+        </button>
             </li>
         </ul>
         <h3>Completed</h3>
@@ -52,13 +49,11 @@
                 <input type="text" class="task">
                 <button class="edit">Edit</button>
                 <button class="delete">
-                    <img src="./remove.svg"
-                         alt="description">
-                </button>
+          <img src="./remove.svg" alt="remove icon">
+        </button>
             </li>
         </ul>
     </div>
-
     <script src="app.js"></script>
 </body>
 
