@@ -81,7 +81,7 @@ input[type="text"]:focus {
 }
 
   /* New Task */
-ul#newTask  li input[type=text] {
+ul.addRow  li input[type=text] {
   display: inline-block;
   width: 318px;
 }
