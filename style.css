@@ -88,11 +88,11 @@ h2 {
 }
 
 /* New Task */
-.task__todo .section__header {
+.task__todo-item .section__header {
   display: block;
   margin: 0 0 20px;
 }
-.task__todo .row__input {
+.task__todo-item .row__input {
   width: 318px;
 }
 
@@ -132,7 +132,7 @@ h2 {
 }
 
 /* Completed */
-.completed__task.row__label {
+.task__completed .row__label {
   text-decoration: line-through;
   color: #888;
 }

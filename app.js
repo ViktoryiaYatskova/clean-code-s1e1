@@ -1,13 +1,5 @@
-//Document is the DOM can be accessed in the console with document.window.
-// Tree is from the top, html, body, p etc.
-
-//Problem: User interaction does not provide the correct results.
-//Solution: Add interactivity so the user can manage daily tasks.
-//Break things down into smaller steps and take each step at a time.
-
 // Event handling, user interaction is what starts the code execution.
-
-const taskInput = document.querySelector(".task__todo .row__input"); //Add a new task.
+const taskInput = document.querySelector(".task__todo-item .row__input"); //Add a new task.
 const addButton = document.querySelector(".btn_add"); //first button
 const incompleteTaskHolder = document.querySelector(".task__todo .list"); //ul of #incompleteTasks
 const completedTasksHolder = document.querySelector(".task__completed .list"); //completed-tasks
@@ -17,7 +9,7 @@ const createNewTaskElement = function (taskString) {
   const listItem = document.createElement("li");
 
   //input (checkbox)
-  const checkBox = document.createElement("input"); //checkbx
+  const checkBox = document.createElement("input"); //checkbox
   //label
   const label = document.createElement("label"); //label
   //input (text)
@@ -50,12 +42,15 @@ const createNewTaskElement = function (taskString) {
   deleteButtonImg.src = "./remove.svg";
   deleteButtonImg.alt = "Delete";
 
+  deleteButton.appendChild(deleteButtonImg);
+
   //and appending.
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
+
   return listItem;
 };
 
@@ -73,7 +68,6 @@ const addTask = function () {
 };
 
 //Edit an existing task.
-
 const editTask = function () {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
@@ -84,9 +78,9 @@ const editTask = function () {
   const label = listItem.querySelector(".row__label");
   const editBtn = listItem.querySelector(".btn_edit");
   const containsClass = listItem.classList.contains("list__item_edit-on");
-  //If class of the parent is .editmode
+  //If class of the parent is ..list__item_edit-mode
   if (containsClass) {
-    //switch to .editmode
+    //switch to ..list__item_edit-mode
     //label becomes the inputs value.
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
@@ -95,7 +89,7 @@ const editTask = function () {
     editBtn.innerText = "Save";
   }
 
-  //toggle .editmode on the parent.
+  //toggle ..list__item_edit-mode on the parent.
   listItem.classList.toggle("list__item_edit-on");
 };
 
@@ -123,7 +117,7 @@ const taskIncomplete = function () {
   console.log("Incomplete Task...");
   //Mark task as incomplete.
   //When the checkbox is unchecked
-  //Append the task list item to the #incompleteTasks.
+  //Append the task list item to the #incomplete-tasks.
   const listItem = this.parentNode;
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
@@ -158,13 +152,13 @@ const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
 //cycle over incompleteTaskHolder ul list items
 //for each list item
 for (let i = 0; i < incompleteTaskHolder.children.length; i++) {
-  //bind events to list items chldren(tasksCompleted)
+  //bind events to list items children(tasksCompleted)
   bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
 //cycle over completedTasksHolder ul list items
 for (let i = 0; i < completedTasksHolder.children.length; i++) {
-  //bind events to list items chldren(tasksIncompleted)
+  //bind events to list items children(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
 
