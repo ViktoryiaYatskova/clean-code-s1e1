@@ -158,7 +158,7 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-input[type=text] {
+.incomplete-tasks__item input[type=text] {
     display: none;
 }
 
