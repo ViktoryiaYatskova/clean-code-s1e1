@@ -26,7 +26,7 @@ body {
   }
 }
 
-.centered-main-page-element {
+.field-add-item {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -38,7 +38,7 @@ body {
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.add-item {
   display: flex;
 }
 
@@ -151,7 +151,7 @@ button.close img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#field-completed label {
   text-decoration: line-through color: #888;
 }
 
@@ -160,11 +160,11 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
