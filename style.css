@@ -13,7 +13,7 @@
 .header__img {
   width: 100%;
 }
-.header__link{
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -47,7 +47,7 @@
   list-style: none;
 }
 .task__input,
-.task__button{
+.task__button {
   outline: none;
 }
 .button {
@@ -134,7 +134,8 @@
 }
 
 /* Completed */
-.completed-tasks-list,.task__text {
+.completed-tasks-list,
+.task__text {
   text-decoration: line-through;
   color: #888;
 }
