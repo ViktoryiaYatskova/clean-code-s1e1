@@ -2,21 +2,21 @@
 <html>
   <HEAD>
     <title>Todo App</title>
-      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
-      <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
   </HEAD>
   <body>
     <div class="aaa"><img src="./eisenhower-matrix.jpg">
         <a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="centered-main-page-element">
-      <p id='topSectionForAddingElementToList'>
+    <main class="centered-main-page-element">
+      <form id='topSectionForAddingElementToList'>
         <label for="new-task">Add Item</label>
         <div class="task-row-wrapper">
           <input id='new-task'class="task" type="text">
           <button>Add</button>
         </div>
-      </p>
+      </form>
       <h3>Todo</h3>
       <ul id='incompleteTasks'>
         <li>
@@ -49,7 +49,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script SRC="app.js"></script>
   </body>
 </html>
