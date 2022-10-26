@@ -39,16 +39,16 @@
   display: flex;
 }
 .tasks-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .task,
 .heading {
-  list-style:none;
+  list-style: none;
 }
 .task__input,
 .task__button{
-  outline:none;
+  outline: none;
 }
 .button {
   background: none;
@@ -134,21 +134,21 @@
 }
 
 /* Completed */
-.completed-tasks-list .task__text {
+.completed-tasks-list,.task__text {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
 .task__input {
-  display:none
+  display: none
 }
 
 .task-edit .task__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task-edit .task__text {
-  display:none;
+  display: none;
 }
