@@ -25,7 +25,7 @@ body {
   .desc { 
     text-align: center;
   }
-  
+
 }
 
 .main-page {
@@ -45,16 +45,16 @@ body {
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -158,14 +158,14 @@ input,button{
 
 /* Edit Task */
 .tasks-list .tasks-item .input-text {
-  display:none
+  display: none
 }
 
 .tasks-list .edit-mode .input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .tasks-list .edit-mode .tasks-label {
-  display:none;
+  display: none;
 }
