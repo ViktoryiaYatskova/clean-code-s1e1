@@ -154,7 +154,7 @@ button.close img:hover {
 }
 
 /* Completed */
-ul#field-completed label {
+ul#field-completed-item label {
   text-decoration: line-through color:#888;
 }
 
