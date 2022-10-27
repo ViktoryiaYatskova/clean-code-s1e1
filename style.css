@@ -25,7 +25,7 @@ body {
   .matrix-info {
     text-align: center;
   }
-  
+
 }
 
 .field {
@@ -154,12 +154,13 @@ button.close img:hover {
 
 /* Completed */
 ul#field-completed label {
-  text-decoration: line-through color: #888;
+  text-decoration: line-through color:#888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-  display: none
+  display: none;
+  /* этот пункт "Пробел после названий свойств" сделала ещё во-втором коммите */
 }
 
 ul li.edit-mode input[type=text] {
