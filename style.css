@@ -37,7 +37,7 @@ body {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-element-wrapper {
@@ -46,7 +46,7 @@ body {
 
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 li, h3 {
@@ -137,7 +137,7 @@ input,button{
 }
 
 .tasks-item > .input-text {
-  width: 226px
+  width: 226px;
 }
 
 .delete .img-delete {
@@ -152,18 +152,18 @@ input,button{
 
 /* Completed */
 #completed-tasks .tasks-label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .tasks-list .tasks-item .input-text {
-  display: none
+  display: none;
 }
 
 .tasks-list .edit-mode .input-text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .tasks-list .edit-mode .tasks-label {
