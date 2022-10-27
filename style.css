@@ -12,11 +12,11 @@ body {
   text-align: right;
 }
 
-.matrix-info img {
+.matrix-info-img {
   width: 100%;
 }
 
-.matrix-info .matrix-details {
+.matrix-details {
   font-family: fantasy, cursive;
 }
 
@@ -53,6 +53,7 @@ li,
 h3 {
   list-style: none;
 }
+/* Остальное исправлено во-втором коммите */
 
 input,
 button {
