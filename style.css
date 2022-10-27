@@ -37,7 +37,7 @@ body {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-item {
@@ -139,7 +139,7 @@ li>label {
 }
 
 li>input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 button.close img {
@@ -160,12 +160,11 @@ ul#field-completed label {
 /* Edit Task */
 ul li input[type=text] {
   display: none;
-  /* этот пункт "Пробел после названий свойств" сделала ещё во-втором коммите */
 }
 
 ul li.edit-mode input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 ul li.edit-mode label {
