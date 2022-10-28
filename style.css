@@ -21,11 +21,13 @@
 }
 
 @media (max-width:768px) {
+
 .eisenhower-matrix {
   text-align: center;
 }
 
 }
+
 .cent-main-elem {
   display: block;
   width: 500px;
