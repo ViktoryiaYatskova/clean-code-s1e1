@@ -6,54 +6,54 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <img class="header-img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?;</a>
     </header>
     <main class="main">
       <section class="section">
         <div id="new-tasks">
-          <label for="new-task">Add Item</label>
+          <label for="new-task" class="label new-task">Add Item</label>
             <div class="task-row-wrapper">
-              <input id="new-task" class="task" type="text">
-              <button>Add</button>
+              <input id="new-task" type="text" class="input-text task" >
+              <button class="button">Add</button>
             </div>
         </div>
       </section>
       <section class="section">
-        <h3>Todo</h3>
-        <ul id="incomplete-tasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-	      <img src="./remove.svg" alt="">
+        <h3 class="title">Todo</h3>
+        <ul id="incomplete-tasks" class="items">
+          <li class="item">
+            <input type="checkbox" class="input-checkbox">
+            <label class="label task">Pay Bills</label>
+            <input type="text" class="input-text task">
+            <button class="button edit">Edit</button>
+            <button class="button delete">
+	      <img class="button-img" src="./remove.svg" alt="">
             </button>
           </li>
-          <li class="edit-mode">
-	    <input type="checkbox">
-	    <label class="task">Go Shopping</label>
-	    <input type="text" value="Go Shopping" class="task">
-	    <button class="edit">Save</button>
-	    <button class="delete">
-	      <img src="./remove.svg" alt="">
+          <li class="edit-mode item">
+	    <input type="checkbox" class="input-checkbox">
+	    <label class="label task">Go Shopping</label>
+	    <input type="text" value="Go Shopping" class="input-text task">
+	    <button class="button edit">Save</button>
+	    <button class="button delete">
+	      <img class="button-img" src="./remove.svg" alt="">
 	    </button>
            </li>
          </ul>
       </section>
       <section class="section">
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-	      <img src="./remove.svg" alt="">
+        <h3 class="title">Completed</h3>
+        <ul id="completed-tasks" class="items">
+          <li class="item">
+            <input type="checkbox" class="input-checkbox" checked>
+            <label class="label task">See the Doctor</label>
+            <input type="text" class="input-text task">
+            <button class="button edit">Edit</button>
+            <button class="button delete">
+	      <img class="button-img" src="./remove.svg" alt="">
 	    </button>
           </li>
         </ul>
