@@ -4,21 +4,21 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.image {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.image img {
     width: 100%;
 }
-.aaa .more_inf {
+.image .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-.aaa { text-align: center;
+.image { text-align: center;
 }
 }
 .centered-main-page-element {
@@ -139,10 +139,10 @@ ul li input[type=text] {
 }
 
 ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px;
+    display: inline-block;
+    width: 224px;
 }
 
 ul li.editMode label {
-    display:none;
+    display: none;
 }
