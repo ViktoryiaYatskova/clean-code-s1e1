@@ -76,7 +76,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -104,7 +104,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.title {
   display: block;
   margin: 0 0 20px;
 }
