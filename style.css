@@ -4,21 +4,21 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.main {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.main img {
   width: 100%;
 }
-.aaa .more-inf {
+.main .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.main { text-align: center;
 }
 }
 .centered-main-page-element {
@@ -143,6 +143,6 @@ ul li.edit-mode input[type=text] {
   width:224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display:none;
 }
