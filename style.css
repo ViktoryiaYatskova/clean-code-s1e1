@@ -16,7 +16,7 @@ header img {
   width: 100%;
 }
 
-header .more_inf {
+header .more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -163,11 +163,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
