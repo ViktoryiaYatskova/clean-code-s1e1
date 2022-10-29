@@ -1,7 +1,7 @@
 /* default styles */
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 li,
@@ -176,5 +176,5 @@ input#new-task {
   .description { 
     text-align: center;
   }
-  
+
 }
