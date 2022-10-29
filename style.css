@@ -38,13 +38,6 @@ input[type=text] {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-
-  .description { 
-    text-align: center;
-  }
-}
-
 .todo {
   display: block;
   width: 500px;
@@ -176,4 +169,12 @@ input#new-task {
 
 .todo__list li.todo__item_edit-mode label {
   display: none;
+}
+
+@media (max-width:768px) {
+
+  .description { 
+    text-align: center;
+  }
+  
 }
