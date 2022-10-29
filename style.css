@@ -1,15 +1,15 @@
 /* default styles */
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 ul li input[type=text] {
-  display:none
+  display: none
 }
 
 /* Basic Style */
@@ -36,7 +36,7 @@ ul li input[type=text] {
 }
 
 @media (max-width:768px) {
-  
+
   .description { 
     text-align: center;
   }
@@ -59,7 +59,7 @@ ul li input[type=text] {
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 .todo__btn {
@@ -167,10 +167,10 @@ input#new-task {
 /* Edit Task */
 
 .todo__list li.todo__item_edit-mode input[type=text] {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .todo__list li.todo__item_edit-mode label {
-  display:none;
+  display: none;
 }
