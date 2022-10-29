@@ -9,10 +9,6 @@ h3 {
   list-style: none;
 }
 
-ul li input[type=text] {
-  display: none;
-}
-
 /* Basic Style */
 
 .body {
@@ -166,6 +162,10 @@ input#new-task {
 }
 
 .todo__list li.todo__item_edit-mode label {
+  display: none;
+}
+
+.todo__list .todo__item input[type=text] {
   display: none;
 }
 
