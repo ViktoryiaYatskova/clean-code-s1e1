@@ -44,7 +44,7 @@ input[type=text] {
   margin: 0 auto 0;
 }
 
-.todo__task{
+.todo__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
