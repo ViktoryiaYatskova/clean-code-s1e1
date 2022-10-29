@@ -9,7 +9,7 @@ li, h3 {
 }
 
 ul li input[type=text] {
-  display: none
+  display: none;
 }
 
 /* Basic Style */
@@ -51,7 +51,7 @@ ul li input[type=text] {
 .todo__task{
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .todo__row {
