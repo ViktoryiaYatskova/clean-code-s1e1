@@ -104,7 +104,7 @@ input[type="text"]:focus {
   margin: 0 0 20px;
 }
 
-input#new-task {
+.todo__task {
   width: 318px;
 }
 
@@ -138,19 +138,19 @@ input#new-task {
   width: 226px;
 }
 
-.todo__btn.todo__btn_delete img {
+.todo__btn.todo__btn_delete .todo__imge {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.todo__btn.todo__btn_delete img:hover {
+.todo__btn.todo__btn_delete .todo__imge:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks label {
+.todo__list_completed label {
   text-decoration: line-through;
   color: #888;
 }
