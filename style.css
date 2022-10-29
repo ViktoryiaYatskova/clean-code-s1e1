@@ -29,7 +29,8 @@ h3 {
 }
 
 .description__link {
-  font-family: fantasy, cursive;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-left: 332px;
 }
 
 .todo {
