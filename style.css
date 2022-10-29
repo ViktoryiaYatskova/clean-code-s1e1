@@ -113,7 +113,7 @@ label[for="new-task"] {
 }
 
 /* Task list */
-.menu-item {
+li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -153,7 +153,7 @@ li > input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks label {
+#completedTasks label {
   text-decoration: line-through;
   color: #888;
 }
@@ -163,11 +163,11 @@ li input[type="text"] {
   display: none;
 }
 
-input[type="text"] {
+li.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-label {
+li.edit-mode label {
   display: none;
 }
