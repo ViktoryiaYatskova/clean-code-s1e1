@@ -130,7 +130,7 @@ input#new-task {
 .todo__item > label {
   padding-left: 10px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 15px;
   width: 226px;
 }
 
