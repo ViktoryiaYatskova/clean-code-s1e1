@@ -18,9 +18,11 @@
 }
 
 @media (max-width:768px) {
+
   .title-wrapper {
     text-align: center;
   }
+  
 }
 .main-page {
   display: block;
