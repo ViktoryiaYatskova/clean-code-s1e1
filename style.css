@@ -9,12 +9,6 @@ h3 {
   list-style: none;
 }
 
-ul,
-li,
-input[type=text] {
-  display: none;
-}
-
 /* Basic Style */
 
 .body {
@@ -35,7 +29,8 @@ input[type=text] {
 }
 
 .description__link {
-  font-family: fantasy, cursive;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-left: 332px;
 }
 
 .todo {
@@ -44,7 +39,7 @@ input[type=text] {
   margin: 0 auto 0;
 }
 
-.todo__task{
+.todo__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -70,7 +65,7 @@ input[type=text] {
 }
 
 .todo__btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
@@ -85,31 +80,31 @@ input[type=text] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.todo__task.todo__task_input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
 }
 
-input[type="text"]:focus {
+.todo__task.todo__task_input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.todo__title.todo__title_add {
+.todo__name.todo__name_add {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+.todo__task {
   width: 318px;
 }
 
@@ -135,39 +130,43 @@ input#new-task {
 .todo__item > label {
   padding-left: 10px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 15px;
   width: 226px;
 }
 
-.todo__item > input[type="text"] {
+.todo__item > .todo__task.todo__task_input {
   width: 226px;
 }
 
-.todo__btn.todo__btn_delete img {
+.todo__btn.todo__btn_delete .todo__imge {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.todo__btn.todo__btn_delete img:hover {
+.todo__btn.todo__btn_delete .todo__imge:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks label {
+.todo__list_completed .todo__task_value {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.todo__list li.todo__item_edit-mode input[type=text] {
+.todo__item_edit-mode .todo__task.todo__task_input {
   display: inline-block;
   width: 224px;
 }
 
-.todo__list li.todo__item_edit-mode label {
+.todo__item_edit-mode .todo__task_value {
+  display: none;
+}
+
+.todo__item .todo__task_input {
   display: none;
 }
 
