@@ -80,7 +80,7 @@ h3 {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.todo__task.todo__task_input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -93,13 +93,13 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.todo__task.todo__task_input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.todo__title.todo__title_add {
+.todo__name.todo__name_add {
   display: block;
   margin: 0 0 20px;
 }
@@ -134,7 +134,7 @@ input[type="text"]:focus {
   width: 226px;
 }
 
-.todo__item > input[type="text"] {
+.todo__item > .todo__task.todo__task_input {
   width: 226px;
 }
 
@@ -150,23 +150,23 @@ input[type="text"]:focus {
 
 /* Completed */
 
-.todo__list_completed label {
+.todo__list_completed .todo__task_value {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.todo__list li.todo__item_edit-mode input[type=text] {
+.todo__item_edit-mode .todo__task.todo__task_input {
   display: inline-block;
   width: 224px;
 }
 
-.todo__list li.todo__item_edit-mode label {
+.todo__item_edit-mode .todo__task_value {
   display: none;
 }
 
-.todo__list .todo__item input[type=text] {
+.todo__item .todo__task_input {
   display: none;
 }
 
