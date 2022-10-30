@@ -5,21 +5,21 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.container {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.container img {
     width: 100%;
 }
-.aaa .more_inf {
+.container .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.container { text-align: center;
 }
 }
 .centered-main-page-element {
@@ -55,7 +55,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    color: #3a3A3a;
+    color: #3a3a3a;
 }
 /* Heading */
 h3,label[for='new-task'] {
