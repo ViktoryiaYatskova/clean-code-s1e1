@@ -43,7 +43,7 @@ body {
 }
 
 .button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 .button__image_delete {
@@ -132,6 +132,7 @@ body {
 .task__input_new {
   display: inline-block;
 }
+
 /* Completed */
 .task_completed .task__label{
   text-decoration: line-through;
