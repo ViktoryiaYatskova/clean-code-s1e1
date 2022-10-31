@@ -35,7 +35,7 @@
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.tasks-list {
   margin: 0;
   padding: 0px;
 }
@@ -131,21 +131,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.tasks-list#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.tasks-list li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+.tasks-list li.editMode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.tasks-list li.editMode label {
   display: none;
 }
