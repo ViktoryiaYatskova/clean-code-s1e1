@@ -2,7 +2,7 @@
 body {
     background-color: #f8f8f8;
     color: #333;
-    font-family: Lato, sans-serif;
+    font-family: lato, sans-serif;
 }
 .image {
     width: 500px;
@@ -38,10 +38,12 @@ ul {
     margin: 0;
     padding: 0px;
 }
-li, h3 {
+li,
+h3 {
     list-style: none;
 }
-input,button{
+input,
+button{
     outline: none;
 }
 button {
@@ -50,7 +52,7 @@ button {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
+    font-family: lato, sans-serif;
     cursor: pointer;
 }
 button:hover {
@@ -76,7 +78,7 @@ input[type="text"] {
     border: 1px solid #dDd;
     background: #FFF;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: lato, sans-serif;
     color: #888;
 }
 input[type="text"]:focus {
@@ -84,11 +86,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+input #new-task {
     width: 318px;
 }
 
@@ -128,21 +130,23 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul,
+li,
+input[type=text] {
     display: none;
 }
 
-ul li.editMode input[type=text] {
+.editMode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.editMode label {
+.editMode label {
     display: none;
 }
