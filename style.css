@@ -53,18 +53,18 @@
 }
 ul {
 
-  margin:0;
+  margin: 0;
   padding: 0px;
 
 }
 li, h3 {
 
-  list-style:none;
+  list-style: none;
 
 }
 input,button{
 
-  outline:none;
+  outline: none;
 
 }
 button {
@@ -189,18 +189,18 @@ button.del img:hover {
 /* Edit Task */
  li input[type=text] {
 
-  display:none
+  display: none
 
 }
 
  li.edit-mode input[type=text] {
 
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 
 }
  li.edit-mode label {
 
-  display:none;
+  display: none;
 
 }
