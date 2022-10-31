@@ -27,27 +27,29 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.task-row {
   display: flex;
+  margin: 20px 0 0;
 }
 .tasks-list {
   margin: 0;
   padding: 0px;
 }
-li,
+.task-list__item,
 .heading {
   list-style: none;
 }
-input,
-button{
+.input-checkbox,
+.input-text,
+.button{
   outline: none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -56,12 +58,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.heading,
-label[for="new-task"] {
+.heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +71,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,21 +83,17 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-input#new-task {
+.task-row__input-text {
   width: 318px;
 }
 
 /* Task list */
-li {
+.task-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,47 +102,42 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
 
-li > input[type="checkbox"] {
+.input-checkbox {
   margin: 0 10px;
 }
-li > label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.task-list__input-text {
   width: 226px;
+  display: none;
 }
-button.delete img {
+
+.button-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.tasks-list#completed-tasks label {
+#completed-tasks .label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.tasks-list li input[type="text"] {
-  display: none;
-}
-
-.tasks-list li.editMode input[type="text"] {
+.task-list__item_mode_edit .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.tasks-list li.editMode label {
+.task-list__item_mode_edit .label {
   display: none;
 }
