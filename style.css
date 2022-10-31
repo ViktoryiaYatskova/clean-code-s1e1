@@ -21,7 +21,7 @@ body {
 }
 
 @media (max-width:768px) {
-    .aaa {
+    .head-title {
         text-align: center;
     }
 }
