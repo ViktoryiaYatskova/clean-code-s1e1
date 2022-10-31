@@ -5,28 +5,29 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.matrix-img {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.matrix-img img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.matrix-img 
+.more-inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-    .aaa {
+    .matrix-img {
         text-align: center;
     }
 }
 
-.centered-main-page-element {
+.main-page_element {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -38,7 +39,7 @@ body {
     flex-grow: 1
 }
 
-.task-row-wrapper {
+.task-row_wrapper {
     display: flex;
 }
 
@@ -106,7 +107,7 @@ label[for="new-task"] {
     margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
     width: 318px;
 }
 
@@ -157,15 +158,15 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-ul li input[type='text'] {
+ul li input[type="text"] {
     display: none;
 }
 
-ul li.editMode input[type='text'] {
+ul li.edit-mode input[type="text"] {
     display: inline-block;
     width: 224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
     display: none;
 }
