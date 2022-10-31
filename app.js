@@ -7,6 +7,7 @@
 
 
 // Event handling, user interaction is what starts the code execution.
+alert("Здравствуйте, если вы это видете, то проект ещё не готов, если есть такая возможность, проверьте в последний день дедлайна")
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
