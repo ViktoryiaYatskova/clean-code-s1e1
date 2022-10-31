@@ -38,7 +38,7 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .task-row_wrapper {
@@ -139,7 +139,7 @@ li>label {
 }
 
 li>input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 
 button.delete img {
@@ -165,7 +165,7 @@ ul li input[type="text"] {
 
 ul li.edit-mode input[type="text"] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 ul li.edit-mode label {
