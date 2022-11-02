@@ -101,17 +101,17 @@ ul {
 .list > .input {
   width: 226px;
 }
-.delete img {
+.delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
