@@ -26,7 +26,8 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.label,
+.input--text  {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -105,16 +106,16 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.input--checkbox  {
   margin: 0 10px;
 }
-li > label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.input--text {
     width: 226px
 }
 .btn--delete img {
@@ -127,21 +128,25 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.todo-section__list--complete .label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
-  display:none
+.todo-section--add .input--text {
+  display: block
 }
 
-ul li.editMode input[type=text] {
+.input--text {
+  display: none;
+}
+
+.todo-section__list-item--editable .input--text {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+.todo-section__list-item--editable .label {
   display:none;
 }
