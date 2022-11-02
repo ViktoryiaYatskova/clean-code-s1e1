@@ -39,14 +39,14 @@
   display: flex;
 }
 .todo-section__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .todo-section__list-item {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -143,10 +143,10 @@ li > * {
 }
 
 .todo-section__list-item--editable .input--text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .todo-section__list-item--editable .label {
-  display:none;
+  display: none;
 }
