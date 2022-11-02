@@ -13,14 +13,16 @@ body {
 .baner-img {
   width: 100%;
 }
-.baner .more_inf {
+.baner .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
+
   .baner {
     text-align: center;
   }
+
 }
 .centered-main-page-element {
   display: block;
@@ -34,12 +36,12 @@ body {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  
 }
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.incomplete-list,
+.completed-list {
   margin: 0;
   padding: 0px;
 }
@@ -56,7 +58,7 @@ ul {
   color: #3a3a3a;
 }
 /* Heading */
-.title{
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,7 +86,7 @@ ul {
 
 /* New Task */
 #new-task {
-    width: 318px;
+  width: 318px;
 }
 
 /* Task list */
@@ -117,15 +119,15 @@ ul {
 }
 
 /* Edit Task */
-.list input[type="text"] {
+.list input[type='text'] {
   display: none;
 }
 
-.editMode input[type="text"] {
+.edit-mode input[type='text'] {
   display: inline-block;
   width: 224px;
 }
 
-.editMode label {
+.edit-mode .task {
   display: none;
 }

@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css"/>
   </header>
   <body>
-    <div class="baner">
+    <header class="baner">
       <img class="baner-img" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix"/>
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?;
       </a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList"></p>
+    </header>
+    <section class="centered-main-page-element">
+      
       <label class="title" for="new-task">Add Item</label>
       <div class="task-row-wrapper">
         <input id="new-task" class="task input" type="text" />
@@ -24,7 +24,7 @@
       </div>
 
       <h3 class="title">Todo</h3>
-      <ul id="incompleteTasks">
+      <ul class="incomplete-list" id="incomplete-tasks">
         <li class="list task-list">
           <input type="checkbox" />
           <label class="task">Pay Bills</label>
@@ -34,7 +34,7 @@
             <img class="delete-img" src="./remove.svg" alt="remov-arrow" />
           </button>
         </li>
-        <li class="list task-list editMode">
+        <li class="list task-list edit-mode">
           <input type="checkbox" />
           <label class="task">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task input" />
@@ -45,7 +45,7 @@
         </li>
       </ul>
       <h3 class="title">Completed</h3>
-      <ul id="completed-tasks">
+      <ul class="completed-list" id="completed-tasks">
         <li class="list task-list">
           <input type="checkbox" checked />
           <label class="task">See the Doctor</label>
@@ -56,7 +56,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
