@@ -4,24 +4,24 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header__img {
   width: 100%;
 }
-.aaa .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.header { text-align: center;
 }
 }
-.centered-main-page-element {
+.todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -38,7 +38,7 @@ ul {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li {
   list-style:none;
 }
 input,button{
@@ -57,8 +57,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.todo-section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
