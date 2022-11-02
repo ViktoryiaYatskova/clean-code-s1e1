@@ -15,47 +15,50 @@
         Want more details?;
       </a>
     </header>
-    <section class="wrapper">
+    <main class="wrapper">
       <label class="title" for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
+      <section class="task-row-wrapper">
         <input id="new-task" class="task input" type="text" />
         <button class="button">Add</button>
-      </div>
-
-      <h3 class="title">Todo</h3>
-      <ul class="incomplete-list" id="incomplete-tasks">
-        <li class="list task-list">
-          <input type="checkbox" />
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task input" />
-          <button class="button edit">Edit</button>
-          <button class="button delete">
-            <img class="delete-img" src="./remove.svg" alt="remov-arrow" />
-          </button>
-        </li>
-        <li class="list task-list edit-mode">
-          <input type="checkbox" />
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task input" />
-          <button class="edit button">Save</button>
-          <button class="button delete">
-            <img class="delete-img" src="./remove.svg" alt="remov-arrow"/>
-          </button>
-        </li>
-      </ul>
-      <h3 class="title">Completed</h3>
-      <ul class="completed-list" id="completed-tasks">
-        <li class="list task-list">
-          <input type="checkbox" checked />
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task input" />
-          <button class="edit button">Edit</button>
-          <button class="button delete">
-            <img class="delete-img" src="./remove.svg" alt="remov-arrow"/>
-          </button>
-        </li>
-      </ul>
-    </section>
+      </section>
+      <section>
+        <h3 class="title">Todo</h3>
+        <ul class="incomplete-list" id="incomplete-tasks">
+          <li class="list task-list">
+            <input type="checkbox" />
+            <label class="task">Pay Bills</label>
+            <input type="text" class="task input" />
+            <button class="button edit">Edit</button>
+            <button class="button delete">
+              <img class="delete-img" src="./remove.svg" alt="remov-arrow" />
+            </button>
+          </li>
+          <li class="list task-list edit-mode">
+            <input type="checkbox" />
+            <label class="task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task input" />
+            <button class="edit button">Save</button>
+            <button class="button delete">
+              <img class="delete-img" src="./remove.svg" alt="remov-arrow"/>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="title">Completed</h3>
+        <ul class="completed-list" id="completed-tasks">
+          <li class="list task-list">
+            <input type="checkbox" checked />
+            <label class="task">See the Doctor</label>
+            <input type="text" class="task input" />
+            <button class="edit button">Edit</button>
+            <button class="button delete">
+              <img class="delete-img" src="./remove.svg" alt="remov-arrow"/>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
