@@ -48,7 +48,7 @@ body {
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.main-page__task-row-wrapper {
     display: flex;
 }
 
