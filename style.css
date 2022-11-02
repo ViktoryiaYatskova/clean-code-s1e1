@@ -16,7 +16,8 @@ body {
      width: 100%;
 }
 
-.aaa .more_inf {
+.aaa
+.more_inf {
     font-family: fantasy, cursive;
 }
 
@@ -47,11 +48,13 @@ ul {
     padding: 0;
 }
 
-li, h3 {
+li,
+h3 {
     list-style: none;
 }
 
-input, button {
+input,
+button {
     outline: none;
 }
 
@@ -172,11 +175,11 @@ ul li input[type=text] {
     display: none;
 }
 
-#task1 {
+#task-text-transperent {
     display: block;
 }
 
-#task2 {
+#task-hidden {
     display: none;
 }
 
@@ -189,7 +192,8 @@ ul li.edit-mode label {
     display:block;
 }
 
-#incomplete-tasks li:first-child {
-    display: none;
+
+#incomplete-tasks li:first-child{
+display: none;
 }
 
