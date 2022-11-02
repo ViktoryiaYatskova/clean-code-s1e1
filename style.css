@@ -43,6 +43,7 @@
 
 .todo-section__item{
   display: flex;
+  margin: 20px 0 0;
 }
 
 .todo-section__list {
@@ -104,7 +105,6 @@
 /* New Task */
 .input--text {
   display: block;
-  margin: 0 0 20px;
 }
 
 .task--new {
@@ -136,7 +136,6 @@
 
 .input--text {
     width: 226px;
-    display: none;
 }
 
 .btn__img {
@@ -158,6 +157,10 @@
 /* Edit Task */
 .todo-section--add .input--text {
   display: block;
+}
+
+.input--text {
+  display: none;
 }
 
 .todo-section__list-item--editable .input--text {
