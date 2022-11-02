@@ -45,10 +45,10 @@
 .todo-section__list-item {
   list-style: none;
 }
-input,button{
+.input,.btn{
   outline: none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -57,7 +57,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
