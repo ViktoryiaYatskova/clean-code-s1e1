@@ -123,11 +123,11 @@ h3 {
   vertical-align: middle;
 }
 
-.todo__item > input[type="checkbox"] {
+.todo__item > .todo__task.todo__task_input {
   margin: 0 10px;
 }
 
-.todo__item > label {
+.todo__item > .todo__task_value {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 15px;
