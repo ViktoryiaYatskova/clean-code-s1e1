@@ -16,6 +16,7 @@ body {
     width: 100%;
 }
 
+
 .header .header__more-info {
     font-family: fantasy, cursive;
 }
@@ -38,6 +39,7 @@ body {
     display: inline-block;
     flex-grow: 1;
 }
+
 
 .main-page__task-input {
     width: 56%;
@@ -150,7 +152,9 @@ li >    input[type="text"] {
     width: 226px;
 }
 
+
 .main-page__delete img {
+
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
@@ -163,6 +167,7 @@ li >    input[type="text"] {
 /* Completed */
 
 #main-page__completed-tasks label {
+
     text-decoration: line-through;
     color: #888;
 }
