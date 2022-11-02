@@ -30,7 +30,7 @@ body {
 .input--text  {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .todo-section__item{
   display: flex;
@@ -116,7 +116,8 @@ li > * {
   width: 226px;
 }
 .input--text {
-    width: 226px
+    width: 226px;
+    display: none;
 }
 .btn__img {
   height: 2em;
@@ -129,17 +130,13 @@ li > * {
 
 /* Completed */
 .todo-section__list--complete .label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .todo-section--add .input--text {
-  display: block
-}
-
-.input--text {
-  display: none;
+  display: block;
 }
 
 .todo-section__list-item--editable .input--text {
