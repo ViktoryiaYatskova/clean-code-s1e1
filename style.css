@@ -31,14 +31,14 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.todo-section__item{
   display: flex;
 }
-ul {
+.todo-section__list {
   margin:0;
   padding: 0px;
 }
-li {
+.todo-section__list-item {
   list-style:none;
 }
 input,button{
@@ -92,7 +92,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.todo-section__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
