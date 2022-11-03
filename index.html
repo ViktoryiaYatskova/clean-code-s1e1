@@ -12,66 +12,72 @@
         charset="utf-8">
   </head>
   <body>
-    <div class="header">
+
+    <header class="header">
       <img src="./eisenhower-matrix.jpg" alt="Eisenhower-Matrix">
       <a 
-          class="more-info" 
+          class="header__more-info" 
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="main-page">
-     <p id="add-task">
-     <label for="new-task">Add Item</label>
-       <div class="task-row-wrapper">
+    </header>
+    <main class="main-page">
+     <p id="main-page__add-task">
+     <label for="new-task" class="main-page__label main-page__label_new-task">Add Item</label>
+       <section class="main-page__task-row-wrapper">
          <input 
-             id="new-task" 
-             class="task-input" 
+             id="main-page__new-task" 
+             class="main-page__input main-page__task-input" 
              type="text-input">
-         <button>Add</button>
-       </div>
+         <button class="main-page__button">Add</button>
+       </section>
      </p>
-     <h3>Todo</h3>
-     <ul id="incomplete-tasks">
-       <li>
-          <input type="checkbox">
-          <label class="task-text">Pay Bills</label>
-          <input type="text" class="task-input">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove">
+     <h3 class="main-page__tasks-title">Todo</h3>
+     <ul id="main-page__incomplete-tasks" class="main-page__tasks">
+       <li class="main-page__task">
+          <input type="checkbox" class="main-page__checkbox">
+          <label class="main-page__label main-page__task-text">Pay Bills</label>
+          <input type="text" class="main-page__input main-page__task-input">
+          <button class="main-page__button main-page__edit">Edit</button>
+          <button class="main-page__button main-page__delete">
+            <img src="./remove.svg" alt="Remove" class="main-page__remove-img">
           </button>
        </li>
-       <li class="edit-mode">
-         <input type="checkbox">
-         <label class="task-text">Go Shopping</label>
+       <li class="main-page__edit-mode main-page__task">
+         <input type="checkbox" class="main-page__checkbox">
+         <label class="main-page__label main-page__task-text">Go Shopping</label>
          <input 
              type="text" 
              value="Go Shopping" 
-             class="task-input">
-         <button class="edit">Save</button>
-         <button class="delete">
-           <img src="./remove.svg" alt="Remove">
+             class="main-page__input main-page__task-input">
+         <button class="main-page__button main-page__edit">Save</button>
+         <button class="main-page__button main-page__delete">
+           <img src="./remove.svg" alt="Remove" class="main-page__remove-img">
          </button>
        </li>
      </ul>
-     <h3>Completed</h3>
-     <ul id="completed-tasks">
-       <li>
+     <h3 class="main-page__tasks-title">Completed</h3>
+
+     <ul id="main-page__completed-tasks" class="main-page__tasks">
+
+       <li class="main-page__task">
          <input 
              type="checkbox"
-             checked>
-         <label class="task-text">See the Doctor</label>
+             checked
+             class="main-page__checkbox">
+
+         <label class="main-page__label main-page__task-text">See the Doctor</label>
          <input 
              type="text"
-             class="task-input">
-         <button class="edit">Edit</button>
-         <button class="delete">
-           <img src="./remove.svg" alt="Remove">
+             class="main-page__input main-page__task-input">
+         <button class="main-page__button main-page__edit">Edit</button>
+         <button class="main-page__button main-page__delete">
+           <img src="./remove.svg" alt="Remove" class="main-page__remove-img">
          </button>
        </li>
      </ul>
-   </div>
+    <main/>
+
    <script src="app.js"></script>
   </body>
 </html>
