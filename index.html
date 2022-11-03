@@ -18,23 +18,25 @@
     media="screen" 
     charset="utf-8" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <img 
+      class="header_img"
       src="./eisenhower-matrix.jpg" 
       alt="header img"/>
       <a
-        class="more_inf"
+        class="header-more_info"
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </header>
     <main class="main">
-      <p id="topSectionForAddingElementToList"></p>
-      <label for="new-task">Add Item</label>
+      <section id="topSectionForAddingElementToList" class="section section-add_todo_task">
+      <h3 for="new-task_title">Add Item</h3>
       <div class="task-row-wrapper">
         <input id="new-task" class="task" type="text" /> <button>Add</button>
       </div>
+    </section>
       <h3>Todo</h3>
       <ul id="incompleteTasks">
         <li>
@@ -55,7 +57,7 @@
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <ul id="completed-tasks" class="complete-tasks">
         <li>
           <input type="checkbox" checked />
           <label class="task">See the Doctor</label>
