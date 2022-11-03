@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
+var taskInput=document.getElementById("new_task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.getElementById("incomplete_tasks");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("completed_tasks");//completed-tasks
 
 
 //New task list item
@@ -85,7 +85,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("editMode");
+    var containsClass=listItem.classList.contains("edit_mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("edit_mode");
 };
 
 
@@ -189,7 +189,6 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 
 // Issues with usability don't get seen until they are in front of a human tester.
-
 //prevent creation of empty tasks.
 
 //Change edit to save when you are in edit mode.
