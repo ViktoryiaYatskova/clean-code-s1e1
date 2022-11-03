@@ -44,8 +44,8 @@
     display: flex;
 }
 
-.incomplete_tasks
-.edit_mode
+.incomplete_tasks,
+.edit_mode,
 .complete_tasks {
     margin: 0;
     padding: 0px;
@@ -100,7 +100,7 @@
 }
 
 /* New Task */
-.section_title {
+.add_title {
     display: block;
     margin: 0 0 20px;
 }
@@ -145,7 +145,7 @@
 }
 
 /* Completed */
-.task_label .complete_tasks {
+.complete_tasks .task__label  {
     text-decoration: line-through;
     color: #888;
 }
