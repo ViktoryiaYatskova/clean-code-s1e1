@@ -45,7 +45,8 @@
 }
 
 .incomplete_tasks
-.edit_mode {
+.edit_mode
+.complete_tasks {
     margin: 0;
     padding: 0px;
 }
@@ -144,7 +145,7 @@
 }
 
 /* Completed */
-ul#completed-tasks label {
+.task_label .complete_tasks {
     text-decoration: line-through;
     color: #888;
 }
