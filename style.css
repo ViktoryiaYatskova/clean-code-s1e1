@@ -33,13 +33,13 @@
     margin: 0 auto 0;
 }
 
-.task__label , .new-task_input {
+.task__label , .task__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
 
-.task-row-wrapper {
+.new-task_wrapper {
     display: flex;
 }
 
@@ -73,8 +73,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.new-task__title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,7 +83,7 @@ label[for='new-task'] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.task__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -97,17 +96,17 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.new-task_input:focus {
     color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+.new-task__title {
     display: block;
     margin: 0 0 20px;
 }
 
-input#new-task {
+.new-task_input {
     width: 318px;
 }
 
