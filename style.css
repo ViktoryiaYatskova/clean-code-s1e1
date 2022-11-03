@@ -33,7 +33,7 @@
     margin: 0 auto 0;
 }
 
-.task {
+.task__label , .new-task_input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
