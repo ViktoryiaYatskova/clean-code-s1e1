@@ -33,7 +33,8 @@
     margin: 0 auto 0;
 }
 
-.task__label , .task__input {
+.task__label,  
+.task__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -43,9 +44,8 @@
     display: flex;
 }
 
-.incomplete_tasks,
-.task__input,
-.task_checkbox {
+.incomplete_tasks
+.edit_mode {
     margin: 0;
     padding: 0px;
 }
@@ -150,15 +150,16 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
-    display: none
+.task .task__input {
+    display: none;
+    width: 226px;
 }
 
-ul li.editMode input[type=text] {
+.edit_mode .task__input{
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
-ul li.editMode label {
+.edit_mode .task__label{
     display: none;
 }
