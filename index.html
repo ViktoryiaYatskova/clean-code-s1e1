@@ -21,62 +21,62 @@
           Want more details?
       </a>
     </header>
-    <article class="main-page">
+    <main class="main-page">
      <p id="main-page__add-task">
-     <label for="new-task">Add Item</label>
+     <label for="new-task" class="main-page__label main-page__label_new-task">Add Item</label>
        <section class="main-page__task-row-wrapper">
          <input 
              id="main-page__new-task" 
-             class="main-page__task-input" 
+             class="main-page__input main-page__task-input" 
              type="text-input">
-         <button>Add</button>
+         <button class="main-page__button">Add</button>
        </section>
      </p>
-     <h3>Todo</h3>
-     <ul id="main-page__incomplete-tasks">
-       <li>
-          <input type="checkbox">
-          <label class="main-page__task-text">Pay Bills</label>
-          <input type="text" class="main-page__task-input">
-          <button class="main-page__edit">Edit</button>
-          <button class="main-page__delete">
-            <img src="./remove.svg" alt="Remove">
+     <h3 class="main-page__tasks-title">Todo</h3>
+     <ul id="main-page__incomplete-tasks" class="main-page__tasks">
+       <li class="main-page__task">
+          <input type="checkbox" class="main-page__checkbox">
+          <label class="main-page__label main-page__task-text">Pay Bills</label>
+          <input type="text" class="main-page__input main-page__task-input">
+          <button class="main-page__button main-page__edit">Edit</button>
+          <button class="main-page__button main-page__delete">
+            <img src="./remove.svg" alt="Remove" class="main-page__remove-img">
           </button>
        </li>
-       <li class="main-page__edit-mode">
-         <input type="checkbox">
-         <label class="main-page__task-text">Go Shopping</label>
+       <li class="main-page__edit-mode main-page__task">
+         <input type="checkbox" class="main-page__checkbox">
+         <label class="main-page__label main-page__task-text">Go Shopping</label>
          <input 
              type="text" 
              value="Go Shopping" 
-             class="main-page__task-input">
-         <button class="main-page__edit">Save</button>
-         <button class="main-page__delete">
-           <img src="./remove.svg" alt="Remove">
+             class="main-page__input main-page__task-input">
+         <button class="main-page__button main-page__edit">Save</button>
+         <button class="main-page__button main-page__delete">
+           <img src="./remove.svg" alt="Remove" class="main-page__remove-img">
          </button>
        </li>
      </ul>
-     <h3>Completed</h3>
+     <h3 class="main-page__tasks-title">Completed</h3>
 
-     <ul id="main-page__completed-tasks">
+     <ul id="main-page__completed-tasks" class="main-page__tasks">
 
-       <li>
+       <li class="main-page__task">
          <input 
              type="checkbox"
-             checked>
+             checked
+             class="main-page__checkbox">
 
-         <label class="main-page__task-text">See the Doctor</label>
+         <label class="main-page__label main-page__task-text">See the Doctor</label>
          <input 
              type="text"
-             class="main-page__task-input">
-         <button class="main-page__edit">Edit</button>
-         <button class="main-page__delete">
-
-           <img src="./remove.svg" alt="Remove">
+             class="main-page__input main-page__task-input">
+         <button class="main-page__button main-page__edit">Edit</button>
+         <button class="main-page__button main-page__delete">
+           <img src="./remove.svg" alt="Remove" class="main-page__remove-img">
          </button>
        </li>
      </ul>
-    </article>
+    <main/>
 
    <script src="app.js"></script>
   </body>

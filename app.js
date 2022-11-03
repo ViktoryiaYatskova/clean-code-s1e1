@@ -9,6 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput=document.getElementById("main-page__new-task");//Add a new task.
+taskInput.classList.add("main-page__input")
 var addButton=document.getElementsByTagName("button")[0];//first button
 
 var incompleteTaskHolder=document.getElementById("main-page__incomplete-tasks");//ul of #incompleteTasks
@@ -19,35 +20,44 @@ var completedTasksHolder=document.getElementById("main-page__completed-tasks");/
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add("main-page__task");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.classList.add("main-page__checkbox");
     //label
     var label=document.createElement("label");//label
+    
     //input (text)
     var editInput=document.createElement("input");//text
+    editInput.classList.add("main-page__input");
+    
     //button.edit
     var editButton=document.createElement("button");//edit button
+    
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+   
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.classList.add("main-page__remove-img");
+    
 
     label.innerText=taskString;
 
-    label.className='main-page__task-text';
+    label.className='main-page__label main-page__task-text';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
 
-    editInput.className="main-page__task-input";
+    editInput.className="main-page__input main-page__task-input";
 
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="main-page__edit";
+    editButton.className="main-page__button main-page__edit";
 
-    deleteButton.className="main-page__delete";
+    deleteButton.className="main-page__button main-page__delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
