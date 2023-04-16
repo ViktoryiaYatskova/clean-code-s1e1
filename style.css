@@ -19,9 +19,9 @@ button {
 }
 
 .main {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
 
 .info {
@@ -29,6 +29,10 @@ button {
   margin: 0 auto;
   display: block;
   text-align: right;
+}
+
+#todo__add{
+  padding: 16px 0;
 }
 
 .info__img {
