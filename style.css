@@ -5,21 +5,21 @@ body {
   font-family: Lato, sans-serif;
 }
 ul {
-    margin: 0;
-    padding: 0px;
+  margin: 0;
+  padding: 0px;
 }
 
 li,
 h3 {
-    list-style: none;
+  list-style: none;
 }
 li>* {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 input,
 button {
-    outline: none;
+  outline: none;
 }
 .info {
   width: 500px;
