@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
+    <div class="info">
       <img src="./eisenhower-matrix.jpg">
       <a
-        class="more-info"
+        class="info__details"
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </div>
-    <div class="centered-main-page-element">
-      <p id="top-section-for-adding-element-to-List">
+    <div class="todo">
+      <p id="todo__adding">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+        <div class="add__task">
+          <input id="new-task"class="task__input" type="text">
           <button>Add</button>
         </div>
       </p>
       <h3>Todo</h3>
-      <ul id="incompleted-Tasks">
+      <ul class="tasks tasks_incompleted" id="tasks">
         <li>
           <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
+          <label class="task__label">Pay Bills</label>
+          <input type="text" class="task__input">
           <button class="edit">Edit</button>
           <button class="delete">
             <img src="./remove.svg">
@@ -37,8 +37,8 @@
         </li>
         <li class="edit-mode">
           <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
+          <label class="task__label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task__input">
           <button class="edit">Save</button>
           <button class="delete">
             <img src="./remove.svg">
@@ -46,11 +46,11 @@
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <ul class="tasks tasks_completed" id="completed-tasks">
         <li>
           <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
+          <label class="task__label">See the Doctor</label>
+          <input type="text" class="task__input">
           <button class="edit">Edit</button>
           <button class="delete">
             <img src="./remove.svg">

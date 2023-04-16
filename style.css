@@ -4,35 +4,36 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.info img {
   width: 100%;
 }
-.aaa .more-info {
+.info .info__details {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa {
+.info {
   text-align: center;
 }
 }
-.centered-main-page-element {
+.todo{
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task__label,
+.task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add__task {
   display: flex;
 }
 ul {
