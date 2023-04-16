@@ -34,7 +34,7 @@ button {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .info {
     text-align: center;
@@ -145,11 +145,11 @@ button {
 
 /* Edit Task */
 .hidden {
-  display:none
+  display: none
 }
 
 .tasks .task.edit-mode .task__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
