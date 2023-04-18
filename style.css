@@ -31,7 +31,7 @@ button {
   text-align: right;
 }
 
-#todo__add{
+#todo__add {
   padding: 16px 0;
 }
 
@@ -43,15 +43,7 @@ button {
   font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
-
-  .info {
-    text-align: center;
-  }
-
-}
-
-.todo{
+.todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -137,21 +129,23 @@ button {
   margin: 0 10px;
 }
 
-.task__label{
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task >    .input {
+.task>.input {
   width: 226px;
 }
+
 .delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete__img:hover {
   transform: rotateZ(0);
 }
@@ -172,3 +166,10 @@ button {
   width: 224px;
 }
 
+@media (max-width: 768px) {
+
+  .info {
+    text-align: center;
+  }
+
+}
