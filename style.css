@@ -105,7 +105,7 @@ input[type="text"]:focus {
 
 /* New Task */
 
-.add-task__title .block-title {
+.add-task .block-title {
   display: block;
   margin: 0 0 20px;
 }
