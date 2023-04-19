@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more-inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -34,7 +34,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 ul {
@@ -45,7 +45,7 @@ li,
 h3 {
   list-style:none;
 }
-input, 
+input,
 button{
   outline: none;
 }
