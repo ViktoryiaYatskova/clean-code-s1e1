@@ -1,25 +1,19 @@
-
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
 var incompleteTaskHolder=document.getElementById("incompleteTasks");
 var completedTasksHolder=document.getElementById("completed-tasks");
 
-
-
 var createNewTaskElement=function(taskString){
-
     var listItem=document.createElement("li");
-
     
     var checkBox=document.createElement("input");
-    //label
+  
     var label=document.createElement("label");
-    //input (text)
+   
     var editInput=document.createElement("input");
-    //button.edit
+    
     var editButton=document.createElement("button");
 
-    //button.delete
     var deleteButton=document.createElement("button");
     var deleteButtonImg=document.createElement("img");
 
@@ -39,7 +33,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.appendChild(deleteButtonImg);
 
 
-    //and appending.
+
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
     listItem.appendChild(editInput);
@@ -55,7 +49,7 @@ var addTask=function(){
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
 
-    //Append listItem to incompleteTaskHolder
+  
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
 
@@ -152,6 +146,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 for (var i=0; i<completedTasksHolder.children.length;i++){
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
+
 
 
 
