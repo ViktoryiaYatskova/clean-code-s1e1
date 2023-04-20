@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.header img {
+.header__img {
   width: 100%;
 }
 .header__more-inf {
@@ -123,12 +123,12 @@
 .list-item >    .input[type="text"] {
   width: 226px;
 }
-.delete img {
+.delete__img {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.delete__img:hover {
   transform: rotatez(0);
 }
 
