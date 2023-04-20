@@ -18,21 +18,21 @@ input,button{
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.matrix .img-matrix {
     width: 100%;
 }
-.aaa .more_inf {
+.matrix .link-matrix {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.matrix  { text-align: center;
 }
 }
 .main-page {
@@ -40,7 +40,7 @@ input,button{
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.text-task, .label-tasks {
     width: 56%;
     display: inline-block;
     flex-grow: 1
