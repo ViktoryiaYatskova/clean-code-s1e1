@@ -31,7 +31,6 @@ var createNewTaskElement = function (taskString) {
 
   label.innerText = taskString;
 
-
   //Each elements, needs appending
   label.className = "label-tasks";
   listItem.className = "tasks-item";
@@ -39,7 +38,6 @@ var createNewTaskElement = function (taskString) {
   checkBox.className ="input-task check-task";
   editInput.type = "text";
   editInput.className = "input-task text-task";
-
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "btn-task btn-edit";
   deleteButtonImg.className ="img-remove";
