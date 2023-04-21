@@ -27,7 +27,7 @@ body {
 
 }
 
-.task-list-container {
+.task-list-container, #new-task-title {
     display: block;
     width: 500px;
     margin: 0 auto 0;
