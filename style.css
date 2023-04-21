@@ -20,7 +20,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
 .header { text-align: center;
 }
@@ -44,17 +44,17 @@ body {
 }
 
 .task-list{
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 .incomplete-task-element, .editing-task, .completed-task-element, #incomplete-task-title, #completed-task-title {
     
-    list-style:none;
+    list-style: none;
 }
 
 .checkbox-element, .task-name, .add, .edit, .delete {
-    outline:none;
+    outline: none;
 }
 
 .add, .edit, .delete {
@@ -158,14 +158,14 @@ body {
 
 /* Edit Task */
 .task-list li input[type=text] {
-    display:none
+    display: none
 }
 
 .task-list li.editing-task input[type=text] {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .task-list li.editing-task label {
-    display:none;
+    display: none;
 }
