@@ -27,7 +27,7 @@ body {
 
 }
 
-.task-list-container, #new-task-title {
+.task-list-container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -53,7 +53,6 @@ body {
 .completed-task-element, 
 #incomplete-task-title, 
 #completed-task-title {
-    
     list-style: none;
 }
 
@@ -130,7 +129,6 @@ body {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
