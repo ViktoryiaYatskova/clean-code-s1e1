@@ -76,7 +76,7 @@ var editTask = function () {
   var listItem = this.parentNode;
 
   var editInput = listItem.querySelector(".check-task");
-  var label = listItem.querySelector("label");
+  var label = listItem.querySelector(".label-tasks");
   var editBtn = listItem.querySelector(".btn-edit");
   var containsClass = listItem.classList.contains("edit-mode");
   //If class of the parent is .edit-mode
