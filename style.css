@@ -36,7 +36,7 @@ body {
 .task-name {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .new-task-input {
@@ -137,7 +137,7 @@ body {
 }
 
 #todo-task, #completed-task, #new-task {
-    width: 226px
+    width: 226px;
 }
 
 .remove-image {
@@ -152,18 +152,18 @@ body {
 
 /* Completed */
 .task-list label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .task-list li input[type=text] {
-    display: none
+    display: none;
 }
 
 .task-list li.editing-task input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .task-list li.editing-task label {
