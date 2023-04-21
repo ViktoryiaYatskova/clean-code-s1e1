@@ -18,6 +18,8 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    
+    listItem.className = "list__item";
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -41,9 +43,10 @@ var createNewTaskElement=function(taskString){
     editInput.className="task-name";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit-task";
+    editButton.className="button edit-task";
 
-    deleteButton.className="delete-task";
+    deleteButton.className="button delete-task";
+    deleteButtonImg.className="remove-image";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -156,8 +159,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit-task");
-    var deleteButton=taskListItem.querySelector("button.delete-task");
+    var editButton=taskListItem.querySelector(".edit-task");
+    var deleteButton=taskListItem.querySelector(".delete-task");
 
 
     //Bind editTask to edit button.
