@@ -5,11 +5,13 @@ ul {
     padding: 0px;
 }
 
-li, h3 {
+li, 
+h3 {
     list-style: none;
 }
 
-input,button{
+input,
+button{
     outline: none;
 }
 
@@ -50,7 +52,8 @@ input,button{
     margin: 0 auto 0;
 }
 
-.text-task, .label-tasks {
+.text-task, 
+.label-tasks {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
