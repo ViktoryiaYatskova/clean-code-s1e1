@@ -7,10 +7,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.getElementById(".add-input"); //Add a new task.
+var taskInput = document.querySelector(".add-input"); //Add a new task.
 var addButton = document.getElementsByTagName("button")[0]; //first button
-var incompleteTaskHolder = document.getElementById(".todo"); //ul of .todo
-var completedTasksHolder = document.getElementById(".completed"); //completed-tasks
+var incompleteTaskHolder = document.querySelector(".todo"); //ul of .todo
+var completedTasksHolder = document.querySelector(".completed"); //completed-tasks
 
 //New task list item
 var createNewTaskElement = function (taskString) {
@@ -138,8 +138,8 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("btn-edit");
-  var deleteButton = taskListItem.querySelector("btn-delete");
+  var editButton = taskListItem.querySelector(".btn-edit");
+  var deleteButton = taskListItem.querySelector(".btn-delete");
 
   //Bind editTask to edit button.
   editButton.onclick = editTask;
