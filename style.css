@@ -18,7 +18,8 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.aaa { 
+    text-align: center;
 }
 }
 .centered-main-page-element {
@@ -115,7 +116,7 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
 button.delete img {
@@ -129,7 +130,7 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
