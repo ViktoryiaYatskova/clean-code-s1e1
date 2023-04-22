@@ -127,7 +127,8 @@ body {
 /* Task list */
 .incomplete-task-element, 
 .editing-task, 
-.completed-task-element {
+.completed-task-element,
+.task-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
