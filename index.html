@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,6 +19,53 @@
             Want more details?
         </a>
     </header>
+    <main class="main">
+        <section class="container">
+            <h2 class="title" for="add-input">Add Item</h2>
+            <div class="add-to-do">
+                <input id="input" class="add-to-do_input">
+                <button class="ad-to-do_button">Add</button>
+            </div>
+        </section>
+        <section>
+            <h2 class="title">Todo</h2>
+            <ul id="active-list">
+                <li class="list-item">
+                    <input type="checkbox" class="list-item_checkbox">
+                    <label class="list-item_label">Pay Bills</label>
+                    <input type="text" class="list-item_input">
+                    <button class="list-item_edit">Edit</button>
+                    <button class="list-item_remove">
+                        <img src="./images/icon/remove.svg" alt="remove-btn">
+                    </button>
+                </li>
+                <li class="contribute list-item">
+                    <input type="checkbox" class="list-item_checkbox">
+                    <label class="list-item_label">Go Shopping</label>
+                    <input type="text" value="Go SHopping" class="list-item_input">
+                    <button class="list-item_edit">Save</button>
+                    <button class="list-item_remove">
+                        <img src="./images/icon/remove.svg" alt="remove-btn">
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="title">Compleated</h2>
+            <div id="compleated-list">
+                <li class="list-item">
+                    <input type="checkbox" class="list-item_checkbox" checked>
+                    <label class="list-item_label">See the Doctor</label>
+                    <input type="text" class="list-item_input">
+                    <button class="list-item_edit">Edit</button>
+                    <button class="list-item_remove">
+                        <img src="./images/icon/remove.svg" alt="remove-btn">
+                    </button>
+                </li>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
