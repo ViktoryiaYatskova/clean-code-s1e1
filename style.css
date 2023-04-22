@@ -34,7 +34,8 @@ body {
     margin: 0 auto 0;
 }
 
-.task-name {
+.task-name,
+.task-label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -62,7 +63,8 @@ body {
 .task-name, 
 .add, 
 .edit, 
-.delete {
+.delete,
+.task-label {
     outline: none;
 }
 
@@ -149,7 +151,8 @@ body {
 
 .incomplete-task-element .task-name, 
 .editing-task .task-name, 
-.completed-task-element .task-name {
+.completed-task-element .task-name,
+.task-label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -173,7 +176,8 @@ body {
 }
 
 /* Completed */
-#completed-task-list .task-name {
+#completed-task-list .task-name,
+#completed-task-list .task-label {
     text-decoration: line-through;
     color: #888;
 }
