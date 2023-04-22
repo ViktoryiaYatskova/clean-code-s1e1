@@ -42,9 +42,12 @@ var createNewTaskElement=function(taskString){
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
+    checkBox.classList.add('checkbox-element')
+
 
     deleteButton.className="delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add('remove-image')
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -65,6 +68,7 @@ var addTask=function(){
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
     listItem.classList.add('incomplete-task-element')
+    
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
