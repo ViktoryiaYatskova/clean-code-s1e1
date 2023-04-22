@@ -53,7 +53,8 @@ body {
 .editing-task, 
 .completed-task-element, 
 #incomplete-task-title, 
-#completed-task-title {
+#completed-task-title,
+.task-item {
     list-style: none;
 }
 
@@ -171,7 +172,7 @@ body {
 }
 
 /* Completed */
-.task-list label {
+#completed-task-list .task-name {
     text-decoration: line-through;
     color: #888;
 }
