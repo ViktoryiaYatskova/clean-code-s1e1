@@ -67,8 +67,7 @@ var addTask=function(){
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
-    listItem.classList.add('incomplete-task-element')
-    
+    listItem.classList.add('incomplete-task-element');
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
