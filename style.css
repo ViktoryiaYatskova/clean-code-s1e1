@@ -13,7 +13,7 @@ body {
 .aaa img {
     width: 100%;
 }
-.aaa .more_inf {
+.aaa .more-inf {
     font-family: fantasy, cursive;
 }
 
@@ -31,7 +31,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task-row__wrapper {
     display: flex;
 }
 ul {
