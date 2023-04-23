@@ -1,8 +1,8 @@
 /* Basic Style */
 .page {
-  background-color: #f8f8f8;
-  color: #333;
-  font-family: Lato, sans-serif;
+  background-color: #f8f8f8; 
+  color: #333; 
+  font-family: Lato, sans-serif; 
 }
 .start-article {
   width: 500px;
@@ -22,7 +22,7 @@
   .start-article { 
     text-align: center;
   }
-  
+
 }
 .content {
   display: block;
@@ -38,14 +38,14 @@
   display: flex;
 }
 .list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -137,14 +137,14 @@ li input[type="text"] {
 
 /* Edit Task */
 li input[type=text] {
-  display:none
+  display: none
 }
 
 .edit-mode .edit-mode__space {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit-mode__text {
-  display:none;
+  display: none;
 }
