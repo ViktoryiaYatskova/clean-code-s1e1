@@ -41,7 +41,8 @@ body {
   margin: 0;
   padding: 0px;
 }
-.list__item, .section-title {
+.list__item,
+.section-title {
   list-style: none;
 }
 input,button{
@@ -60,7 +61,8 @@ input,button{
   color: #3a3A3a;
 }
 /* Heading */
-.section-title, .add_label {
+.section-title,
+.add_label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -117,7 +119,7 @@ input[type="text"]:focus {
   font-size: 18px;
   width: 226px;
 }
-.list__item >    input[type="text"] {
+.list__item > input[type="text"] {
   width: 226px;
 }
 .remove-image {
