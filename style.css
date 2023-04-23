@@ -137,7 +137,7 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-.completed-list > * {
+.completed-list > *:not(.editmode) {
   text-decoration: line-through;
   color: #888;
 }
