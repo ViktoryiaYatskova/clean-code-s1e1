@@ -9,20 +9,18 @@
     <title>Todo App</title>
   </head>
   <body>
-    <div class="aaa">
+    <header class="header">
       <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
+      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main">
+        <h3 class="main__title">Add Item</h3>
+        <section class="main__add-task">
           <input id="new-task" class="task" type="text">
           <button>Add</button>
-        </div>
-      </p>
+        </section>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
+      <ul id="incompleteTasks" class="main__todo-task">
           <li>
             <input type="checkbox">
             <label class="task">Pay Bills</label>
@@ -39,7 +37,7 @@
           </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <ul id="completed-tasks" class="main__competed-task">
           <li>
             <input type="checkbox" checked>
             <label class="task">See the Doctor</label>
@@ -48,7 +46,7 @@
             <button class="delete"><img src="./remove.svg"></button>
           </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
