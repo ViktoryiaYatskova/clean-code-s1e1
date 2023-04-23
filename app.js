@@ -40,7 +40,8 @@ var createNewTaskElement=function(taskString){
   editInput.type="text";
   editInput.className="task";
 
-  editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
+  editButton.innerText="Edit"; /*innerText encodes special characters, 
+      HTML does not.*/
   editButton.className="edit";
 
   deleteButton.className="delete";
@@ -188,7 +189,8 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 
 
-// Issues with usability don't get seen until they are in front of a human tester.
+/* Issues with usability don't get seen until they are 
+      in front of a human tester.*/
 
 //prevent creation of empty tasks.
 
