@@ -52,7 +52,8 @@ button {
   outline: none;
 }
 .edit,
-.delete {
+.delete,
+.button-add {
   background: none;
   border: 0px;
   color: #888;
@@ -62,7 +63,8 @@ button {
   cursor: pointer;
 }
 .edit:hover,
-.delete:hover {
+.delete:hover,
+.button-add:hover {
   color: #3a3A3a;
 }
 /* Heading */
