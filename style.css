@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page__body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -51,7 +51,8 @@ input,
 button {
   outline: none;
 }
-button {
+.edit,
+.delete {
   background: none;
   border: 0px;
   color: #888;
@@ -60,11 +61,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.edit:hover,
+.delete:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
+.section-header,
 .new-task-label {
   color: #333;
   font-weight: 700;
@@ -100,7 +102,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -109,11 +111,11 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.list-item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.checkbox {
   margin: 0 10px;
 }
 li > label {
@@ -125,17 +127,17 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.delete__svg {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete__svg:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-list label {
+.completed-list > * {
   text-decoration: line-through;
   color: #888;
 }
