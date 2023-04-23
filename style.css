@@ -4,41 +4,41 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.hero {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.hero-img {
   width: 100%;
 }
-.aaa .more_inf {
+.hero-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa { text-align: center;
+  .hero { text-align: center;
 }
 }
-.centered-main-page-element {
+.todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.todo-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.todo-input-add {
   display: flex;
 }
 ul {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li, .todo-title {
   list-style:none;
 }
 input,button{
@@ -57,7 +57,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
+.todo-title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
