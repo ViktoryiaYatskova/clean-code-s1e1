@@ -13,7 +13,8 @@ body {
 .header__logo img {
   width: 100%;
 }
-.header__logo .header__link {
+.header__logo,
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -29,7 +30,8 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.new-task, .task {
+.new-task, 
+.task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -41,10 +43,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
-input,button{
+input,
+button {
   outline: none;
 }
 button {
