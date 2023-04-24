@@ -50,16 +50,17 @@
   padding: 0;
 }
 
-li, .todo-title {
+li,
+.todo-title {
   list-style: none;
 }
 
 input,
-.button {
+button {
   outline: none;
 }
 
-.button {
+button {
   background: none;
   border: 0;
   color: #888;
