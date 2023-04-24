@@ -18,8 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
-.start_screen { text-align: center;
-}
+
+  .start_screen {
+    text-align: center;
+  }
+
 }
 .main {
     display: block;
