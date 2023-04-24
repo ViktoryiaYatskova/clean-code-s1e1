@@ -71,10 +71,6 @@ button {
   cursor: pointer;
 }
 
-.text-button{
-  
-}
-
 .text-button:hover {
   color: #3a3A3a;
 }
@@ -90,7 +86,7 @@ button {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -103,7 +99,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input-text:focus {
   color: #333;
 }
 
