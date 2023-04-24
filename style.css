@@ -22,8 +22,11 @@
 }
 
 @media (max-width:768px) {
-  .header { text-align: center;
+
+  .header {
+    text-align: center;
   }
+
 }
 
 .main {
@@ -74,6 +77,7 @@
 }
 
 /* Heading */
+
 .tasks__title {
   color: #333;
   font-weight: 700;
@@ -126,11 +130,13 @@
   align-items: center;
 }
 
-.tasks__item > * {
+.tasks__input,
+.tasks__label,
+.tasks__button {
   vertical-align: middle;
 }
 
-.tasks__item > .tasks__input_checkbox {
+.tasks__input_checkbox {
   margin: 0 10px;
 }
 
@@ -141,7 +147,7 @@
   width: 226px;
 }
 
-.tasks__item > .tasks__input_text {
+.tasks__input_text {
   width: 226px
 }
 
