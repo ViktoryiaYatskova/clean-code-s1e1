@@ -67,7 +67,7 @@ label[for='new_task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -88,7 +88,7 @@ label[for='new_task'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new_task {
+#new_task {
     width: 318px;
 }
 
