@@ -164,7 +164,7 @@
 
 .tasks .task.edit-mode .input[type="text"] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .tasks .task.edit-mode .label {
