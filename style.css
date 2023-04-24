@@ -13,7 +13,8 @@ body {
 .top-element img {
   width: 100%;
 }
-.top-element .more-inf {
+.top-element,
+.more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -42,10 +43,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
-input,button{
+input,
+button {
   outline: none;
 }
 button {
@@ -118,7 +121,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >  input[type="text"] {
+li > input[type="text"] {
   width: 226px;
 }
 .delete img {
@@ -141,11 +144,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul .editMode input[type=text] {
+.editMode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+.editMode label {
   display: none;
 }
