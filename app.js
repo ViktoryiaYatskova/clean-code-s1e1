@@ -18,6 +18,9 @@ const completedTasksHolder = document.querySelector("#completed-tasks");//comple
 function createNewTaskElement(taskText = "")
 {
     const listItem = document.createElement("li");
+    const taskElement = document.createElement("article");
+    taskElement.className = "task"
+    
 
     //input (checkbox)
     const checkBox = document.createElement("input");//checkbx
@@ -30,30 +33,30 @@ function createNewTaskElement(taskText = "")
 
     //button.delete
     const deleteButton = document.createElement("button");//delete button
-    const deleteButtonImg = document.createElement("img");//delete button image
 
     label.innerText = taskText;
-    label.className = 'task';
+    label.className = "task__text";
 
     //Each elements, needs appending
     checkBox.type = "checkbox";
+    checkBox.className = "task__input-checkbox"
     editInput.type = "text";
-    editInput.className = "task";
+    editInput.className = "task__input-text";
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className = "edit";
+    editButton.className = "task__button-edit";
 
-    deleteButton.className = "delete";
-    deleteButtonImg.src = './remove.svg';
-    deleteButton.appendChild(deleteButtonImg);
+    deleteButton.className = "task__button-delete";
 
 
     //and appending.
-    listItem.appendChild(checkBox);
-    listItem.appendChild(label);
-    listItem.appendChild(editInput);
-    listItem.appendChild(editButton);
-    listItem.appendChild(deleteButton);
+    taskElement.appendChild(checkBox);
+    taskElement.appendChild(label);
+    taskElement.appendChild(editInput);
+    taskElement.appendChild(editButton);
+    taskElement.appendChild(deleteButton);
+    
+    listItem.append(taskElement)
     return listItem;
 }
 
@@ -84,10 +87,10 @@ function editTask()
 
     const listItem = this.parentNode;
 
-    const editInput = listItem.querySelector('input[type=text]');
-    const label = listItem.querySelector("label");
-    const editBtn = listItem.querySelector(".edit");
-    const containsClass = listItem.classList.contains("editMode");
+    const editInput = listItem.querySelector(".task__input-text");
+    const label = listItem.querySelector(".task__text");
+    const editBtn = listItem.querySelector(".task__button-edit");
+    const containsClass = listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if (containsClass) {
 
@@ -101,7 +104,7 @@ function editTask()
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("edit-mode");
 };
 
 
@@ -165,10 +168,13 @@ addButton.addEventListener("click", ajaxRequest);
 function bindTaskEvents(taskListItem, checkboxEventHandler)
 {
     console.log("bind list item events");
+    console.log(taskListItem);
     //select ListItems children
-    const checkBox = taskListItem.querySelector("input[type=checkbox]");
-    const editButton = taskListItem.querySelector("button.edit");
-    const deleteButton = taskListItem.querySelector("button.delete");
+    const checkBox = taskListItem.querySelector(".task__input-checkbox");
+    const editButton = taskListItem.querySelector(".task__button-edit");
+    const deleteButton = taskListItem.querySelector(".task__button-delete");
+
+    console.log(checkBox, editButton, deleteButton)
 
 
     //Bind editTask to edit button.
@@ -181,13 +187,13 @@ function bindTaskEvents(taskListItem, checkboxEventHandler)
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
-for (const task of incompleteTaskHolder.children) {
+for (const task of incompleteTaskHolder.querySelectorAll(".task")) {
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(task, taskCompleted);
 }
 
 //cycle over completedTasksHolder ul list items
-for (const task of completedTasksHolder.children) {
+for (const task of completedTasksHolder.querySelectorAll(".task")) {
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(task, taskIncomplete);
 }

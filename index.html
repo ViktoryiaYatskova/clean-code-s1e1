@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> <!-- Это тоже CSS -->
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
 <body>
-  <div class="aaa">
-    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+  <header class="header">
+    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix" class="header__img">
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
-  </div>
-  <div class="centered-main-page-element">
-    <p id="topSectionForAddingElementToList">
-      <label for="new-task">Add Item</label>
-    <div class="task-row-wrapper">
-      <input id="new-task" class="task" type="text">
-      <button id="addButton">Add</button>
-    </div>
-    </p>
-    <h3>Todo</h3>
-    <ul id="incompleteTasks">
-      <li>
-        <input type="checkbox">
-        <label class="task">Pay Bills</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete"></button>
-      </li>
-      <li class="editMode">
-        <input type="checkbox">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete"></button>
-      </li>
-    </ul>
-    <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete"></button>
-      </li>
-    </ul>
-  </div>
+  </header>
+  <main class="main">
+    <section id="adding" class="section adding">
+      <h2 class="adding__title">Add Item</h2>
+      <div class="adding__row-wrapper">
+        <input id="new-task" class="adding__input-text" type="text">
+        <button id="addButton" class="adding__button-add text-button">Add</button>
+      </div>
+    </section>
+    <section class="section incomplete">
+      <h3 class="section__title">Todo</h3>
+      <ul id="incompleteTasks" class="task-list">
+        <li>
+          <article class="task">
+            <input type="checkbox" class="task__input-checkbox">
+            <label class="task__text">Pay Bills</label>
+            <input type="text" class="task__input-text">
+            <button class="task__button-edit text-button">Edit</button>
+            <button class="task__button-delete"></button>
+          </article>
+        </li>
+        <li>
+          <article class="task edit-mode">
+            <input type="checkbox" class="task__input-checkbox">
+            <label class="task__text">Go Shoppings</label>
+            <input type="text" class="task__input-text" value="Go Shopping">
+            <button class="task__button-edit text-button">Edit</button>
+            <button class="task__button-delete"></button>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="section completed">
+      <h3 class="section__title">Completed</h3>
+      <ul id="completed-tasks" class="task-list">
+        <li>
+          <article class="task">
+            <input type="checkbox" checked class="task__input-checkbox">
+            <label class="task__text">See the Doctor</label>
+            <input type="text" class="task__input-text">
+            <button class="task__button-edit text-button">Edit</button>
+            <button class="task__button-delete"></button>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
   <!-- Использовал атрибут 'type' для подключения JS-модулей (.mjs).
   Иначе не работает. -->
   <script type="module" src="app.js"></script>
