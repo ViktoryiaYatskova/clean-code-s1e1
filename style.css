@@ -28,11 +28,13 @@ body {
 
 }
 
-.main-page {
+section {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
+
 
 .task {
     width: 56%;
@@ -42,6 +44,7 @@ body {
 
 .task-wrapper {
     display: flex;
+    padding-top: 20px;
 }
 
 ul {
