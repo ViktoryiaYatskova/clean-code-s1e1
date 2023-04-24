@@ -79,7 +79,8 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.new-task-input,
+.task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -91,7 +92,8 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.new-task-input:focus,
+.task-input:focus {
   color: #333;
 }
 
@@ -121,13 +123,13 @@ input[type="text"]:focus {
 .checkbox {
   margin: 0 10px;
 }
-li > label {
+.task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.task-input {
   width: 226px;
 }
 .delete-svg {
@@ -146,15 +148,15 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task-input {
   display: none;
 }
 
-ul li.editmode input[type=text] {
+.list-item.editmode .task-input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editmode label {
+.list-item.editmode .task-label {
   display: none;
 }
