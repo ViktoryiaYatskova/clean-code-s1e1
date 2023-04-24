@@ -38,7 +38,7 @@ body {
 .task-label, .task-input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -138,7 +138,7 @@ li > label {
 }
 
 li >  input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 button.delete-button img {
@@ -153,13 +153,13 @@ button.delete-button img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-  display :none
+  display : none;
 }
 
 ul li.editMode input[type=text] {
