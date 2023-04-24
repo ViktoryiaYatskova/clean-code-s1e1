@@ -5,48 +5,48 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet">
     <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="body">
     <section class="header">
-      <img class="header__img" src="./eisenhower-matrix.jpg" alt="tasks plan">
+      <img class="header__img img" src="./eisenhower-matrix.jpg" alt="tasks plan">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a>
     </section>
     <main class="main">
-      <article class="newTask" id="addElement">
-        <label for="newTask">Add Item</label>
+      <article class="newTasks" id="addElement">
+        <label class="newTask--label task" for="newTask">Add Item</label>
         <div class="newTask__wrapper">
-          <input id="newTask" class="task" type="text">
-          <button class="newTask__button" >Add</button>
+          <input id="new-task" class="newTask__input task input" type="text">
+          <button class="newTask__button btn" >Add</button>
         </div>
       </article>
       <h3 class="title">Todo</h3>
-      <ul class="task__list" id="incompleteTasks">
-        <li class="task__item--incomplete">
-          <input class="incomplete__checkbox" type="checkbox">
-          <label class="incomplete__task">Pay Bills</label>
-          <input type="text" class="incomplete__task">
-          <button class="incomplete__edit">Edit</button>
-          <button class="incomplete__delete">
-          <img class="incomplete__img" src="./remove.svg" alt="remove button"></button>
+      <ul class="task__list" id="incomplete-tasks">
+        <li class="item task__item--incomplete">
+          <input class="incomplete__checkbox input outline" type="checkbox">
+          <label class="incomplete__task task outline">Pay Bills</label>
+          <input type="text" class="incomplete__task outline text input">
+          <button class="incomplete__edit btn">Edit</button>
+          <button class="incomplete__delete btn">
+          <img class="incomplete__img img" src="./remove.svg" alt="remove button"></button>
         </li>
-        <li class="task__item--edit">
-          <input class="edit__checkbox" type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="edit__task">
-          <button class="edit__button">Save</button>
-          <button class="edit__delete">
-            <img class="edit__img" src="./remove.svg" alt="remove button">
+        <li class="item task__item--edit">
+          <input class="edit__checkbox input outline" type="checkbox">
+          <label class="task edit__label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="edit__task text input outline">
+          <button class="edit__button btn">Save</button>
+          <button class="edit__delete btn">
+            <img class="edit__img img" src="./remove.svg" alt="remove button">
           </button>
         </li>
       </ul>
       <h3 class="title">Completed</h3>
-      <ul class="complete__list" id="completedTasks">
-        <li>
-          <input class="complete__checkbox" type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input class="complete__text" type="text">
-          <button class="complete__edit">Edit</button>
-          <button class="complete__delete">
-            <img class="complete__img" src="./remove.svg" alt="remove button">
+      <ul class="complete__list" id="completed-tasks">
+        <li class="item complete__item">
+          <input class="complete__checkbox input outline" type="checkbox" checked>
+          <label class="task complete__label">See the Doctor</label>
+          <input class="complete__text text input outline" type="text">
+          <button class="complete__edit btn">Edit</button>
+          <button class="complete__delete btn">
+            <img class="complete__img img" src="./remove.svg" alt="remove button">
           </button>
         </li>
       </ul>
