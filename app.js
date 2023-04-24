@@ -41,10 +41,10 @@ function createNewTaskElement(taskText = "")
     checkBox.type = "checkbox";
     checkBox.className = "task__input-checkbox"
     editInput.type = "text";
-    editInput.className = "task__input-text";
+    editInput.className = "task__input-text input-text";
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className = "task__button-edit";
+    editButton.className = "task__button-edit text-button";
 
     deleteButton.className = "task__button-delete";
 
@@ -55,7 +55,7 @@ function createNewTaskElement(taskText = "")
     taskElement.appendChild(editInput);
     taskElement.appendChild(editButton);
     taskElement.appendChild(deleteButton);
-    
+
     listItem.append(taskElement)
     return listItem;
 }
