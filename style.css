@@ -1,49 +1,63 @@
 /* Basic Style */
+
 .wrapper {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header .header-img {
   width: 100%;
 }
+
 .header .header-information {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .header { text-align: center;
+
+  .header { 
+    text-align: center;
+  }
+
 }
-}
+
 .main-page-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-row-wrapper {
   display: flex;
 }
+
 .list {
   margin:0;
   padding: 0px;
 }
+
 .list-item, .list-name {
   list-style:none;
 }
+
 .input,.button{
   outline:none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -53,10 +67,13 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .list-name,
 .label.new-task {
   color: #333;
@@ -67,6 +84,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .input.task {
   margin: 0;
   font-size: 18px;
@@ -79,29 +97,33 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .input.task:focus {
   color: #333;
 }
 
 /* New Task */
+
 .label.new-task {
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
 
 /* Task list */
+
 .list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .list-item > .input.checkbox {
   vertical-align: middle;
 }
@@ -109,31 +131,37 @@
 .list-item > .label {
   margin: 0 10px;
 }
+
 li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .list-item > .input.task {
   width: 226px
 }
+
 .button.delete .remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button.delete .remove-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 .list#completed-tasks .label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
+
 .list .list-item .input.task {
   display:none
 }
