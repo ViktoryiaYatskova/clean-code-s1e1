@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-.main .more-inf {
+.main .main_more-inf {
     font-family: fantasy, cursive;
 }
 
@@ -33,7 +33,7 @@ body {
     margin: 0 auto 0;
 }
 
-.task {
+.to-do_task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
