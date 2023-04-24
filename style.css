@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.hero-img {
+.hero .hero-img {
   width: 100%;
 }
-.hero-info {
+.hero .hero-info {
   font-family: fantasy, cursive;
 }
 
@@ -34,17 +34,18 @@ body {
 .todo-input-add {
   display: flex;
 }
-ul {
+.todo-list {
   margin:0;
   padding: 0px;
 }
 li, .todo-title {
   list-style:none;
 }
-input,button{
+input,
+.button{
   outline:none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -53,12 +54,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 /* Heading */
 .todo-title,
-label[for="new-task"] {
+.todo-add {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,11 +85,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="todo-add"] {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+input#todo-add {
   width: 318px;
 }
 
@@ -100,8 +101,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-li > * {
   vertical-align: middle;
 }
 
@@ -114,20 +113,20 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.input-text {
   width: 226px
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through
   color: #888;
 }
@@ -137,11 +136,11 @@ ul li input[type="text"] {
   display:none
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type="text"] {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display:none;
 }
