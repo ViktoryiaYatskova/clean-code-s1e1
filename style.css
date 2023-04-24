@@ -9,7 +9,7 @@
     width: 500px;
     margin: 0 auto;
     display: block;
-    text-align: right;
+
 }
 
 .header-image {
@@ -18,7 +18,9 @@
 
 a.link {
     font-family: fantasy, cursive;
+
 }
+
 
 @media (max-width:768px) {
     .header {
@@ -30,6 +32,12 @@ a.link {
     display: block;
     max-width: 500px;
     margin: 0 auto 0;
+}
+
+a.link {
+    font-family: fantasy, cursive;
+    position: relative;
+    left: 850px;
 }
 
 .add-to-do__input,
@@ -55,14 +63,17 @@ ul {
 
 input,
 button {
-    outline: none;
+    outline: 0;
+    border: 0;
+    background: #fff;
+    margin-top: 15px;
 }
 
 .add-to-do__button,
 .list-item__remove,
 .list-item__edit {
     background: none;
-    border: 0px;
+    border: none;
     color: #888;
     font-size: 15px;
     width: 60px;
@@ -90,6 +101,7 @@ button {
 #input.add-to-do__input {
     margin-top: 15px;
 }
+
 
 
 .add-to-do__input,
@@ -144,10 +156,6 @@ button {
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
-}
-
-.list-item>.task-item {
-    width: 226px
 }
 
 .list-item__remove {
