@@ -30,8 +30,9 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.new-task, 
-.task {
+.new-task-input, 
+.task-input,
+.task-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -99,7 +100,7 @@ input[type="text"]:focus {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.task-input {
   width: 318px;
 }
 
