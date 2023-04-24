@@ -32,20 +32,23 @@ var createNewTaskElement=function(taskString){
   var deleteButton=document.createElement("button");//delete button
   var deleteButtonImg=document.createElement("img");//delete button image
 
+  listItem.className ="edit-mode list__item"
   label.innerText=taskString;
-  label.className='task';
+  label.className="label task";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
   editInput.type="text";
-  editInput.className="task";
+  editInput.className="input task input-text";
+  checkBox.className="input input-checkbox";
 
   editButton.innerText="Edit"; /*innerText encodes special characters, 
       HTML does not.*/
-  editButton.className="edit";
+  editButton.className="button edit";
 
-  deleteButton.className="delete";
-  deleteButtonImg.src='./remove.svg';
+  deleteButton.className="button delete";
+  deleteButtonImg.src="./remove.svg";
+  deleteButtonImg.className = "remove-img"
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -86,11 +89,11 @@ var editTask=function(){
   var editInput=listItem.querySelector('input[type=text]');
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".edit");
-  var containsClass=listItem.classList.contains("edit-mode");
-  //If class of the parent is .edit-mode
+  var containsClass=listItem.classList.contains("edit-mode list__item");
+  //If class of the parent is .editmode
   if(containsClass){
 
-    //switch to .edit-mode
+    //switch to .editmode
     //label becomes the inputs value.
     label.innerText=editInput.value;
     editBtn.innerText="Edit";
@@ -100,7 +103,7 @@ var editTask=function(){
   }
 
   //toggle .edit-mode on the parent.
-  listItem.classList.toggle("edit-mode");
+  listItem.classList.toggle("edit-mode list__item");
 };
 
 
@@ -120,10 +123,10 @@ var deleteTask=function(){
 var taskCompleted=function(){
   console.log("Complete Task...");
 
-    //Append the task list item to the #completed-tasks
+  //Append the task list item to the #completed-tasks
   var listItem=this.parentNode;
   completedTasksHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskIncomplete);  
+  bindTaskEvents(listItem, taskIncomplete);
 
 }
 
@@ -178,16 +181,11 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 }
 
 
-
-
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
-
-
-
 
 /* Issues with usability don't get seen until they are 
       in front of a human tester.*/
