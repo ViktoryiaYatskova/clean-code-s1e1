@@ -140,7 +140,7 @@ li > label {
 }
 
 .list-item > .input.task {
-  width: 226px
+  width: 226px;
 }
 
 .button.delete .remove-img {
@@ -163,12 +163,12 @@ li > label {
 /* Edit Task */
 
 .list .list-item .input.task {
-  display: none
+  display: none;
 }
 
 .list .list-item.edit-mode .input.task {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list .list-item.edit-mode .label {
