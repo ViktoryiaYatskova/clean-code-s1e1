@@ -4,24 +4,29 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.start_screen {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.start_screen
+img {
     width: 100%;
 }
-.aaa .more_inf {
+.start_screen
+.more_info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+
+  .start_screen {
+    text-align: center;
+  }
+
 }
-}
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -29,20 +34,20 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
-.task-row-wrapper {
+.task_row_wrapper {
     display: flex;
 }
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 li, h3 {
-    list-style:none;
+    list-style: none;
 }
-input,button{
-    outline:none;
+input,button {
+    outline: none;
 }
 button {
     background: none;
@@ -58,7 +63,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+label[for='new_task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -67,14 +72,14 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #dDd;
-    background: #FFF;
+    border: 1px solid #ddd;
+    background: #fff;
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
@@ -84,11 +89,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for='new_task'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new_task {
     width: 318px;
 }
 
@@ -116,9 +121,9 @@ li > label {
     width: 226px;
 }
 li >    input[type="text"] {
-    width: 226px
+    width: 226px;
 }
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
@@ -128,21 +133,28 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through
+ul#completed_tasks
+label {
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
-    display:none
+ul
+li
+input[type=text] {
+    display: none;
 }
 
-ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px
+ul
+li.edit_Mode
+input[type=text] {
+    display: inline-block;
+    width: 224px;
 }
 
-ul li.editMode label {
-    display:none;
+ul
+li.edit_Mode
+label {
+    display: none;
 }
