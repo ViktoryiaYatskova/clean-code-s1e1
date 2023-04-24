@@ -2,7 +2,7 @@
 .app {
   background-color: #f8f8f8;
   color: #333;
-  font-family: lato, sans-serif;
+  font-family: Lato, sans-serif;
 }
 .header {
   width: 500px;
@@ -55,7 +55,7 @@
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: lato, sans-serif;
+  font-family: Lato, sans-serif;
   cursor: pointer;
 }
 .button:hover {
@@ -81,7 +81,7 @@
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: lato, sans-serif;
+  font-family: Lato, sans-serif;
   color: #888;
 }
 .task-list-item__edit-input:focus,
