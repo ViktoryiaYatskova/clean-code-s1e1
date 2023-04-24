@@ -53,7 +53,7 @@ button {
 }
 .edit,
 .delete,
-.button-add {
+.add {
   background: none;
   border: 0px;
   color: #888;
@@ -64,7 +64,7 @@ button {
 }
 .edit:hover,
 .delete:hover,
-.button-add:hover {
+.add:hover {
   color: #3a3A3a;
 }
 /* Heading */
