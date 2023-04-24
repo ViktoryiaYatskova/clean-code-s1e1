@@ -1,31 +1,31 @@
 /* Basic Style */
-.page__body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.header__logo {
+.header-logo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header__logo img {
+.header-logo img {
   width: 100%;
 }
-.header__logo,
-.header__link {
+.header-logo,
+.header-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .header__logo { 
+  .header-logo { 
     text-align: center;
   }
   
 }
-.main__centered-element {
+.main-centered-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -129,12 +129,12 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-.delete__svg {
+.delete-svg {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete__svg:hover {
+.delete-svg:hover {
   transform: rotateZ(0);
 }
 
