@@ -1,4 +1,7 @@
 /* Basic Style */
+body {
+  min-height: 100vh;
+}
 ul {
   margin: 0;
   padding: 0px;
@@ -19,6 +22,7 @@ button {
 }
 
 .main {
+  height: 100%;
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
