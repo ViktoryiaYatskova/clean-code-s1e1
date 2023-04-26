@@ -105,6 +105,7 @@ body {
 }
 
 /* New Task */
+
 .task__header[for="new-task"] {
   display: block;
   margin: 0 0 20px;
