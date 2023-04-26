@@ -1,0 +1,24 @@
+{
+  "name": "clean-code-s1e1",
+  "version": "1.0.0",
+  "description": "<img width=\"1199\" alt=\"code-quality-task-screenshot\" src=\"https://user-images.githubusercontent.com/8201843/113413843-4080fb80-93c4-11eb-9f20-15e4b4c1e430.png\">",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antongap99/clean-code-s1e1.git"
+  },
+  "keywords": [],
+  "author": "Anton Gaponenko",
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
