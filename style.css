@@ -160,6 +160,7 @@ body {
 }
 
 /* Completed */
+
 .task__list_complete
 .task__label {
   text-decoration: line-through;
