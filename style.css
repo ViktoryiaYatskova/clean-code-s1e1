@@ -116,6 +116,7 @@ body {
 }
 
 /* Task list */
+
 .task__item {
   overflow: hidden;
   padding: 20px 0;
