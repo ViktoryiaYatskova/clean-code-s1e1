@@ -1,19 +1,60 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
-</body>
+<!DOCTYPE html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="page">
+    <article class="start-article">
+      <img class="description-img" src="./eisenhower-matrix.jpg" alt="Todo App specification">
+      <a class="more-info" 
+          href="https://goal-life.com/page/method/matrix-eisenhower">
+          Want more details?
+      </a>
+    </article>
+    <section class="content">
+      <div id="adding-element">
+        <label class="label add-sub" for="new-task">Add Item</label>
+        <div class="new-task__wrapper">
+          <input id="new-task" class="input task new-task__space input-text" type="text">
+          <button class="button">Add</button>
+        </div>
+      </div>
+      <h3 class="subtitle">Todo</h3>
+      <ul class="list" id="incomplete-tasks">
+        <li class="list__item">
+          <input class="input input-checkbox" type="checkbox">
+          <label class="label task">Pay Bills</label>
+          <input type="text" class="input task input-text">
+          <button class="button edit">Edit</button>
+          <button class="button delete">
+            <img class="remove-img" src="./remove.svg" alt="delete sign">
+          </button>
+        </li>
+        <li class="edit-mode list__item">
+          <input class="input input-checkbox" type="checkbox">
+          <label class="label task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="input task input-text">
+          <button class="button edit">Save</button>
+          <button class="button delete">
+            <img class="remove-img" src="./remove.svg" alt="delete sign">
+          </button>
+        </li>
+      </ul>
+      <h3 class="subtitle">Completed</h3>
+      <ul class="list" id="completed-tasks">
+        <li class="list__item">
+          <input class="input input-checkbox" type="checkbox" checked>
+          <label class="label task">See the Doctor</label>
+          <input type="text" class="input task input-text">
+          <button class="button edit">Edit</button>
+          <button class="button delete">
+            <img class="remove-img" src="./remove.svg" alt="delete sign">
+          </button>
+        </li>
+      </ul>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
