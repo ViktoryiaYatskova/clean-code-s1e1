@@ -106,7 +106,6 @@ var editTask=function(){
   listItem.classList.toggle("list__item");
 };
 
-
 //Delete task.
 var deleteTask=function(){
   console.log("Delete Task...");
