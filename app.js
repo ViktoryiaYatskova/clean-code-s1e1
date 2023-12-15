@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.getElementById("incomplete-list");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("completed-list");//completed-tasks
 
 
 //New task list item
@@ -33,21 +33,24 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task';
+    label.className='incomplete__label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.classList.add('incomplete__checkbox')
+
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="incomplete__text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit";
+    editButton.className="btn__edit btn";
 
-    deleteButton.className="delete";
+    deleteButton.className="btn__delete btn";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="incomplete__remove";
     deleteButton.appendChild(deleteButtonImg);
 
-
+    listItem.classList.add('incomplete__item')
     //and appending.
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
@@ -156,8 +159,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+    var editButton=taskListItem.querySelector("button.btn__edit");
+    var deleteButton=taskListItem.querySelector("button.btn__delete");
 
 
     //Bind editTask to edit button.
