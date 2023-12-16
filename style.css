@@ -4,28 +4,34 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .header__img {
     width: 100%;
 }
+
 .header .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+    .header {
+        text-align: center;
+    }
 }
-}
+
 .main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .addited__text,
 .completed__text,
 .completed__label,
@@ -35,19 +41,26 @@ body {
     display: inline-block;
     flex-grow: 1
 }
+
 .addited__box {
     display: flex;
 }
+
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
-li, h3 {
-    list-style:none;
+
+li,
+h3 {
+    list-style: none;
 }
-input,button{
-    outline:none;
+
+input,
+button {
+    outline: none;
 }
+
 .btn {
     background: none;
     border: 0px;
@@ -57,9 +70,11 @@ input,button{
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 .btn:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 .title,
 .addited__label {
@@ -71,6 +86,7 @@ input,button{
     margin: 0;
     text-transform: uppercase;
 }
+
 .addited__text,
 .completed__text,
 .incomplete__text {
@@ -85,6 +101,7 @@ input,button{
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 .addited__text:focus,
 .completed__text:focus,
 .incomplete__text:focus {
@@ -96,6 +113,7 @@ input,button{
     display: block;
     margin: 0 0 20px;
 }
+
 #new-task {
     width: 318px;
 }
@@ -115,6 +133,7 @@ input,button{
 .incomplete__checkbox {
     margin: 0 10px;
 }
+
 .completed__label,
 .incomplete__label {
     padding-left: 10px;
@@ -122,17 +141,19 @@ input,button{
     font-size: 18px;
     width: 226px;
 }
+
 .completed__text {
     width: 226px
 }
 
 .completed__remove,
-.incomplete__remove{
+.incomplete__remove {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.completed__remove:hover ,
+
+.completed__remove:hover,
 .incomplete__remove:hover {
     transform: rotateZ(0);
 }
@@ -140,21 +161,21 @@ input,button{
 
 /* Completed */
 .completed__label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .completed__text,
 .incomplete__text {
-    display:none
+    display: none
 }
 
 .incomplete__label_mode {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .incomplete__text_mode {
-    display:none;
+    display: none;
 }
