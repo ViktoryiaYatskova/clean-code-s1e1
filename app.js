@@ -15,7 +15,7 @@ const createNewTaskElement = function (taskString) {
     const listItem = document.createElement('li');
 
     // input (checkbox)
-    const checkBox = document.createElement('input'); // checkbx
+    const checkBox = document.createElement('input'); // checkbox
     // label
     const label = document.createElement('label'); // label
     // input (text)
@@ -78,7 +78,7 @@ const editTask = function () {
     const containsClass = listItem.classList.contains('editMode');
     // If class of the parent is .editmode
     if (containsClass) {
-        // switch to .editmode
+        // switch to .edit mode
         // label becomes the inputs value.
         label.innerText = editInput.value;
         editBtn.innerText = 'Edit';
@@ -87,7 +87,7 @@ const editTask = function () {
         editBtn.innerText = 'Save';
     }
 
-    // toggle .editmode on the parent.
+    // toggle .edit mode on the parent.
     listItem.classList.toggle('editMode');
 };
 
@@ -149,13 +149,13 @@ const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
 // cycle over incompleteTaskHolder ul list items
 // for each list item
 for (let i = 0; i < incompleteTaskHolder.children.length; i++) {
-    // bind events to list items chldren(tasksCompleted)
+    // bind events to list items children (tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
 // cycle over completedTasksHolder ul list items
 for (let i = 0; i < completedTasksHolder.children.length; i++) {
-    // bind events to list items chldren(tasksIncompleted)
+    // bind events to list items children (tasksInCompleted)
     bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
 
