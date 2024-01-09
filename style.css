@@ -179,3 +179,15 @@ button {
 .incomplete__text_mode {
     display: none;
 }
+
+.incomplete__list .incomplete__item.editMode input[type=text],
+.completed__list .completed__item.editMode input[type=text]{
+    display:inline-block;
+    width:224px
+}
+
+.completed__list .completed__item.editMode .complete__label,
+.incomplete__list .incomplete__item.editMode .incomplete__label{
+    display:none;
+}
+
